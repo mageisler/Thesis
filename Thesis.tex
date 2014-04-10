@@ -1,4 +1,25 @@
-\documentclass{article}
+\input{setup}
+
 \begin{document}
-\LaTeX{} ist gar nicht so kompliziert.
+
+\pagenumbering{roman}
+\setcounter{page}{999}
+\setboolean{@twoside}{true}
+\renewcommand{\chapterpagestyle}{empty}
+
+\setcounter{page}{1}
+
+\renewcommand*\contentsname{Table of Contents}
+\tableofcontents
+\clearpage
+
+\pagenumbering{arabic}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{Introduction}
+%\clearpage
+
+Test, test
+
 \end{document}

@@ -1,0 +1,94 @@
+
+\input{general/command-definitions}
+
+%%%%%%%%%%%%%%%  Title page %%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[11pt,twoside, openright, a4paper, pdftex, tdr]{general/new-cms-tdr}
+\usepackage[left=29mm,right=25mm,top=25mm,bottom=14mm,includeheadfoot]{geometry}%includehead
+
+\usepackage{multirow}
+
+\newboolean{draft}
+\setboolean{draft}{false} %%set comments and lipsums on and off 
+
+\newboolean{publication}
+\setboolean{publication}{true} %%include acknowledgements and different title page in publication version
+
+\newcommand{\chooseTitlepage}{\ifthenelse{\boolean{publication}} {\input{title}} {\input{title_submission}} }
+\newcommand{\includeAcknowledgement}{\ifthenelse{\boolean{publication}} {\input{acknowledgement}} {} }
+
+
+\usepackage{xcolor}
+\definecolor{lightblue}{rgb}{0.85,0.85,0.92}
+\definecolor{gray}{gray}{0.6}
+\usepackage{lipsum}
+\newcommand{\lorem}{ \ifthenelse{\boolean{draft}} {\textcolor{lightblue}{\lipsum}} {} }
+\setlipsumdefault{1-2}
+
+\renewcommand{\arraystretch}{1.1}
+
+%define comments
+\newcommand{\comment}[1]{ \ifthenelse{\boolean{draft}} {\textcolor{red}{#1}} {} }
+%\usepackage{ulem}
+%\newcommand{\comment}[1]{ \ifthenelse{\boolean{draft}} {\textcolor{red}{\sout{#1}}} {} }
+
+%set tau note include path
+\newcommand{\notepath}{../tauNote}
+%set figure include path
+\newcommand{\notefigurepath}{\notepath/figures/}
+%\input{\notepath/definitions}
+
+%\renewcommand{\pairwidth}{.481\textwidth}
+
+\usepackage[latin1]{inputenc}
+\usepackage{upgreek}
+\usepackage{tikz}
+%\input{\notepath/tikzSetup}
+%\input{tikzSetupAddon}
+\usepackage[margin=10pt,skip=8pt, format=plain]{caption}
+\KOMAoption{captions}{tableheading, bottombeside}
+
+\makeatletter
+\renewcommand{\fps@figure}{htbp}
+\renewcommand{\fps@table}{htbp}
+\makeatother
+
+\usepackage{booktabs}
+\usepackage{color}
+\definecolor{RWTHblue}{RGB}{0,84,159}%RWTH blau
+\definecolor{RWTHlightblue}{RGB}{142,186,229}%RWTH hellblau
+\usepackage[%
+colorlinks, % verwende farbige Links
+linkcolor=black, % Linkfarbe ist RWTH blau
+citecolor=RWTHlightblue, % Zitatfarbe ist RWTH blau
+bookmarks, % erstelle Bookmarks der Links
+bookmarksopen, % Bookmarks werden beim Öffnen des Dokumentes ebenfalls geöffnet
+bookmarksopenlevel=2,
+urlcolor=RWTHblue, % Hyperlinks sind RWTH blau 
+bookmarksnumbered, % Bookmarks sind nummeriert
+pdfborder=0,
+plainpages=false,
+pdfpagelabels,
+final % Endversion 
+]{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+
+%\hypersetup{%
+%	plainpages=false,
+%	pdfpagemode=Normal,%Keine Navigatorspalte
+%	pdfview=FitH,%Standard-View fuer Link
+%	pdfstartview=FitH,%Start-Ansicht FitH,FitV,...
+%	pdfpagelayout=TwoColumnRight,%OneColumn,TwoColumnLeft,TwoColumnRight,SinglePage
+%	colorlinks=true,%true Farbe der Links
+%	bookmarksopen=true,
+%	bookmarksnumbered=true,
+%	bookmarksopenlevel=2,
+%	pdfmenubar=true,
+%	pdfwindowui=true,
+%	pdffitwindow=true,
+%	linkcolor=blue,%black,
+%	linkcolor=black,
+%	linkbordercolor=false,%Rahmenfarbe um Links (1 0 0)Leerzeichen wichtig(R G B)
+%	citecolor=blue,
+%	citecolor=black,
+%	urlcolor=black
+%}

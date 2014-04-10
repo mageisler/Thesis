@@ -6,10 +6,25 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXFileReference section */
+		8C2FC42C18F6D5F700897BF4 /* Thesis.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Thesis.tex; sourceTree = "<group>"; };
+		8C2FC42D18F6DC1C00897BF4 /* setup.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = setup.tex; sourceTree = "<group>"; };
+		8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lucas_unsrt.bst; path = general/lucas_unsrt.bst; sourceTree = "<group>"; };
+		8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "new-cms-tdr.cls"; path = "general/new-cms-tdr.cls"; sourceTree = "<group>"; };
+		8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "command-definitions.tex"; path = "general/command-definitions.tex"; sourceTree = "<group>"; };
+		8C2FC43118F6E4FE00897BF4 /* Introduction.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Introduction.tex; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
 /* Begin PBXGroup section */
 		8C59192518F6BE5F00CB61A5 = {
 			isa = PBXGroup;
 			children = (
+				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
+				8C2FC43118F6E4FE00897BF4 /* Introduction.tex */,
+				8C2FC42D18F6DC1C00897BF4 /* setup.tex */,
+				8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */,
+				8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */,
+				8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */,
 			);
 			sourceTree = "<group>";
 		};
@@ -18,11 +33,12 @@
 /* Begin PBXLegacyTarget section */
 		8C59192A18F6BE5F00CB61A5 /* Thesis */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = "$(ACTION)";
+			buildArgumentsString = Thesis.tex;
 			buildConfigurationList = 8C59192D18F6BE5F00CB61A5 /* Build configuration list for PBXLegacyTarget "Thesis" */;
 			buildPhases = (
 			);
 			buildToolPath = /usr/texbin/pdflatex;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = Thesis;
@@ -163,6 +179,7 @@
 				8C59192F18F6BE5F00CB61A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
