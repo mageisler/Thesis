@@ -1,13 +1,13 @@
 \chapter{Introduction \label{sec:Intro}}
 
-\subsection{Luminosity and Proton-Proton-Interactions \label{sec:IntroLumiPPI}}
+\section{Luminosity and Proton-Proton-Interactions \label{sec:IntroLumiPPI}}
 
-Already,nun at the end of the first proton-proton run period in December 2012 the LHC accelerator came close to its design luminosity of \LHigh. As shown in Figure~\ref{plot:IntroInstLumi}, an instantaneous luminosity greater than 7\hertzpernbarn has been reached. This corresponds to about $70\%$ of the design luminosity.
+Already, at the end of the first proton-proton run period in December 2012 the LHC accelerator came close to its design luminosity of \LHigh{}. As shown in Figure~\ref{plot:IntroInstLumi}, an instantaneous luminosity greater than 7\hertzpernbarn{} has been reached. This corresponds to about $70\%$ of the design luminosity.
 
 \begin{figure}[!Hhtb]
   \centering
   \includegraphics[width=0.55\textwidth]{Intro/peak_lumi_per_day_pp_2012}
-  \caption[Instantaneous luminosity at CMS]{The instantaneaous luminosity as delivered to CMS from the LHC accelerator during the proton-proton run period in 2012. Taken from reference~\citen{CMS-Lumi-Public-Webpage}. \label{plot:IntroInstLumi}}
+  \caption[Instantaneous luminosity at CMS]{The instantaneaous luminosity as delivered to CMS from the LHC accelerator during the proton-proton run period in 2012. \label{plot:IntroInstLumi}}
 \end{figure}
 
 To get  a more suitable parameter this instantaneous luminosity needs to be translated into proton-proton interactions per bunch crossing. For this, the total cross section for proton-proton interactions is taken from Figure~\ref{plot:IntroTotalCross}. At a center-of-mass energy of 8\TeV it is assumed to be approximately 90\mb. Together with the bunch spacing of 50\ns it leads for the number of interaction $n_{int}$ to
@@ -39,7 +39,7 @@ To illustrate the influence pileup can have Figure~\ref{plot:IntroOccuTracker} i
   \caption[Occupancy of the tracker with and without pileup]{Both pictures show the occupancy of the CMS tracker at a \ttbar event. On the left hand side without pileup and on the right hand side with 20 underlying pileup interactions. Here, all tracks are shown which leave at least three hits in the tracker material, have a \pt greater than 1\GeVc and a pseudorapidity of $\left|\eta\right|\leq2.4$. \label{plot:IntroOccuTracker}}
 \end{figure}
 
-\subsection{Resolution of the Track Reconstruction}
+\section{Resolution of the Track Reconstruction}
 
 To allow a good separation between signal and pileup tracks after reconstruction a short look at the performance of the track reconstruction is needed. A very detailed description of the fit of the reconstructed tracks can be found in reference~\citen{CMS-PAPER-TRK-11-001}. As it will be explained in Section~\ref{sec:IntroSepResPV} the region where the tracks come from is much larger along the z axis than in the other two dimensions. Hence, a good precision of the z position of the origin of the track is necessary to enable a good track to vertex assignment. The important parameter to evaluate the performance of the reconstruction of this value is the resolution. It has been estimated based on simulated events and is calculated as follows. For every reconstructed track the best matching simulated track is taken. This best match is searched by comparing the number of shared hits. Also, a minimum number of shared hits is needed. From both tracks the z value of the position of closest approach to the interaction region is taken. The distance between these two values is then stored in a histogram. After this has been done for all analyzed vertices a gaussian is fitted to this histogram. Finally, to obtain the resolution of the primary vertex reconstruction standard deviation of this gaussian is divided by $\sqrt{2}$.  As shown in Figure~\ref{plot:IntroTrackRes} the averaged resolution of the z position of the reconstructed track lies between 30\mum and can go up to some millimeter for high $\left|\eta\right|$ and low \pt. 
 
@@ -49,7 +49,7 @@ To allow a good separation between signal and pileup tracks after reconstruction
   \caption[Track resolution \vs pseudo rapidity for different bins of transverse momentum]{The distribution of the track resolution in the transverse impact parameter $d_{z}$ as a function of the pseudorapidity for different bins of transverse momentum. The tracks have been divided into three regions of pseudorapidity, in the barrel region $\left[0., 0.9\right]$, the transition region $\left(0.9, 1.4\right]$ and the endcap region $\left(1.4, 2.5\right]$\label{plot:IntroTrackRes}}
 \end{figure}
 
-\subsection{Producing the Primary Vertices\label{sec:IntroProdPV}}
+\section{Producing the Primary Vertices\label{sec:IntroProdPV}}
 
 Another input that enables the differentiation of the tracks into signal and pileup is the collection of reconstructed primary vertices. These are produced by clustering a subset of the reconstructed tracks into sets of tracks which are coming from nearly the same position. These tracks have to fulfill certain quality selections and have its origin close to the interaction region. The most important feature for the work presented here is the so-called track weight. This weight is calculated after the fit is finished and stands for the compatibility between track and the fitted vertex. It is greater than 0 for those tracks only which have been used at the fit of the respective vertex. The closer the value gets to 1 the more compatible the track is with the vertex. As said above only a subset of the reconstructed track is used for the production of the primary vertices. As it can be seen in Figure~\ref{plot:IntroTrackWeight} only about $60\%$ of all reconstructed tracks have a track weight at any vertex.  More information about the technique of the vertex fit can be found elsewhere~\cite{CMS-PAPER-TRK-11-001}.
 
@@ -60,7 +60,7 @@ Another input that enables the differentiation of the tracks into signal and pil
   \caption[Distribution of number of tracks used for fitting the vertices and fraction of reconstructed tracks which have a track weight at any primary vertex]{The distribution of the number of tracks used for fitting a particular vertex (left hand side) and the fraction of reconstructed tracks which have a track weight greater than 0 at the chosen signal vertex, at any primary vertex or at no vertex at all as a function of the pseudorapidity (right hand side). \label{plot:IntroTrackWeight}}
 \end{figure}
 
-\subsubsection{Separation and Resolution of the Primary Vertices\label{sec:IntroSepResPV}}
+\subsection{Separation and Resolution of the Primary Vertices\label{sec:IntroSepResPV}}
 
 As shown in Section~\ref{sec:IntroLumiPPI} in one bunch crossing up to 40 proton-proton interactions can happen. The space in which all these collisions happen is the so-called beam-spot. The shape of the beam-spot can be described as a cylinder lying centrally along the z-axis. This cylinder has a diameter of about 120\mum and a total length of about 30\cm. Therefore, the biggest separation of the primary vertices is expected to be along the z axis compared to the other axis. The probability for a collision to be at a certain position z is shown in Figure~\ref{plot:IntroVertexPos}. The shape of the probability can be well-described as gaussian with a width of about 5\cm. 
 
@@ -96,7 +96,7 @@ To estimate the resolution of the primary vertex reconstruction the "split metho
 
 Thus, the complete picture for the distribution of the primary vertices is that the typical separation lies in the millimeter region while the resolution is two orders of magnitude smaller. On the other hand the resolution of the track reconstruction lies somewhere in between.
 
-\subsubsection{Defining the Signal Vertex\label{sec:IntroSigVer}}
+\subsection{Defining the Signal Vertex\label{sec:IntroSigVer}}
 
 To pick the physically most interesting interactions the vertex with the highest $\pt^{2}$ is typically chosen. In the calculation for a vertex, the $\pt^{2}$ from all track which were used fitting the vertex is summed up. In order to account for misreconstructed track momenta the \pt-error is first subtracted from the \pt and only if the reduced \pt is still greater than 0 it is squared and added to the sum. Figure~\ref{plot:IntroSigVertexProb} shows the probability that the chosen primary vertex is the closest reconstructed vertex to the simulated signal interaction. For events with more than 40 underlying pileup events the efficiency can fall below $90\,{}\%{}$.
 
@@ -107,20 +107,19 @@ To pick the physically most interesting interactions the vertex with the highest
 \end{figure}
 
 
-\subsection{Current Pileup Subtraction Techniques\label{sec:IntroCurPST}}
+\section{Current Pileup Subtraction Techniques\label{sec:IntroCurPST}}
 
 First, it should be mentioned that the association of tracks to primary vertices can only be done for charged particles which leave hits in the tracker. For neutral particles it is more or less impossible to obtain a sufficient resolution on the momentum due to the much poorer spacial resolution of the calorimeter. In order to subtract tracks coming from pileup vertices, two different approaches have been developed. Both techniques take advantage of the track weight which is stored in each vertex as explained in Section~\ref{sec:IntroProdPV}. Furthermore, the techniques only divide the reconstructed vertices into one signal vertex and one group of pileup vertex. For the latter ones no individual association is done. Therefore, both approaches strongly rely on the correct identification of the signal vertex (see Section~\ref{sec:IntroSigVer}). Additionally, the clustering of the tracks to vertices can be faulty. \\
 Another analogy is, that both approaches are executed after the so-called \textit{particle flow} identification has been applied. This makes it possible, that only for charged hadrons  the check for the track weight is done.  Only if those have a track weight at one of the pileup vertices they get subtracted. The difference in these two approaches shows up in the treatment of the charged hadrons which do not have a track weight at any primary vertex. All other particles are treated as signal, first. In following filters for muons and electrons a cut is applied on the distance from the track to the signal vertex. In doing so, pileup subtraction is executed for charged hadrons, muons and electrons. Hence, the new approach will be compared to the outcome of these associations and filters.
 
-\subsubsection{Jet/MET Approach \label{sec:IntroJM}}
+\subsection{Jet/MET Approach \label{sec:IntroJM}}
 
 In this approach, all charged hadrons which have no track weight at any primary vertex are treated as coming from the signal one. In doing so, the vertex with the highest \pt-sum is overvalued because about $40\%$ of all reconstructed charged hadrons are treated as signal always.
 
-\subsubsection{Muon/Egamma Approach \label{sec:IntroME}}
+\subsection{Muon/Egamma Approach \label{sec:IntroME}}
 
 In this approach, charged hadrons which have no track weight at any primary vertex are assigned to the closest vertex in z. This approach takes advantage of the fact that the largest separation or the primary vertices is along the z axis. 
 
-\subsection{Basic Ideas for a new Approach}
+\section{Basic Ideas for a New Approach}
 
 In order to reach a better performance in assigning tracks to primary vertices, a more individual search for the best matching vertex needs to be performed. As mentioned above no association to a particular pileup vertex takes place until now. Hence, afterwards it is impossible to obtain the tracks coming from one special pileup vertex. Especially tracks without a track weight at any vertex are not assigned. To provide the possibility to obtain the track assigned to any primary vertex an \textit{Association Map} is created. In this map for any primary vertex it is possible to get a set of tracks together with a number indicating the quality of this association. In an additional step, it is possible to obtain only those tracks assigned to the signal vertex. Thus, tracks considered as coming from pileup vertices are subtracted from the initial track collection.
-
