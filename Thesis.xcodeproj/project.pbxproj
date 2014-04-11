@@ -15,12 +15,14 @@
 		8C2FC43118F6E4FE00897BF4 /* Introduction.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Introduction.tex; sourceTree = "<group>"; };
 		8C7A64DC18F7D8730020961B /* Titlepage.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Titlepage.tex; sourceTree = "<group>"; };
 		8C7A64DF18F7F2840020961B /* Detector.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Detector.tex; sourceTree = "<group>"; };
+		8C7A64E118F8304E0020961B /* Thesis.bib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thesis.bib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		8C59192518F6BE5F00CB61A5 = {
 			isa = PBXGroup;
 			children = (
+				8C7A64E118F8304E0020961B /* Thesis.bib */,
 				8C7A64DF18F7F2840020961B /* Detector.tex */,
 				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
 				8C2FC43118F6E4FE00897BF4 /* Introduction.tex */,
@@ -37,12 +39,12 @@
 /* Begin PBXLegacyTarget section */
 		8C59192A18F6BE5F00CB61A5 /* Thesis */ = {
 			isa = PBXLegacyTarget;
-			buildArgumentsString = Thesis.tex;
+			buildArgumentsString = Thesis;
 			buildConfigurationList = 8C59192D18F6BE5F00CB61A5 /* Build configuration list for PBXLegacyTarget "Thesis" */;
 			buildPhases = (
 			);
-			buildToolPath = /usr/texbin/pdflatex;
-			buildWorkingDirectory = "";
+			buildToolPath = /Users/Matze/Dateien/programs/correctLatex.py;
+			buildWorkingDirectory = /Users/Matze/Documents/Uni/Promotion/Thesis;
 			dependencies = (
 			);
 			name = Thesis;

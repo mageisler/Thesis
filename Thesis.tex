@@ -25,4 +25,16 @@
 \input{Detector}
 \clearpage
 
+\renewcommand*\listfigurename{List of Figures}
+\renewcommand*\listtablename{List of Tables}
+\renewcommand*\bibname{Bibliography}
+
+\phantomsection\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+\clearpage
+\phantomsection\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+\phantomsection\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{Thesis}
+
 \end{document}
