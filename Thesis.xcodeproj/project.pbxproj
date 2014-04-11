@@ -13,6 +13,7 @@
 		8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "new-cms-tdr.cls"; path = "general/new-cms-tdr.cls"; sourceTree = "<group>"; };
 		8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "command-definitions.tex"; path = "general/command-definitions.tex"; sourceTree = "<group>"; };
 		8C2FC43118F6E4FE00897BF4 /* Introduction.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Introduction.tex; sourceTree = "<group>"; };
+		8C7A64DC18F7D8730020961B /* Titlepage.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Titlepage.tex; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -22,6 +23,7 @@
 				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
 				8C2FC43118F6E4FE00897BF4 /* Introduction.tex */,
 				8C2FC42D18F6DC1C00897BF4 /* setup.tex */,
+				8C7A64DC18F7D8730020961B /* Titlepage.tex */,
 				8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */,
 				8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */,
 				8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */,
