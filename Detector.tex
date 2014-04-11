@@ -1,0 +1,127 @@
+\chapter{LHC and CMS \label{sec:LHCCMS}}
+
+\section{The Large Hadron Collider \label{LHCCMSLHC}}
+
+\section{Luminosity and Proton-Proton-Interactions \label{sec:IntroLumiPPI}}
+
+Already, at the end of the first proton-proton run period in December 2012 the LHC accelerator came close to its design luminosity of \LHigh{}. As shown in Figure~\ref{plot:IntroInstLumi}, an instantaneous luminosity greater than 7\hertzpernbarn{} has been reached. This corresponds to about $70\%$ of the design luminosity.
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{Intro/peak_lumi_per_day_pp_2012}
+  \caption[Instantaneous luminosity at CMS]{The instantaneaous luminosity as delivered to CMS from the LHC accelerator during the proton-proton run period in 2012. \label{plot:IntroInstLumi}}
+\end{figure}
+
+To get  a more suitable parameter this instantaneous luminosity needs to be translated into proton-proton interactions per bunch crossing. For this, the total cross section for proton-proton interactions is taken from Figure~\ref{plot:IntroTotalCross}. At a center-of-mass energy of 8\TeV it is assumed to be approximately 90\mb. Together with the bunch spacing of 50\ns it leads for the number of interaction $n_{int}$ to
+\begin{eqnarray}
+n_{int} & \approx & 7\hertzpernbarn \cdot 90\mb \cdot 50\ns \nonumber \\
+ & \approx & 31.5 \nonumber
+\end{eqnarray}
+
+In doing so, the distribution of the instantaneous luminosity from Figure~\ref{plot:IntroInstLumi} can be transferred into a distribution of the number of interactions per bunch crossing as shown in Figure~\ref{plot:IntroPileupDistr}. From this it can be seen that the mean of the number of proton-proton interaction for the first run period was 21. That means that on average in an event with one hard interaction about 20 soft interaction happen. The tail reaches up to 40 additional interactions. This background is often referred to "pileup". This can have a severe influence on the performance of the reconstruction of the hard collisions (so-called signal process).
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.7\textwidth]{Intro/ppXsection}
+  \caption[Total and elastic cross section for pp interactions]{The total and elastic cross section for proton-proton collisions as a function of the center-of-mass energy. Taken from reference ~\citen{Beringer:1900zz}.\label{plot:IntroTotalCross}}
+\end{figure}
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{Intro/pileup_pp_2012}
+  \caption[Number of pp collisions]{The distribution for the number of proton proton collisions calculated based on Figure~\ref{plot:IntroInstLumi}. Taken from reference~\citen{CMS-Lumi-Public-Webpage}. \label{plot:IntroPileupDistr}}
+\end{figure}
+
+To illustrate the influence pileup can have Figure~\ref{plot:IntroOccuTracker} is shown. Both pictures display the occupancy of the CMS tracker for a simulated \ttbar event with 20 additional pileup events. The difference is that on the left hand side picture only the tracks coming from the signal vertex are displayed while on the picture on the right hand side all tracks displayed. Here, only tracks from charged particles are displayed since neutral particles do not leave hits in the tracker material. It is imaginable that these additional tracks affect the reconstruction of objects like jets or the missing transverse energy of the signal process. 
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{Intro/tracker_withoutPU}
+  \includegraphics[width=0.45\textwidth]{Intro/tracker_withPU}
+  \caption[Occupancy of the tracker with and without pileup]{Both pictures show the occupancy of the CMS tracker at a \ttbar event. On the left hand side without pileup and on the right hand side with 20 underlying pileup interactions. Here, all tracks are shown which leave at least three hits in the tracker material, have a \pt greater than 1\GeVc and a pseudorapidity of $\left|\eta\right|\leq2.4$. \label{plot:IntroOccuTracker}}
+\end{figure}
+
+\section{Resolution of the Track Reconstruction}
+
+To allow a good separation between signal and pileup tracks after reconstruction a short look at the performance of the track reconstruction is needed. A very detailed description of the fit of the reconstructed tracks can be found in reference~\citen{CMS-PAPER-TRK-11-001}. As it will be explained in Section~\ref{sec:IntroSepResPV} the region where the tracks come from is much larger along the z axis than in the other two dimensions. Hence, a good precision of the z position of the origin of the track is necessary to enable a good track to vertex assignment. The important parameter to evaluate the performance of the reconstruction of this value is the resolution. It has been estimated based on simulated events and is calculated as follows. For every reconstructed track the best matching simulated track is taken. This best match is searched by comparing the number of shared hits. Also, a minimum number of shared hits is needed. From both tracks the z value of the position of closest approach to the interaction region is taken. The distance between these two values is then stored in a histogram. After this has been done for all analyzed vertices a gaussian is fitted to this histogram. Finally, to obtain the resolution of the primary vertex reconstruction standard deviation of this gaussian is divided by $\sqrt{2}$.  As shown in Figure~\ref{plot:IntroTrackRes} the averaged resolution of the z position of the reconstructed track lies between 30\mum and can go up to some millimeter for high $\left|\eta\right|$ and low \pt. 
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{Intro/TrackRes_dz_Vs_Pt}
+  \caption[Track resolution \vs pseudo rapidity for different bins of transverse momentum]{The distribution of the track resolution in the transverse impact parameter $d_{z}$ as a function of the pseudorapidity for different bins of transverse momentum. The tracks have been divided into three regions of pseudorapidity, in the barrel region $\left[0., 0.9\right]$, the transition region $\left(0.9, 1.4\right]$ and the endcap region $\left(1.4, 2.5\right]$\label{plot:IntroTrackRes}}
+\end{figure}
+
+\section{Producing the Primary Vertices\label{sec:IntroProdPV}}
+
+Another input that enables the differentiation of the tracks into signal and pileup is the collection of reconstructed primary vertices. These are produced by clustering a subset of the reconstructed tracks into sets of tracks which are coming from nearly the same position. These tracks have to fulfill certain quality selections and have its origin close to the interaction region. The most important feature for the work presented here is the so-called track weight. This weight is calculated after the fit is finished and stands for the compatibility between track and the fitted vertex. It is greater than 0 for those tracks only which have been used at the fit of the respective vertex. The closer the value gets to 1 the more compatible the track is with the vertex. As said above only a subset of the reconstructed track is used for the production of the primary vertices. As it can be seen in Figure~\ref{plot:IntroTrackWeight} only about $60\%$ of all reconstructed tracks have a track weight at any vertex.  More information about the technique of the vertex fit can be found elsewhere~\cite{CMS-PAPER-TRK-11-001}.
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{Intro/VertexNum_Vs_Ntrks}
+  \includegraphics[width=0.45\textwidth]{Intro/TrackWeightCheck}
+  \caption[Distribution of number of tracks used for fitting the vertices and fraction of reconstructed tracks which have a track weight at any primary vertex]{The distribution of the number of tracks used for fitting a particular vertex (left hand side) and the fraction of reconstructed tracks which have a track weight greater than 0 at the chosen signal vertex, at any primary vertex or at no vertex at all as a function of the pseudorapidity (right hand side). \label{plot:IntroTrackWeight}}
+\end{figure}
+
+\subsection{Separation and Resolution of the Primary Vertices\label{sec:IntroSepResPV}}
+
+As shown in Section~\ref{sec:IntroLumiPPI} in one bunch crossing up to 40 proton-proton interactions can happen. The space in which all these collisions happen is the so-called beam-spot. The shape of the beam-spot can be described as a cylinder lying centrally along the z-axis. This cylinder has a diameter of about 120\mum and a total length of about 30\cm. Therefore, the biggest separation of the primary vertices is expected to be along the z axis compared to the other axis. The probability for a collision to be at a certain position z is shown in Figure~\ref{plot:IntroVertexPos}. The shape of the probability can be well-described as gaussian with a width of about 5\cm. 
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{Intro/VertexNum_Vs_Z}
+  \caption[Vertex distribution along z]{The distribution for the reconstructed primary vertices along the z axis for the last run period in 2012 (normalized to an integral of 1). \label{plot:IntroVertexPos}}
+\end{figure}
+
+The mean separation of the primary vertices in one bunch crossing is therefore strongly dependent on the number of collisions. For the data in Figure~\ref{plot:IntroVertexSep}, the mean separation is shown against the number of reconstructed vertices of the bunch crossing. The separation has been defined as the distance of one primary vertex to the closest other one. For bunch crossings with more than 30 reconstructed vertices the mean separation becomes less than 5\mm. The same holds for an instantaneous luminosity of greater than 6\hertzpernbarn. A more detailed look of the primary vertex separation can be found in Figure~\ref{plot:IntroVertexSep2D}. As it can be seen the separation of the primary vertices can go down below 1\mm in the central region. 
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{Intro/VertexSep_Vs_Npu}
+  \includegraphics[width=0.45\textwidth]{Intro/VertexSep_Vs_InstLumi}
+  \caption[Mean vertex separation \vs number of reconstructed vertices and \vs instantaneous luminosity]{The distribution for the mean separation of the primary vertices \vs the number of reconstructed vertices (left hand side) and \vs the instantaneous luminosity for one run of the last run period in 2012. \label{plot:IntroVertexSep}}
+\end{figure}
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.45\textwidth]{Intro/VertexSep_Vs_Npu_Vs_Z}
+  \includegraphics[width=0.45\textwidth]{Intro/VertexNum_Vs_Z_Vs_Sep}
+  \caption[Vertex separation \vs number of reconstructed vertices and \vs z position of the vertex. Number of signal vertices \vs z position and separation for events with 20 underlying pileup events]{The distribution for the averaged separation of the signal vertex \vs the number of reconstructed vertices and the z position (left hand side) and the number of signal vertices \vs z position and separation for events with 20 underlying pileup events for one run of the last run period in 2012. \label{plot:IntroVertexSep2D}}
+\end{figure}
+
+To estimate the resolution of the primary vertex reconstruction the "split method" has been applied on data from one run at the end of the first run period in 2012. A more detailed description of this method can be found in reference~\citen{CMS-PAPER-TRK-11-001}. First, all tracks from a certain vertex are split equally into two different sets. In this process, one tries to ensure that both track sets have, on average, the same kinematic properties. Based on these two sets two new vertices are fitted independently using the adaptive vertex fitter. The distance of the position of these two vertices is then stored. After applying this procedure to all primary vertices a gaussian is fitted to the distribution of that distance. To obtain the resolution of the primary vertices the standard deviation of the gaussian is divided by $\sqrt{2}$. In Figure~\ref{plot:IntroVertexRes} the primary vertex resolution in z is shown. As it can be seen the resolution depends strongly on the number of tracks that have been used to fit the primary vertex. The typical range for this resolution lies between 200\mum for about 10 tracks and around 40\mum for more than 60 tracks.
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{Intro/VertexResolution_Vs_nTrks}
+  \caption[Vertex resolution \vs number of used tracks]{The distribution for the resolution in z of the primary vertices \vs the number of tracks that were used to fit the primary vertex for one run of the last run period in 2012. \label{plot:IntroVertexRes}}
+\end{figure}
+
+Thus, the complete picture for the distribution of the primary vertices is that the typical separation lies in the millimeter region while the resolution is two orders of magnitude smaller. On the other hand the resolution of the track reconstruction lies somewhere in between.
+
+\subsection{Defining the Signal Vertex\label{sec:IntroSigVer}}
+
+To pick the physically most interesting interactions the vertex with the highest $\pt^{2}$ is typically chosen. In the calculation for a vertex, the $\pt^{2}$ from all track which were used fitting the vertex is summed up. In order to account for misreconstructed track momenta the \pt-error is first subtracted from the \pt and only if the reduced \pt is still greater than 0 it is squared and added to the sum. Figure~\ref{plot:IntroSigVertexProb} shows the probability that the chosen primary vertex is the closest reconstructed vertex to the simulated signal interaction. For events with more than 40 underlying pileup events the efficiency can fall below $90\,{}\%{}$.
+
+\begin{figure}[!Hhtb]
+  \centering
+  \includegraphics[width=0.55\textwidth]{Intro/FirstVertexCheck_Vs_Npu}
+  \caption[Probability to define the correct vertex as signal]{The percentage for events in which the correct primary vertex is defined as the signal vertex as a function of number of reconstructed vertices. \label{plot:IntroSigVertexProb}}
+\end{figure}
+
+
+\section{Current Pileup Subtraction Techniques\label{sec:IntroCurPST}}
+
+First, it should be mentioned that the association of tracks to primary vertices can only be done for charged particles which leave hits in the tracker. For neutral particles it is more or less impossible to obtain a sufficient resolution on the momentum due to the much poorer spacial resolution of the calorimeter. In order to subtract tracks coming from pileup vertices, two different approaches have been developed. Both techniques take advantage of the track weight which is stored in each vertex as explained in Section~\ref{sec:IntroProdPV}. Furthermore, the techniques only divide the reconstructed vertices into one signal vertex and one group of pileup vertex. For the latter ones no individual association is done. Therefore, both approaches strongly rely on the correct identification of the signal vertex (see Section~\ref{sec:IntroSigVer}). Additionally, the clustering of the tracks to vertices can be faulty. \\
+Another analogy is, that both approaches are executed after the so-called \textit{particle flow} identification has been applied. This makes it possible, that only for charged hadrons  the check for the track weight is done.  Only if those have a track weight at one of the pileup vertices they get subtracted. The difference in these two approaches shows up in the treatment of the charged hadrons which do not have a track weight at any primary vertex. All other particles are treated as signal, first. In following filters for muons and electrons a cut is applied on the distance from the track to the signal vertex. In doing so, pileup subtraction is executed for charged hadrons, muons and electrons. Hence, the new approach will be compared to the outcome of these associations and filters.
+
+\subsection{Jet/MET Approach \label{sec:IntroJM}}
+
+In this approach, all charged hadrons which have no track weight at any primary vertex are treated as coming from the signal one. In doing so, the vertex with the highest \pt-sum is overvalued because about $40\%$ of all reconstructed charged hadrons are treated as signal always.
+
+\subsection{Muon/Egamma Approach \label{sec:IntroME}}
+
+In this approach, charged hadrons which have no track weight at any primary vertex are assigned to the closest vertex in z. This approach takes advantage of the fact that the largest separation or the primary vertices is along the z axis. 
+
+\section{Basic Ideas for a New Approach}
+
+In order to reach a better performance in assigning tracks to primary vertices, a more individual search for the best matching vertex needs to be performed. As mentioned above no association to a particular pileup vertex takes place until now. Hence, afterwards it is impossible to obtain the tracks coming from one special pileup vertex. Especially tracks without a track weight at any vertex are not assigned. To provide the possibility to obtain the track assigned to any primary vertex an \textit{Association Map} is created. In this map for any primary vertex it is possible to get a set of tracks together with a number indicating the quality of this association. In an additional step, it is possible to obtain only those tracks assigned to the signal vertex. Thus, tracks considered as coming from pileup vertices are subtracted from the initial track collection.
