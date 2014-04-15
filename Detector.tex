@@ -54,9 +54,11 @@ n_{int} & \approx & 7\hertzpernbarn \cdot 90\mb \cdot 50\ns \nonumber \\
 
 Hence, the expected number of proton-proton interaction per bunch crossing during the first run period of the LHC is expected to be in the order of 30.
 
-\section{The Compact Muon Solenoid Detector \label{LHCCMSCMS}}
+\section{The Compact Muon Solenoid Experiment \label{LHCCMSCMS}}
 
-At interaction point five of the LHC the CMS detector is located. The cylindrical shaped detector with a length of 29\m{} and a diameter of 15\m{} is placed in a cavern around 100\m{} under ground. The total weight of the detector is around 14000 tonnes. An artistic sketch of the whole detector is shown in Figure~\ref{plot:LHCCMSWholeCMS}. As it can be seen the general installatioin of the subdetectors is onion shaped. One section of the CMS detector with the layers of all subdetectors is displayed in Figure~\ref{plot:LHCCMSOnionCMS}. The gap in the middle is filled by the solenoid magnet. Starting from the innermost point after the beampipe the subdetectors are arranged in the following way: Pixel and strip tracker, electromagnetic calorimeter, hadronic calorimeter, magnet and muon chambers.
+\subsection{The CMS Detector \label{LHCCMSCMSDet}}
+
+At interaction point five of the LHC the CMS detector is located. The cylindrical shaped detector with a length of 29\m{} and a diameter of 15\m{} is placed in a cavern around 100\m{} under ground. The total weight of the detector is around 14000 tonnes. An artistic sketch of the whole detector is shown in Figure~\ref{plot:LHCCMSWholeCMS}. As it can be seen the general installatioin of the sub-detectors is onion shaped. One section of the CMS detector with the layers of all sub-detectors is displayed in Figure~\ref{plot:LHCCMSOnionCMS}. The gap in the middle is filled by the solenoid magnet. Starting from the innermost point after the beampipe the sub-detectors are arranged in the following way: Pixel and strip tracker, electromagnetic calorimeter, hadronic calorimeter, magnet and muon chambers.
 
 \begin{figure}[!Hhtb]
   \centering
@@ -67,51 +69,77 @@ At interaction point five of the LHC the CMS detector is located. The cylindrica
 \begin{figure}[!Hhtb]
   \centering
   \includegraphics[width=0.7\textwidth]{Detector/CMS_Onion}
-  \caption[One section of the CMS detector with all layers]{One section of the CMS detector with all layers from the subdetectors togtehr with the beam pipe. The magnet is placed in the gap. Taken from~\citen{CMSPlots}. \label{plot:LHCCMSOnionCMS}}
+  \caption[One section of the CMS detector with all layers]{One section of the CMS detector with all layers from the sub-detectors togtehr with the beam pipe. The magnet is placed in the gap. Taken from~\citen{CMSPlots}. \label{plot:LHCCMSOnionCMS}}
 \end{figure}
 
+\subsubsection{Silicon Tracker}
 
-\subsection{Silicon Tracker}
+The innermost part of the CMS detector is the tracking system. It has a cylindrical shape with a length of 5.8\m{} and a diameter of 2.5\m{}. With this the acceptance of the tracker reaches a pseudorapidity of 2.5. The modules of the tracker are made of silicon. On the one hand, modules made of silicon can provide a very high granularity and a fast readout. This is needed since at its design parameters the LHC will collide two proton bunches every 25\ns{} with at all around 1000 created particles per event. Furthermore, silicon is expected to withstand these conditions with such a high radiation for a relatively high lifetime. On the other hand, using silicon modules leads to a high amount af readout electronics and cooling devices. This increases the probability of photon conversion or nuclear interactions. mor information about the choise which sensor technology has beeen chosen can be found elsewhere~\cite{Chatrchyan:1129810}. In total about 200\ms{} of active silicon area is build in the CMS tracker making it the largest silicon tracker ever build.\\
+As demonstrated in the sketches shown in Figure~\ref{plot:LHCCMSTrackerCMS} the tracker can be further divided into a Pixel and a Strip detector. A schematic cross section through the CMS tracker can be seen in Figure~\ref{plot:LHCCMSTrackerCrossCMS}. Also there, the position of the Pixel and Strip tracker is ilustrated.
 
 \begin{figure}[!Hhtb]
-  \centering
-  \includegraphics[width=0.45\textwidth]{Detector/CMS_Tracker}
-  \includegraphics[width=0.45\textwidth]{Detector/CMS_PixelTracker}
-  \caption[]{Taken from~\citen{CMSPlots}. \label{plot:LHCCMSTrackerCMS}}
+    \centering
+    \includegraphics[width=0.45\textwidth]{Detector/CMS_Tracker}
+    \includegraphics[width=0.45\textwidth]{Detector/CMS_PixelTracker}
+    \caption[Sketches of the CMS Tracker]{A sketch of the whole CMS silicon Tracker (left hand plot) and a zoom to the Pixel Tracker and its enclosure only (right hand plot). Taken from~\citen{CMSPlots}. \label{plot:LHCCMSTrackerCMS}}
 \end{figure}
 
-\subsection{Electromagnetic Calorimeter}
+\begin{figure}[!Hhtb]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Detector/Sketch_CMS_Crosssection}
+    \caption[Schematic cross section of the CMS Tracker]{A schematic cross section of the CMS tracker including the Pixel and Strip detector. Modules which are marked with double lines deliver stereo hits. Taken from~\citen{Chatrchyan:1129810}. \label{plot:LHCCMSTrackerCrossCMS}}
+\end{figure}
+
+\paragraph{Pixel Tracker}
+To enable a good resolution of the reconstrcution of the track impact parameter the cells of the pixel tracker need to have a very small size. To achieve this a size has been chosen of $\text{100}\,\times\,\text{150}\,\mu\text{m}^{\text{2}}$ per pixel. As it can be seen from Figure~\ref{plot:LHCCMSTrackerCrossCMS} there are three barrel layers of the pixel detector with a length of 53\cm{} at radii of 4.4, 7.3 and 10.2 \cm{}. Furthermore, at the end planes of these cylinder two pixel disks are located at z values of $\pm{}34.5$ and $\pm{}46.5\,\text{cm}$. In doing so, in the barrel region the cells are aligned in the $\phi{}$-z-plane and in the disks in the x-y-plane. One more psecial feature of teh placement of the pixel disks is that they tilted by 20\de{} looking like a turbine. The reason for this is the charge-sharing which comes due to geometrical effects of the bending of hte particles in the magnetic field.  With this arrangement three hits per track are expected on average. In total, the pixel detector covers an area of about 1\ms{} and has 66 million pixels mounted on 1440 modules.
+
+
+\paragraph{Strip Tracker}
+As already shown in Figure~\ref{plot:LHCCMSTrackerCrossCMS} the strip tracker consists of several parts. In the central region to barrels, namely the Tracker Inner Barrel (TIB) and the Tracker Outer Barrel (TOB), are placed. On the end planed the Tracker Innder Disks (TID) and the Tracker End Caps (TEC) are installed. All these parts are equipped with several different silicon modules. For the two barrels rectangular sensors are chosen while there are 11 wedge-shaped sensors for the TID and TEC. One further difference is the thickness. While those modules which are close to the interaction region at the TIB, the TID and on the four inner rings of the TEC thin sensors with a thickness of 320\mum{} are used the other modules are 500\mum{} thick. These thicker modules can have a bow which is required to be less than 100\mum{}. These different thicknesses are due to the particle flux and the resulting signal to noise ratio. Finally, another important difference between the modules is the width. They can have either 512 or 768 strips with a pitch of 80$-$120\mum{}. In general it can be said the farer the sensors are ways from the interaction region the thicker, the mmore strip and the larger strip pitch they have. Due to the strip design the modules are able to measure the impact point of the track with a high accuracy in one dimension only. To provide also two dimensional information about the impact point at some places two modules are paired together with an angular difference of 100\mrad{}.\\
+In the central region the TIB consists of four cylinders with a length of 140\cm{} placed at radii of 255.0, 339.0, 418.5 and 498.0\mm{}. This tracker part is followed by the TOB which is the only tracker sub-detector which is fully equipped with thick sensors. It consists of six cylindrical layers with a length of 236\cm{}. The layers are placed at radii of 608, 692, 780, 868, 956 and 1080\mm{}. The modules are arranged in that was that that the strips are parallel to the z direction. Hence the $\phi{}$ position of the hit can be measured with highest accuracy. For both, TIB and TOB, the two innermost layers are equipped with double-sided modules giving also information of the z position of the hits.\\
+Next to the TIB the TID is placed. It consists of three disks at z positions of $\pm{}$80 to $\pm$90\cm{} . These disks are identical and assembled with three rings of modules spanning a radius from 200 to 500\mm{}. Due to this orientation again the $\phi{}$ position of the hit has the highest accuracy. The two innermost rings of each wheel are equipped with double-sided modules. In doing so, the radius of the position of the double-sided modules of TIB and TID are similar. Addotionally, the radius of the hit from the beam axis can be measured at thw double-sided modules. Last, the TEC consists of 9 endcaps at z positions from $\pm{}$124 to $\pm{}$ 280\cm{}. The cover a radius from 220 to 1135\mm{}. Depending on the z position the endcaps are equipped with four to seven rings of modules. The double-sided modules are again placed in that way the the distance to the beam axis is the same as for those in the TIB and TOB. \\
+In total, 15 148 strip detectotr modules are installed leading to 24 244 channels from 9.3 million strips. In Figure~\ref{plot:LHCCMSTrackerRadiationLength} the material budget in terms of radiation length is shown for the whole tracker and divided into the sub-detectors. As it can be seen for the central region it is between 0.4 and 0.6 but for a pseudorapidity between 1. and 2. is rises up to 1.8. For electrons the radiation length is the typical length in which an high energetic electron loses its energy due to Bremsstrahlung down to 1/e. For photons it is defined as 7/9 of the mean free path for pair production of a high energetic photon. This has as a consequence that about $75\,\%$ of all photons convert within the tracker volume.
+
+\begin{figure}[!Hhtb]
+    \centering
+    \includegraphics[width=0.55\textwidth]{Detector/Tracker_RadiationLength}
+    \caption[Material budget of the CMS Tracker]{The material budget of the CMS tracker in multiples of the radiation length as a function of the pseudorapidity. It is further broken down to the sub-detectors. Taken from~\citen{Chatrchyan:1129810}. \label{plot:LHCCMSTrackerRadiationLength}}
+\end{figure}
+
+\subsubsection{Electromagnetic Calorimeter}
+
+To measure the elecromagnetic energy right behind the tracker at a hermetic and homogeneous calorimeter made of more than 75000 lead tungstate crystals is used. It is again cylindric with a length of about 630\cm{} and a diameter of 320\cm. The barral of it can be seen on the left hand plot in Figure~\ref{plot:LHCCMSECalCMS} while a typical endcap of a calorimeter is shown in the right hand plot of Figure~\ref{plot:LHCCMSHCalCMS}. The transition region from the barrel to the endcaps is at a pseudorapidity of 1.479. The individual crystals have been arranged in that way that all face the interaction point as shown on the right hand plot of Figure~\ref{plot:LHCCMSECalCMS}. Lead tungstate has been chosen because of its high density (8.28\gcmc{}), short radiation length in the order of 0.89\cm ans a small Moli\`ere radius of 2.2\cm{}. This Moli\`ere radius is a characteristic constant of a material. A cylinder with this radiu contains on average $90\,\%$ of the energy deposition of a electromagnetic shower. The crystals have a pyramidal shape with a cross-section of 22 $\times{}$ 22\mms{} at the inner face and 26 $\times{}$ 26\mms{} at the rear face. The length of one crystals is 23\cm corresponding to 25.8 radiation lengths.
 
 \begin{figure}[!Hhtb]
   \centering
   \includegraphics[width=0.45\textwidth]{Detector/CMS_ECal}
   \includegraphics[width=0.45\textwidth]{Detector/CMS_ECal_Modules}
-  \caption[]{Taken from~\citen{CMSPlots}. \label{plot:LHCCMSECalCMS}}
+  \caption[Sketches of the electromagnetic calorimeter of CMS]{A sketch showing the barrel of the CMS electromagnetic calorimeter (left hand pot) and one slice of the modules (right hand side). Taken from~\citen{CMSPlots}. \label{plot:LHCCMSECalCMS}}
 \end{figure}
 
-\subsection{Hadronic Calorimeter}
+\subsubsection{Hadronic Calorimeter}
 
 \begin{figure}[!Hhtb]
   \centering
   \includegraphics[width=0.45\textwidth]{Detector/CMS_HCal}
   \includegraphics[width=0.45\textwidth]{Detector/CMS_ECal_EndCap}
-  \caption[]{Taken from~\citen{CMSPlots}. \label{plot:LHCCMSHCalCMS}}
+  \caption[Sketches of the hadronic calorimeter of CMS]{A sketch of the hadronic smaple calorimeter of the CMS detector (left hand plot) and one of a typical endcap of the electronmagnetic of hadronic calorimeter (right hand plot). Taken from~\citen{CMSPlots}. \label{plot:LHCCMSHCalCMS}}
 \end{figure}
 
-\subsection{Superconducting Magnet}
+\subsubsection{Superconducting Magnet}
 
 \begin{figure}[!Hhtb]
   \centering
   \includegraphics[width=0.7\textwidth]{Detector/CMS_Magnet}
-  \caption[]{Taken from~\citen{CMSPlots}. \label{plot:LHCCMSMagnetCMS}}
+  \caption[Sketch of the solenoid magnet]{A sketch showing the solenoid magnet of the CMS detector and the beam pipe with a human for size comparison. Taken from~\citen{CMSPlots}. \label{plot:LHCCMSMagnetCMS}}
 \end{figure}
 
-\subsection{Muon Chambers}
+\subsubsection{Muon Chambers}
 
 \begin{figure}[!Hhtb]
   \centering
   \includegraphics[width=0.7\textwidth]{Detector/CMS_MuonChambers}
-  \caption[]{Taken from~\citen{CMSPlots}. \label{plot:LHCCMSMuonChambersCMS}}
+  \caption[Sketch of the muon chambers of CMS]{A sketch of the muon chambers of the CMS detector. The are shown in red followed by the . Perpendicular to the beam pipe the are mounted. Taken from~\citen{CMSPlots}. \label{plot:LHCCMSMuonChambersCMS}}
 \end{figure}
 
 
