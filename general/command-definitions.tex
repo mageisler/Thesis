@@ -174,6 +174,9 @@
 
 
 
+
+\newcommand{\cmsSymbolFace}{\mathrm}
+
 % Physics symbols ...
 
 \newcommand{\PT}{\ensuremath{p_{\mathrm{T}}}\xspace}
@@ -181,18 +184,88 @@
 \newcommand{\ET}{\ensuremath{E_{\mathrm{T}}}\xspace}
 \newcommand{\HT}{\ensuremath{H_{\mathrm{T}}}\xspace}
 \newcommand{\et}{\ensuremath{E_{\mathrm{T}}}\xspace}
-\providecommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
-\providecommand{\Pm}{\ensuremath{p\hspace{-0.5em}/}\xspace}
-\providecommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
-\providecommand{\PTslash}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/}\xspace}
+\newcommand{\Em}{\ensuremath{E\hspace{-0.6em}/}\xspace}
+\newcommand{\Pm}{\ensuremath{p\hspace{-0.5em}/}\xspace}
+\newcommand{\PTm}{\ensuremath{{p}_\mathrm{T}\hspace{-1.02em}/\kern 0.5em}\xspace}
+\newcommand{\PTslash}{\PTm}
 \newcommand{\ETm}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
-\providecommand{\ETslash}{\ensuremath{E_{\mathrm{T}}\hspace{-1.1em}/}\xspace}
-\newcommand{\MET}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
-\newcommand{\ETmiss}{\ensuremath{E_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\MET}{\ETm}
+\newcommand{\ETmiss}{\ETm}
+\newcommand{\ETslash}{\ensuremath{E_{\mathrm{T}}\hspace{-1.1em}/\kern0.45em}\xspace}
 \newcommand{\VEtmiss}{\ensuremath{{\vec E}_{\mathrm{T}}^{\text{miss}}}\xspace}
+\newcommand{\ptvec}{\ensuremath{{\vec p}_{\mathrm{T}}}\xspace}
 
 % roman face derivative
-\providecommand{\dd}[2]{\ensuremath{\frac{\mathrm{d} #1}{\mathrm{d} #2}}}
+\newcommand{\dd}[2]{\ensuremath{\frac{\cmsSymbolFace{d} #1}{\cmsSymbolFace{d} #2}}}
+\newcommand{\ddinline}[2]{\ensuremath{\cmsSymbolFace{d} #1/\cmsSymbolFace{d} #2}}
+\newcommand{\rd}{\ensuremath{\cmsSymbolFace{d}}}
+\newcommand{\re}{\ensuremath{\cmsSymbolFace{e}}}
+% absolute value
+\newcommand{\abs}[1]{\ensuremath{\lvert #1 \rvert}}
+
+% Extensions for missing names in PENNAMES % note no xspace, to match syntax in PENNAMES
+\newcommand{\cPgn}{\ensuremath{\nu}} % generic neutrino
+\providecommand{\Pgn}{\ensuremath{\nu}} % generic neutrino
+\newcommand{\cPagn}{\ensuremath{\overline{\nu}}} % generic neutrino
+\providecommand{\Pagn}{\ensuremath{\overline{\nu}}} % generic neutrino
+\newcommand{\cPgg}{\ensuremath{\gamma}} % gamma
+\newcommand{\cPJgy}{\ensuremath{\cmsSymbolFace{J}\hspace{-.08em}/\hspace{-.14em}\psi}} % J/Psi (no mass)
+\newcommand{\cPZ}{\ensuremath{\cmsSymbolFace{Z}}} % plain Z (no superscript 0)
+\newcommand{\cPZpr}{\ensuremath{\cmsSymbolFace{Z}^\prime}} % plain Z'
+\newcommand{\cPqt}{\ensuremath{\cmsSymbolFace{t}}} % t for t quark
+\newcommand{\cPqb}{\ensuremath{\cmsSymbolFace{b}}} % b for b quark
+\newcommand{\cPqc}{\ensuremath{\cmsSymbolFace{c}}} % c for c quark
+\newcommand{\cPqs}{\ensuremath{\cmsSymbolFace{s}}} % s for s quark
+\newcommand{\cPqu}{\ensuremath{\cmsSymbolFace{u}}} % u for u quark
+\newcommand{\cPqd}{\ensuremath{\cmsSymbolFace{d}}} % d for d quark
+\newcommand{\cPq}{\ensuremath{\cmsSymbolFace{q}}} % generic quark
+\newcommand{\cPg}{\ensuremath{\cmsSymbolFace{g}}} % generic gluon
+\newcommand{\cPG}{\ensuremath{\cmsSymbolFace{G}}} % Graviton
+\newcommand{\cPaqt}{\ensuremath{\overline{\cmsSymbolFace{t}}}} % t for t anti-quark
+\newcommand{\cPaqb}{\ensuremath{\overline{\cmsSymbolFace{b}}}} % b for b anti-quark
+\newcommand{\cPaqc}{\ensuremath{\overline{\cmsSymbolFace{c}}}} % c for c anti-quark
+\newcommand{\cPaqs}{\ensuremath{\overline{\cmsSymbolFace{s}}}} % s for s anti-quark
+\newcommand{\cPaqu}{\ensuremath{\overline{\cmsSymbolFace{u}}}} % u for u anti-quark
+\newcommand{\cPaqd}{\ensuremath{\overline{\cmsSymbolFace{d}}}} % d for d anti-quark
+\newcommand{\cPaq}{\ensuremath{\overline{\cmsSymbolFace{q}}}} % generic anti-quark
+% future symbols from heppennames2
+\providecommand{\PH}{\ensuremath{\cmsSymbolFace{H}}\xspace} % plain Higgs
+\providecommand{\PJGy}{\ensuremath{\cmsSymbolFace{J}\hspace{-.08em}/\hspace{-.14em}\psi}\xspace} % J/Psi (no mass)
+\providecommand{\PBzs}{\ensuremath{\cmsSymbolFace{B}^0_\cmsSymbolFace{s}}\xspace} % B^0_s
+\providecommand{\Pg}{\ensuremath{\cmsSymbolFace{g}}\xspace} % generic gluon
+\providecommand{\PSg}{\ensuremath{\widetilde{\cmsSymbolFace{g}}}\xspace} % gluino
+\providecommand{\PSQ}{\ensuremath{\widetilde{\cmsSymbolFace{q}}}\xspace} % squark
+\providecommand{\PXXG}{\ensuremath{\cmsSymbolFace{G}}\xspace} % graviton
+\providecommand{\PXXSG}{\ensuremath{\widetilde{\PXXG}}\xspace} % gravitino
+\providecommand{\PSGcp}{\ensuremath{\widetilde{\chi}^+}\xspace}
+\providecommand{\PSGc}{\ensuremath{\widetilde{\chi}}\xspace} % neutralino
+\providecommand{\PSGcz}{\ensuremath{\widetilde{\chi}^0}\xspace} % neutralino with superscript 0
+\providecommand{\PSGczDo}{\ensuremath{\widetilde{\chi}^{0}_{1}}\xspace} % neutralino
+\providecommand{\PSGczDt}{\ensuremath{\widetilde{\chi}^{0}_{2}}\xspace} % neutralino
+\providecommand{\PSGcpm}{\ensuremath{\widetilde{\chi}^\pm}\xspace} % neutralino
+\providecommand{\Pl}{\ensuremath{\cmsSymbolFace{l}}\xspace} % non-ell lepton
+\providecommand{\PAl}{\ensuremath{\overline{\cmsSymbolFace{l}}}\xspace} % non-ell anti-lepton
+\providecommand{\PGnl}{\ensuremath{\nu_\cmsSymbolFace{l}}\xspace} % lepton neutrino
+\providecommand{\PAGnl}{\ensuremath{\overline{\nu}_\cmsSymbolFace{l}}\xspace} % anti-lepton neutrino
+\providecommand{\PQtpr}{\ensuremath{\cmsSymbolFace{t}^{\prime}}\xspace} % t'
+\providecommand{\PAQtpr}{\ensuremath{\bar{\cmsSymbolFace{t}}^\prime}\xspace} % t'-bar; needs to be converted to overline-requires rework a la heppennames
+\providecommand{\PQbpr}{\ensuremath{\cmsSymbolFace{b}^{\prime}}\xspace} % b'
+\providecommand{\PAQbpr}{\ensuremath{\bar{\cmsSymbolFace{b}}^\prime}\xspace} % b'-bar; needs same as anti-t'
+\providecommand{\PGg}{\ensuremath{\gamma}\xspace} % gamma
+\providecommand{\PKzS}{\ensuremath{\cmsSymbolFace{K}^0_\cmsSymbolFace{S}}\xspace} % K short
+\providecommand{\PgL}{\ensuremath{\Lambda{}}\xspace} % Lambda
+\providecommand{\Pgpm}{\ensuremath{\pi{}^{+}}\xspace} % pi +
+\providecommand{\Pgpp}{\ensuremath{\pi{}^{-}}\xspace} % pi -
+\providecommand{\PBs}{\ensuremath{\cmsSymbolFace{B}_\cmsSymbolFace{s}}\xspace} % B sub s
+\providecommand{\PSQt}{\ensuremath{\widetilde{\cmsSymbolFace{t}}}\xspace} % stop
+\providecommand{\PZpr}{\ensuremath{\cmsSymbolFace{Z}^\prime}} % plain Z'
+\providecommand{\PaB}{\ensuremath{\overline{B}}\xspace} % anti B
+\providecommand{\PB}{\ensuremath{B}\xspace} % B
+
+% SM (still to be classified)
+
+\newcommand{\lum}{\ensuremath{\,\text{(lum.)}}\xspace}
+
 %%%%%%
 % From Albert
 %

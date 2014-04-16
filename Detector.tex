@@ -241,9 +241,11 @@ To pick the physically most interesting interactions the vertex with the highest
 
 \paragraph{Secondary Vertex Reconstruction}
 
-One more ingredient to the presented work are the reconstructed secondary vertices. Part of this work are namely the photon conversions, the $\text{V}^{\text{0}}$ decays standing for \PKzS{} and \PgL{}, secondary vertices coming from nuclear interactions and another fitter tuned to the fit of vertices coming from the decay of B hadrons.
-
-
+One more ingredient to the presented work are the reconstructed secondary vertices. Part of this work are namely the photon conversions, the $\text{V}^{\text{0}}$ decays standing for \PKzS{} and \PgL{}, secondary vertices coming from nuclear interactions and another fitter tuned to the fit of vertices coming from the decay of B hadrons. \\
+A detailed description of the reconstruction of photon conversions can be found elsewhere~\cite{GiordanoConversion} or~\cite{CMS-PAS-EGM-10-005}. The basic principle is to find pairs of oppositely charged particles which have vertices close to each other and are parallel at that point. Additionally, invariant mass of the pair has to fit to a photon. Based on these two tracks a vertex is then fitted. \\
+The reconstrcution of $\text{V}^{\text{0}}$ decays is somehow similar. It is described in~\citen{v0paper}. It aims to find secondary vertices as coming from $\PKzS{} \rightarrow{} \Pgpm{}\Pgpp{}$ and $\PgL{} \rightarrow{} p\Pgpm{}$. Thus, it requires the presence of two oppositely charged particles having their verices at a similar position. Furthermore, the invariant mass of the pair has to be within a certain window around the nominal \PKzS{} (\PgL{}) mass. \\
+The reconstruction of nuclear interactions is described in~\citen{CMS-PAS-TRK-10-001}. It is a much more genral approach trying to link all pairs of tracks whose distance at the closest approach is small enough.  Based on the these pairs several secondary vertices are fitted. If the invariant mass of the pair matches to a photon or a $\text{V}^{\text{0}}$ the secondary vertex is removed from the list. \\
+The last producer of secondary vertices, namely the inclusive vertex finder, has been established to reconstruct the vertex of decays of B hadrons which mostly comes along with jets. A description can be found in~\citen{ivfPaper}.
 
 
 \subsection{Reconstructed Proton-Proton Interactions}
