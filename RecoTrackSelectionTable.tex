@@ -1,0 +1,26 @@
+%%
+%% This is just the table of the cuts for the reco track selection
+%%
+%% Parameter | Value
+%%
+
+\begin{table}[h]
+\begin{center}
+\caption{The different parameters of the reconstructed track and the applied filters. The cuts are mainly very soft to analyze most or the reconstructed tracks. The $\chi^{2}$ comes from the fit of the track. The transverse impact parameter is the minimum distance from the track to the beam axis in the x-y-plane while the longitudinal is the minimum distance from the track to the position of the nominal beam spot in z direction. Both values are chosen in that way that the whole tracker volume is covered. The beam spot itself is reconstructed every ?? lumi sections. The explanation for the given track qualities can be found in reference~\citen{CMS-PAPER-TRK-11-001}.}
+\label{tab:TARecoTrackFilter}
+
+\begin{tabular}{c | c }
+Parameter & Value \\
+\hline
+\pt & $\geq1.0\GeV$ \\
+$\left| \eta \right|$ & $\leq 2.4$ \\
+number of hits & $\geq 3$ \\
+$\chi^{2}$ & $\leq 10000$ \\
+transverse impact parameter & $ \leq 120\cm $ \\
+longitudinal impact parameter & $\leq 280\cm $ \\
+quality & \textit{highPurity}, \textit{tight} or \textit{loose} \\
+
+\end{tabular}
+
+\end{center}
+\end{table}

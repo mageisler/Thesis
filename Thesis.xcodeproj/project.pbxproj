@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		8C15598E190958D000AB69C8 /* AllTracksComparisonTableTT.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllTracksComparisonTableTT.tex; sourceTree = "<group>"; };
+		8C15598F190958D000AB69C8 /* AllTracksComparisonTableZEE.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllTracksComparisonTableZEE.tex; sourceTree = "<group>"; };
+		8C155990190958D000AB69C8 /* AllTracksComparisonTableZMM.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AllTracksComparisonTableZMM.tex; sourceTree = "<group>"; };
+		8C155991190958D000AB69C8 /* ChargedHadronsComparisonTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ChargedHadronsComparisonTable.tex; sourceTree = "<group>"; };
+		8C155992190958D000AB69C8 /* ElectronComparisonTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ElectronComparisonTable.tex; sourceTree = "<group>"; };
+		8C155993190958D000AB69C8 /* MuonComparisonTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MuonComparisonTable.tex; sourceTree = "<group>"; };
+		8C155994190958D000AB69C8 /* QualityComparisonTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QualityComparisonTable.tex; sourceTree = "<group>"; };
+		8C155995190958D000AB69C8 /* RecoTrackSelectionTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RecoTrackSelectionTable.tex; sourceTree = "<group>"; };
+		8C155996190958D000AB69C8 /* SimTrackSelectionTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimTrackSelectionTable.tex; sourceTree = "<group>"; };
+		8C155997190958D000AB69C8 /* TrackAssignment.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrackAssignment.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C2FC42C18F6D5F700897BF4 /* Thesis.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Thesis.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C2FC42D18F6DC1C00897BF4 /* setup.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = setup.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lucas_unsrt.bst; path = general/lucas_unsrt.bst; sourceTree = "<group>"; };
@@ -30,6 +40,16 @@
 				8C7A64E118F8304E0020961B /* Thesis.bib */,
 				8C7A64DF18F7F2840020961B /* Detector.tex */,
 				8CB021E11907EF1A009E0FD8 /* AssociationMap.tex */,
+				8C15598E190958D000AB69C8 /* AllTracksComparisonTableTT.tex */,
+				8C15598F190958D000AB69C8 /* AllTracksComparisonTableZEE.tex */,
+				8C155990190958D000AB69C8 /* AllTracksComparisonTableZMM.tex */,
+				8C155991190958D000AB69C8 /* ChargedHadronsComparisonTable.tex */,
+				8C155992190958D000AB69C8 /* ElectronComparisonTable.tex */,
+				8C155993190958D000AB69C8 /* MuonComparisonTable.tex */,
+				8C155994190958D000AB69C8 /* QualityComparisonTable.tex */,
+				8C155995190958D000AB69C8 /* RecoTrackSelectionTable.tex */,
+				8C155996190958D000AB69C8 /* SimTrackSelectionTable.tex */,
+				8C155997190958D000AB69C8 /* TrackAssignment.tex */,
 				8CB021E21907EFF3009E0FD8 /* AssociationQualityTable.tex */,
 				8CB021E31907EFF3009E0FD8 /* AssociationQualityTableI1.tex */,
 				8CB021E41907EFF3009E0FD8 /* AssociationQualityTableI1nc.tex */,

@@ -1,0 +1,27 @@
+%%
+%% This is just the table for the all tracks comparison for all options
+%%
+%% Quality | Efficiency | Purity | PU Efficiency | PU Purity
+%%
+
+\begin{table}[h]
+\begin{center}
+\caption{The resulting values in $\%$ for efficiency, purity and the product of both for keeping signal tracks and subtracting pileup tracks for the different pileup subtraction techniques. Here, all tracks from simulated \ttbar events were considered. All values are averaged over the whole parameter range.}
+\label{tab:TAAppCompATTT}
+
+\begin{tabular}{c || c | c | c || c | c | c}
+ & \multicolumn{3}{c ||} {Signal} & \multicolumn{3}{c} {Pileup}  \\
+Approach & Efficiency & Purity & Product & Efficiency & Purity  & Product \\
+\hline 
+No pileup cleaning  & 100.0 & 41.4 & 41.4 & 0.0 & 0.0 & 0.0 \\
+\hline
+Jet/MET  &  95.1 & 74.3 & 70.6 & 78.8 & 94.9 & 74.8 \\
+\hline
+Muon/Egamma &  85.9 & 98.2 & 84.4 & 99.0 & 89.8 & 88.8 \\
+\hline
+Association map &  89.4 & 98.1 & 87.6 & 98.9 & 92.0 & 90.9 \\
+
+\end{tabular}
+
+\end{center}
+\end{table}

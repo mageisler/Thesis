@@ -1,0 +1,27 @@
+%%
+%% This is just the table for the charged hadrons comparison for all options
+%%
+%% Quality | Efficiency | Purity | PU Efficiency | PU Purity
+%%
+
+\begin{table}[h]
+\begin{center}
+\caption{The resulting values in $\%$ for efficiency, purity and the product of both for keeping signal tracks and subtracting pileup tracks for the different pileup subtraction techniques. Here, only charged hadrons from simulated \ttbar events were considered. All values are averaged over the whole parameter range.}
+\label{tab:TAAppCompCH}
+
+\begin{tabular}{c || c | c | c || c | c | c}
+ & \multicolumn{3}{c ||} {Signal} & \multicolumn{3}{c} {Pileup}  \\
+Approach & Efficiency & Purity & Product & Efficiency & Purity  & Product \\
+\hline 
+No pileup cleaning  & 100.0 & 40.6 & 40.6 & 0.0 & 0.0 & 0.0 \\
+\hline
+Jet/MET  &  99.1 & 73.8 & 73.2 & 78.1 & 99.2 & 77.5 \\
+\hline
+Muon/Egamma &  89.4 & 98.2 & 87.7 & 98.9 & 92.5 & 91.5 \\
+\hline
+Association map &  90.5 & 98.2 & 88.8 & 98.9 & 93.2 & 92.1 \\
+
+\end{tabular}
+
+\end{center}
+\end{table}
