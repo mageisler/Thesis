@@ -9,12 +9,11 @@
 
 \pagenumbering{roman}
 \setcounter{page}{3}
-\setboolean{@twoside}{false}
+\setboolean{@twoside}{true}
 \renewcommand{\chapterpagestyle}{mystyle}
 
 \input{Abstract}
 \input{Zusammenfassung}
-\clearpage
 
 \renewcommand*\contentsname{Table of Contents}
 \tableofcontents
@@ -39,6 +38,12 @@
 \input{TrackAssignment}
 \clearpage
 
+\input{Summary}
+\clearpage
+
+\appendix
+\input{Appendix}
+
 \renewcommand*\listfigurename{List of Figures}
 \renewcommand*\listtablename{List of Tables}
 \renewcommand*\bibname{Bibliography}
@@ -50,5 +55,8 @@
 \listoftables
 \phantomsection\addcontentsline{toc}{chapter}{\bibname}
 \bibliography{Thesis}
+
+\input{Acknowledgments}
+\clearpage
 
 \end{document}

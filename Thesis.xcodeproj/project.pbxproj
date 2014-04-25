@@ -33,6 +33,9 @@
 		8CB021E31907EFF3009E0FD8 /* AssociationQualityTableI1.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI1.tex; sourceTree = "<group>"; };
 		8CB021E41907EFF3009E0FD8 /* AssociationQualityTableI1nc.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI1nc.tex; sourceTree = "<group>"; };
 		8CB021E51907EFF3009E0FD8 /* AssociationQualityTableI2.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI2.tex; sourceTree = "<group>"; };
+		8CC48900190A9DEF00EB75DE /* Acknowledgments.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Acknowledgments.tex; sourceTree = "<group>"; };
+		8CC48901190A9E6D00EB75DE /* Appendix.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Appendix.tex; sourceTree = "<group>"; };
+		8CC48902190A9F2200EB75DE /* Summary.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Summary.tex; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -57,6 +60,9 @@
 				8CB021E41907EFF3009E0FD8 /* AssociationQualityTableI1nc.tex */,
 				8CB021E51907EFF3009E0FD8 /* AssociationQualityTableI2.tex */,
 				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
+				8CC48902190A9F2200EB75DE /* Summary.tex */,
+				8CC48901190A9E6D00EB75DE /* Appendix.tex */,
+				8CC48900190A9DEF00EB75DE /* Acknowledgments.tex */,
 				8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */,
 				8C85A0BD190A6477004F1AF9 /* Abstract.tex */,
 				8C2FC43118F6E4FE00897BF4 /* Introduction.tex */,
