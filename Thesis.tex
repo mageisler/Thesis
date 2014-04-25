@@ -1,19 +1,27 @@
 \input{setup}
 
 \begin{document}
-
+    
 \input{Titlepage}
 
-\pagenumbering{roman}
-\setcounter{page}{999}
-\setboolean{@twoside}{true}
-\renewcommand{\chapterpagestyle}{empty}
+\thispagestyle{empty}
+\cleardoublepage
 
-\setcounter{page}{1}
+\pagenumbering{roman}
+\setcounter{page}{3}
+\setboolean{@twoside}{false}
+\renewcommand{\chapterpagestyle}{mystyle}
+
+\input{Abstract}
+\input{Zusammenfassung}
+\clearpage
 
 \renewcommand*\contentsname{Table of Contents}
 \tableofcontents
 \clearpage
+
+\setboolean{@twoside}{true}
+\setcounter{page}{1}
 
 \pagenumbering{arabic}
 

@@ -48,6 +48,13 @@
 \usepackage[width=0.9\textwidth, skip=8pt, format=plain, labelfont=bf]{caption}
 \KOMAoption{captions}{tableheading, bottombeside}
 
+\fancypagestyle{mystyle}{% plain neu definieren
+  \fancyhf{} % reset
+  \fancyfoot[C]{\thepage} % Seite zentriert
+  \renewcommand{\headrulewidth}{0pt} %Kopflinie löschen
+  \renewcommand{\footrulewidth}{0pt}% Fußlinie löschen
+}
+
 \makeatletter
 \renewcommand{\fps@figure}{htbp}
 \renewcommand{\fps@table}{htbp}
@@ -73,24 +80,3 @@ pdfpagelabels,
 final % Endversion 
 ]{hyperref}
 \usepackage[numbers,sort&compress]{natbib}
-
-%\hypersetup{%
-%	plainpages=false,
-%	pdfpagemode=Normal,%Keine Navigatorspalte
-%	pdfview=FitH,%Standard-View fuer Link
-%	pdfstartview=FitH,%Start-Ansicht FitH,FitV,...
-%	pdfpagelayout=TwoColumnRight,%OneColumn,TwoColumnLeft,TwoColumnRight,SinglePage
-%	colorlinks=true,%true Farbe der Links
-%	bookmarksopen=true,
-%	bookmarksnumbered=true,
-%	bookmarksopenlevel=2,
-%	pdfmenubar=true,
-%	pdfwindowui=true,
-%	pdffitwindow=true,
-%	linkcolor=blue,%black,
-%	linkcolor=black,
-%	linkbordercolor=false,%Rahmenfarbe um Links (1 0 0)Leerzeichen wichtig(R G B)
-%	citecolor=blue,
-%	citecolor=black,
-%	urlcolor=black
-%}

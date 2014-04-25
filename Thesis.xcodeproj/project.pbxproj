@@ -26,6 +26,8 @@
 		8C7A64DC18F7D8730020961B /* Titlepage.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Titlepage.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C7A64DF18F7F2840020961B /* Detector.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Detector.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C7A64E118F8304E0020961B /* Thesis.bib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thesis.bib; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.bibtex; };
+		8C85A0BD190A6477004F1AF9 /* Abstract.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Abstract.tex; sourceTree = "<group>"; };
+		8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Zusammenfassung.tex; sourceTree = "<group>"; };
 		8CB021E11907EF1A009E0FD8 /* AssociationMap.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationMap.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8CB021E21907EFF3009E0FD8 /* AssociationQualityTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTable.tex; sourceTree = "<group>"; };
 		8CB021E31907EFF3009E0FD8 /* AssociationQualityTableI1.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI1.tex; sourceTree = "<group>"; };
@@ -55,6 +57,8 @@
 				8CB021E41907EFF3009E0FD8 /* AssociationQualityTableI1nc.tex */,
 				8CB021E51907EFF3009E0FD8 /* AssociationQualityTableI2.tex */,
 				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
+				8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */,
+				8C85A0BD190A6477004F1AF9 /* Abstract.tex */,
 				8C2FC43118F6E4FE00897BF4 /* Introduction.tex */,
 				8C2FC42D18F6DC1C00897BF4 /* setup.tex */,
 				8C7A64DC18F7D8730020961B /* Titlepage.tex */,
