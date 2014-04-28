@@ -17,8 +17,8 @@ All these cuts are rather soft and reject only those vertices where the fit fail
 
 \section{Filter on Simulated and Reconstructed Tracks \label{sec:TAFSRT}}
 
-For the following studies, it needs to be defined which tracks are analyzed. For this, two filters are set, one on the reconstructed and one on the simulated tracks, respectively. \\ \\
-The criteria a reconstructed track needs to fulfill are shown in Table~\ref{tab:TARecoTrackFilter}. The listed value for the minimum transverse momentum is slightly modified for the distributions as a function of it. For this, the minimum \pt is set to $0.1\GeV$. \\
+For the following studies, it needs to be defined which tracks are analyzed. For this, two filters are set, one on the reconstructed and one on the simulated tracks, respectively. \\
+The criteria a reconstructed track needs to fulfill are shown in Table~\ref{tab:TARecoTrackFilter}. The listed value for the minimum transverse momentum is slightly modified for the distributions as a function of it. For this, the minimum \pt is set to $0.1\GeV$.
 
 \input{RecoTrackSelectionTable}
 
@@ -39,7 +39,7 @@ The definitions of the efficiency and purity have already been defined in Sectio
 \label{eq:AssPurity}
 \end{equation}
 
-\begin{figure}[h!t]
+\begin{figure}[!t]
   \centering
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_Purity_1_eta}
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_Purity_1_pt}
@@ -54,11 +54,6 @@ The definitions of the efficiency and purity have already been defined in Sectio
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_EfficiencyPurity_1_npu}
   \caption[Purities, efficiencies and their product for the different quality of the association map with associating to the first vertex always as third step]{The purities, the efficiencies and the product of both for the different association qualities for associating always to the first vertex as step three. The distributions are shown as a function of the pseudo rapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:TASEFRDQ1Signal}}
 \end{figure}
-
-\clearpage{}
-
-With this, the performance of the different pileup subtraction techniques concerning how well they keep simulated signal tracks in the subtraction is evaluated. The efficiency is based on simulated tracks and represents the fraction how many of the simulated signal tracks that have been reconstructed are correctly associated to the signal vertex. The purity on the other side is based on reconstructed tracks and represents the fraction of reconstructed tracks which were also simulated as signal and correctly treated as coming from the signal vertex. For all fractions a value of $100\,\%$ would be the goal and meant a perfect pileup subtraction. \\ \\
-First, the results are shown if the track is associated to the first vertex always in the third step The distributions for the efficiency and purities and the product of both can be found in Figures~\ref{plot:TASEFRDQ1Signal}. At the definition of the various association quality is was said that is was categorized in different purity regions. The reason why the purities shown here are better than the values of the categorization is due to the small modification of the purity itself and also due to the filter on the tracks. Especially the cut on the transverse momentum has a large impact on the purity.
 
 \begin{figure}[h!b]
     \centering
@@ -76,6 +71,11 @@ First, the results are shown if the track is associated to the first vertex alwa
     \caption[Purities, efficiencies and their product for for the different quality of the association map with associating to the closest vertex in three dimensions as third step]{The purities, the efficiencies and the product of both for the different association qualities for associating the track to the closest vertex in three dimensions as step three. The distributions are shown as a function of the pseudo rapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:TASEFRDQ3Signal}}
 \end{figure}
 
+\clearpage{}
+
+With this, the performance of the different pileup subtraction techniques concerning how well they keep simulated signal tracks in the subtraction is evaluated. The efficiency is based on simulated tracks and represents the fraction how many of the simulated signal tracks that have been reconstructed are correctly associated to the signal vertex. The purity on the other side is based on reconstructed tracks and represents the fraction of reconstructed tracks which were also simulated as signal and correctly treated as coming from the signal vertex. For all fractions a value of $100\,\%$ would be the goal and meant a perfect pileup subtraction. \\ \\
+First, the results are shown if the track is associated to the first vertex always in the third step The distributions for the efficiency and purities and the product of both can be found in Figures~\ref{plot:TASEFRDQ1Signal}. At the definition of the various association quality is was said that is was categorized in different purity regions. The reason why the purities shown here are better than the values of the categorization is due to the small modification of the purity itself and also due to the filter on the tracks. Especially the cut on the transverse momentum has a large impact on the purity.
+
 In Table~\ref{tab:TAQualComp} the resulting averaged values are shown for all qualities. In general it can be said that for high transverse momenta the association works very well for all qualities. The greatest lost of efficiency and purity is definitively in the low momentum region. Quality six, which can only be reached from the association based on the track weight, has an averaged purity of around $93\,\%$ but an efficiency of only about $20\,\%$. This efficiency is rather constant with respect to the number of pileup interactions and increases with the transverse momentum. Comparing the barrel with the endcap region it can be seen that the central region has a better efficiency by around $10\,\%$ . This difference is greater at quality five and smaller at all other qualities. For high momenta an efficiency of about $90\,\%$ can be reached. \\
 For quality five the efficiency reaches almost $100\,\%$ for transverse momenta greater than 20\GeV. Also the averaged efficiency increases to about $80\,\%$  while the purity decreases only slightly below $90\,\%$. For quality four this does not change much. Quality three, which is the lowest quality of the first iteration then leads to an averaged purity of $44\,\%$ and an efficiency of $95\,\%$. In this quality step the purity decreases dramatically. This comes due to the fact that all tracks which could not be matched to a primary or a secondary vertex are associated to the first vertex always. For the first time a big dependence on the number of pileup interaction is visible. This dependence is even greater for associations with quality 1 which are all associations after a second iteration. Here, the efficiency is $100\,\%$, which basically means that the simulated signal vertex is reconstructed as the first or the second vertex. On the other hand the purity for this quality class is very poor ($18\,\%$). A third iteration does not change anything. \\
 
@@ -84,7 +84,7 @@ In Table~\ref{tab:TAQualComp} the resulting averaged values are shown for all qu
 
 Finally, the results are shown if the track is associated to the closest vertex in z only in the third step. The distributions for the efficiency and purities can be found in Figures~\ref{plot:TASEFRDQZSignal}. Once more, the shown purities differ a bit from the definition of the association qualities .
 
-\begin{figure}[h!t]
+\begin{figure}[!t]
   \centering
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_Purity_Z_eta}
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_Purity_Z_pt}
@@ -99,6 +99,8 @@ Finally, the results are shown if the track is associated to the closest vertex 
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_EfficiencyPurity_Z_npu}
   \caption[Purities, efficiencies and their product for the different quality of the association map with associating to the closest vertex in z only as third step]{The purities, the efficiencies and the product of both for the different association qualities for associating the track to the closest vertex in z only as step three. The distributions are shown as a function of the pseudo rapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:TASEFRDQZSignal}}
 \end{figure}
+
+\clearpage{}
 
 In Table~\ref{tab:TAQualComp} the resulting averaged values are shown for all qualities. Again, the results for qualities six and five have already been discussed. Moreover, the resulting efficiencies and purities for this option do not differ much from the looking in all three dimension at the third step. Therefore, the discussion given earlier is also valid here. 
 
@@ -119,7 +121,8 @@ Next, a purity indicating how many of the simulated signal tracks are wrongly re
 
 The pileup purities and efficiencies for the three techniques of the third step can be seen in Figure~\ref{plot:TASEFRDQ1Pileup} to Figure~\ref{plot:TASEFRDQZPileup}. The averaged values can be found in Table~\ref{tab:TAQualComp}. In general it can be said that, due to the high amount of pileup interaction and therefore pileup tracks, mostly about $90\,\%$ of the subtracted tracks are correctly identified as pileup. For tracks with a high transverse momentum the pileup purity is low since only a few pileup tracks have a high \pt. Therefore, a wrong subtraction of a signal track has a large effect and leads to a low pileup purity. The same argument holds for events with a low number of underlying pileup interactions. Only executing multiple iterations and associating the track to more than vertex with associating it always to the first vertex as technique at the third step leads to significantly worse results. While for quality two both, pileup purity and efficiency, stay high both values drop to zero for quality one and zero. This is simply because with this technique at the third step after two associations all tracks are considered as coming from the signal primary vertex. For the pileup efficiency a similar picture is drawn. \\
 The two other options for the third step lead to a pileup efficiency between $84\,\%$ and $100\,\%$ for the different qualities. After one association still about $97\,\%$ of the simulated pileup tracks are also considered as pileup after reconstruction. After each following iteration this value decreases by about $6\,\%$. \\
-Already in the results shown up to now it can be seen that for a \pt{} greater than 10\GeV{} almost no tracks from pileup vertices are present. Hence, in the following the signal purity is expected to be close to $100\,\%$ while the pileup purity is very low.
+Already in the results shown up to now it can be seen that for a \pt{} greater than 10\GeV{} almost no tracks from pileup vertices are present. Hence, in the following the signal purity is expected to be close to $100\,\%$ while the pileup purity is very low. \\
+To define a default configuration of the association map the results after the first iteration are compared. For this, the performance only on terms of efficiency and purity are taken into account. Of course, the efficiency is the best when the track is always associated to the first vertex in the third step. On the other hand, the purity is about $40\,\%$ worse with respect to the other two options. Since the difference in efficiency is comparably small with $9\,\%$ one of the other techniques are chosen. Here, looking for the closest vertex only along the z-axis has a slightly better purity while all other results are exactly the same. Therefore, in the following plots and comparisons only this version is shown.
 
 \begin{figure}[!t]
   \centering
@@ -137,6 +140,8 @@ Already in the results shown up to now it can be seen that for a \pt{} greater t
   \caption[Pileup purities, efficiencies and their product for the different quality of the association map with associating to the first vertex always as third step]{The pileup purities, efficiencies and the product of both for the different association qualities for associating always to the first vertex as step three. The distributions are shown as a function of the pseudo rapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:TASEFRDQ1Pileup}}
 \end{figure}
 
+\clearpage{}
+
 \begin{figure}[!t]
   \centering
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_PUpurity_3_eta}
@@ -153,9 +158,10 @@ Already in the results shown up to now it can be seen that for a \pt{} greater t
   \caption[Pileup purities, efficiencies and their product for the different quality of the association map with associating to the closest vertex in three dimensions as third step]{The pileup purities, efficiencies and the product of both for the different quality of the association map with associating to the closest vertex in three dimensions as third step. The distributions are shown as a function of the pseudo rapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:TASEFRDQ3Pileup}}
 \end{figure}
 
-\newpage{}
+\clearpage{}
 
-\begin{figure}[h!t]
+
+\begin{figure}[!t]
   \centering
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_PUpurity_Z_eta}
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_PUpurity_Z_pt}
@@ -171,7 +177,7 @@ Already in the results shown up to now it can be seen that for a \pt{} greater t
   \caption[Pileup purities, efficiencies and their product for the different quality of the association map with associating to the closest vertex in z only as third step]{The pileup purities, efficiencies and the product of both for the different quality of the association map with associating to the closest vertex in z only as third step. The distributions are shown as a function of the pseudo rapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:TASEFRDQZPileup}}
 \end{figure}
 
-To define a default configuration of the association map the results after the first iteration are compared. For this, the performance only on terms of efficiency and purity are taken into account. Of course, the efficiency is the best when the track is always associated to the first vertex in the third step. On the other hand, the purity is about $40\,\%$ worse with respect to the other two options. Since the difference in efficiency is comparably small with $9\,\%$ one of the other techniques are chosen. Here, looking for the closest vertex only along the z-axis has a slightly better purity while all other results are exactly the same. Therefore, in the following plots and comparisons only this version is shown.
+\clearpage{}
 
 \section{Comparison with the Other Approaches \label{sec:TASEFRDA}}
 
@@ -185,6 +191,8 @@ In the first part all reconstructed tracks are taken into account. First, this i
 Considering the purity all approaches reach nearly $100\,\%$ for tracks with a \pt greater than 10\GeV. Below this value the different approaches differ strongly. The association map and the Muon/Egamma approach stay at a value about $80\,\%$ while the other two fall even below $30\,\%$. A similar behavior can be seen for events with a high number of pileup interactions. Considering the efficiency the different approaches lie between $100\,\%$ for no pileup cleaning and $84\,\%$ for the Muon/Egamma approach. Here, the difference is not as big as for the purity. Again, all approaches reach nearly $100\,\%$ for tracks with a \pt greater than 10\GeV. \\
 Considering their power in subtracting pileup tracks all approaches except for the no cleaning end up with a pileup purity of around $97\,\%$. For the pileup efficiency the Jet/MET approach falls below the other two approaches by around $20\,\%$.\\
 Taking all these four values into account it can be motivated that the association map leads to slightly better results than the other ones. Moreover, with the association map an efficiency comparable to the Jet/MET approach can be reached using three associations. Even then the purity of the association map is better by $10\,\%$ compared to the Jet/MET approach.
+
+\input{AllTracksComparisonTableZMM}
 
 \begin{figure}[h!t]
   \centering
@@ -218,7 +226,7 @@ Taking all these four values into account it can be motivated that the associati
   \caption[Pileup purity, efficiency and their product for the different pileup subtraction techniques based on simulated \Zz to \MM events]{The pileup purities, efficiencies and the product of both for the different pileup subtraction techniques based on simulated \Zz to \MM events. The distributions are shown as a function of the pseudo rapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:TACOAACPZMMPileup}}
 \end{figure}
 
-\input{AllTracksComparisonTableZMM}
+\clearpage{}
 
 \subsubsection{\Zz to \EE \label{sec:TASEFRDACPZEE}}
 As a next test, the analyzer has been applied on a data sample with simulated \Zz decays into \EE. The number of underlying pileup events is about 20 like before. Thus, 9000 events are simulated with on average 450 tracks including around 50 signal tracks per event. In Figure~\ref{plot:TACOAACPZEESignal} and Figure~\ref{plot:TACOAACPZEEPileup} the different distributions for the purities and efficiencies are shown. Compared to the results from the \Zz to \MM data sample all results are a bit worse. Applying no pileup subtraction leads to a purity of only about $15\,\%$. Again for the other three approaches the association map leads to similar results as the Muon/Egamma technique. The Jet/MET approach leads to a $10\,\%$ better efficiency while the purity is dramatically worse and only half as good as the other two. \\
@@ -257,6 +265,8 @@ In terms of subtracting pileup the purity of all three approaches is in the same
 \end{figure}
 
 \input{AllTracksComparisonTableZEE}
+
+\clearpage{}
 
 \subsubsection{\ttbar \label{sec:TASEFRDACPTT}}
 Finally, the analyzer is also applied on a data sample with a rather high track multiplicity. For this simulated \ttbar events with at least two jets are chosen. Here, 9000 events are simulated with on average 510 tracks including around 110 signal tracks per event. The resulting purities and efficiencies can be seen in Figure~\ref{plot:TACOAACPTTSignal} and Figure~\ref{plot:TACOAACPTTPileup}. The corresponding averaged values are given in Table~\ref{tab:TAAppCompATTT}. In general it can be said that the values are better compared to the samples with the simulated \Zz decays. Doing no pileup cleaning leads to a purity of about $41\,\%$. The other three approaches are now much closer than for the other samples. In terms of efficiency the Jet/MET approach is about $5\,\%$ better than the association map and about $10\,\%$ better than the Muon/Egamma approach. Again, it can be seen that for tracks with a very low \pt the association map leads to the best results. The difference between the association map and Muon/Egamma is visible over the whole $\eta$ range. \\
@@ -297,6 +307,8 @@ The feature at a \pt{} of around 10\GeV{} can be explained with the turn on beha
 
 \input{AllTracksComparisonTableTT}
 
+\clearpage{}
+
 
 \subsection{Charged Hadrons \label{sec:TASEFRDACH}}
 
@@ -336,6 +348,8 @@ In this part, the analyzer runs only on the reconstructed charged hadrons to stu
 
 \input{ChargedHadronsComparisonTable}
 
+\clearpage{}
+
 \subsection{Muons \label{sec:TASEFRDAM}}
 
 In this part, the analyzer runs only on the reconstructed muons to study the performance of their association. The used data sample for this is the \Zz to \MM sample. Here, 25000 events are simulated with on average slightly above two tracks from muons including the two signal tracks per event. The resulting purities and efficiencies are shown in Figure~\ref{plot:TACOAMuSignal} to Figure~\ref{plot:TACOAMuPileup}. As it can be seen only a small amount of muons are coming from simulated pileup vertices. Especially in the barrel region and in the high transverse momentum region very few muons were simulated. Therefore, in these regions the error bars visible in Figure~\ref{plot:TACOAMuPileup} are comparatively large. The low \pt region is empty. Due to the fact that the Jet/MET and the Muon/Egamma approach apply the same filters for muons the same results are obtained. Furthermore, also the association map leads to very similar results for pileup purity and efficiency. The same holds for signal efficiency and purity. All obtained values for efficiencies are greater than $98\,\%$, the values for purity even above $99\,\%$.
@@ -373,6 +387,8 @@ In this part, the analyzer runs only on the reconstructed muons to study the per
 \end{figure}
 
 \input{MuonComparisonTable}
+
+\clearpage{}
 
 \subsection{Electrons \label{sec:TASEFRDAE} }
 
