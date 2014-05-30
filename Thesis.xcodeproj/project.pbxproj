@@ -28,6 +28,10 @@
 		8C7A64E118F8304E0020961B /* Thesis.bib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thesis.bib; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.bibtex; };
 		8C85A0BD190A6477004F1AF9 /* Abstract.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Abstract.tex; sourceTree = "<group>"; };
 		8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Zusammenfassung.tex; sourceTree = "<group>"; };
+		8C8B12431938C88200B860FC /* ObtainingSignalParticles.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObtainingSignalParticles.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C8B12441938C88200B860FC /* TimeMemoryTableTT.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableTT.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C8B12451938C88200B860FC /* TimeMemoryTableZEE.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableZEE.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C8B12461938C88200B860FC /* TimeMemoryTableZMM.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableZMM.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8CB021E11907EF1A009E0FD8 /* AssociationMap.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationMap.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8CB021E21907EFF3009E0FD8 /* AssociationQualityTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTable.tex; sourceTree = "<group>"; };
 		8CB021E31907EFF3009E0FD8 /* AssociationQualityTableI1.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI1.tex; sourceTree = "<group>"; };
@@ -70,6 +74,10 @@
 				8C7A64DC18F7D8730020961B /* Titlepage.tex */,
 				8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */,
 				8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */,
+				8C8B12431938C88200B860FC /* ObtainingSignalParticles.tex */,
+				8C8B12441938C88200B860FC /* TimeMemoryTableTT.tex */,
+				8C8B12451938C88200B860FC /* TimeMemoryTableZEE.tex */,
+				8C8B12461938C88200B860FC /* TimeMemoryTableZMM.tex */,
 				8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */,
 			);
 			sourceTree = "<group>";

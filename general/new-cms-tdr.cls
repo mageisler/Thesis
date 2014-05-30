@@ -683,5 +683,9 @@ Available on the \href{http://cms.cern.ch/iCMS/jsp/iCMS.jsp?mode=single&part=pub
 }
 \makeatother
 
+
+\newcommand{\eqnref}[1]{(\ref{#1})}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \endinput

@@ -1,0 +1,30 @@
+%%
+%% This is just the table for the time and memory consumption table
+%%
+%% Approach | Time | Memory
+%%
+
+\begin{table}[h]
+\begin{center}
+\caption{Time and memory consumption for the different pileup subtraction techniques. This study is done using simulated $\Zz\rightarrow\EE$ events. The listed valued for the time are the measured CPU time and the real time. The listed values for the memory are the uncompressed and compressed size.}
+\label{tab:OSPTimMemZEE}
+
+\begin{tabular}{c c c c c c}
+ & & \multicolumn{2}{c}{Time / ms} & \multicolumn{2}{c}{Memory / kbyte}  \\
+\multicolumn{2}{c}{Approach} & CPU & Real & Uncompressed & Compressed \\
+\midrule[2pt]
+\multicolumn{2}{c}{Jet/MET}  & 11.4 & 11.4 & 588.4 & 100.7 \\
+\midrule
+\multicolumn{2}{c}{Muon/Egamma}  & 10.5 & 10.5 & 544.6 & 91.3 \\
+\midrule
+\multirow{3}{*}{Association map} 
+                        & One Iteration & 44.8 & 45.0 & 196.9 & 31.9 \\
+\cmidrule{2-6}
+                        & Two Iterations & 85.7 & 85.9 & 225.1 & 36.7 \\
+\cmidrule{2-6}
+                        & Three Iterations  & 132.4 & 132.6 & 253.4 & 41.1 \\
+
+\end{tabular}
+
+\end{center}
+\end{table}
