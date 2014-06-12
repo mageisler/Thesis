@@ -32,52 +32,68 @@
 		8C8B12441938C88200B860FC /* TimeMemoryTableTT.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableTT.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C8B12451938C88200B860FC /* TimeMemoryTableZEE.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableZEE.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C8B12461938C88200B860FC /* TimeMemoryTableZMM.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableZMM.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1C71949D49A00979476 /* BDaughtersTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BDaughtersTable.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1C81949D49A00979476 /* JetPtResponseComp.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JetPtResponseComp.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1C91949D49A00979476 /* JetPtResponseQual.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = JetPtResponseQual.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1CA1949D49A00979476 /* OtherObservables.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OtherObservables.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1CB1949D49A00979476 /* TrackComparisonWithJetWeightTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrackComparisonWithJetWeightTable.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1CC1949D49A00979476 /* TrackQualityWithJetWeightTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrackQualityWithJetWeightTable.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1CD1949D60100979476 /* DataComparison.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataComparison.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1CE1949D68400979476 /* DataComparison_App.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DataComparison_App.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C96C1CF1949D68400979476 /* TrackAssignment_App.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrackAssignment_App.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8CB021E11907EF1A009E0FD8 /* AssociationMap.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationMap.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8CB021E21907EFF3009E0FD8 /* AssociationQualityTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTable.tex; sourceTree = "<group>"; };
 		8CB021E31907EFF3009E0FD8 /* AssociationQualityTableI1.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI1.tex; sourceTree = "<group>"; };
 		8CB021E41907EFF3009E0FD8 /* AssociationQualityTableI1nc.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI1nc.tex; sourceTree = "<group>"; };
 		8CB021E51907EFF3009E0FD8 /* AssociationQualityTableI2.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AssociationQualityTableI2.tex; sourceTree = "<group>"; };
 		8CC48900190A9DEF00EB75DE /* Acknowledgments.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Acknowledgments.tex; sourceTree = "<group>"; };
-		8CC48901190A9E6D00EB75DE /* Appendix.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Appendix.tex; sourceTree = "<group>"; };
-		8CC48902190A9F2200EB75DE /* Summary.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Summary.tex; sourceTree = "<group>"; };
+		8CC48902190A9F2200EB75DE /* Summary.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Summary.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		8C59192518F6BE5F00CB61A5 = {
 			isa = PBXGroup;
 			children = (
+				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
 				8C7A64E118F8304E0020961B /* Thesis.bib */,
+				8C7A64DC18F7D8730020961B /* Titlepage.tex */,
+				8C85A0BD190A6477004F1AF9 /* Abstract.tex */,
+				8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */,
+				8C2FC43118F6E4FE00897BF4 /* Introduction.tex */,
 				8C7A64DF18F7F2840020961B /* Detector.tex */,
 				8CB021E11907EF1A009E0FD8 /* AssociationMap.tex */,
-				8C15598E190958D000AB69C8 /* AllTracksComparisonTableTT.tex */,
-				8C15598F190958D000AB69C8 /* AllTracksComparisonTableZEE.tex */,
-				8C155990190958D000AB69C8 /* AllTracksComparisonTableZMM.tex */,
-				8C155991190958D000AB69C8 /* ChargedHadronsComparisonTable.tex */,
-				8C155992190958D000AB69C8 /* ElectronComparisonTable.tex */,
-				8C155993190958D000AB69C8 /* MuonComparisonTable.tex */,
-				8C155994190958D000AB69C8 /* QualityComparisonTable.tex */,
-				8C155995190958D000AB69C8 /* RecoTrackSelectionTable.tex */,
-				8C155996190958D000AB69C8 /* SimTrackSelectionTable.tex */,
-				8C155997190958D000AB69C8 /* TrackAssignment.tex */,
 				8CB021E21907EFF3009E0FD8 /* AssociationQualityTable.tex */,
 				8CB021E31907EFF3009E0FD8 /* AssociationQualityTableI1.tex */,
 				8CB021E41907EFF3009E0FD8 /* AssociationQualityTableI1nc.tex */,
 				8CB021E51907EFF3009E0FD8 /* AssociationQualityTableI2.tex */,
-				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
+				8C155997190958D000AB69C8 /* TrackAssignment.tex */,
+				8C155995190958D000AB69C8 /* RecoTrackSelectionTable.tex */,
+				8C155996190958D000AB69C8 /* SimTrackSelectionTable.tex */,
+				8C155994190958D000AB69C8 /* QualityComparisonTable.tex */,
+				8C155990190958D000AB69C8 /* AllTracksComparisonTableZMM.tex */,
+				8C15598F190958D000AB69C8 /* AllTracksComparisonTableZEE.tex */,
+				8C15598E190958D000AB69C8 /* AllTracksComparisonTableTT.tex */,
+				8C155991190958D000AB69C8 /* ChargedHadronsComparisonTable.tex */,
+				8C155993190958D000AB69C8 /* MuonComparisonTable.tex */,
+				8C155992190958D000AB69C8 /* ElectronComparisonTable.tex */,
+				8C8B12431938C88200B860FC /* ObtainingSignalParticles.tex */,
+				8C8B12461938C88200B860FC /* TimeMemoryTableZMM.tex */,
+				8C8B12451938C88200B860FC /* TimeMemoryTableZEE.tex */,
+				8C8B12441938C88200B860FC /* TimeMemoryTableTT.tex */,
+				8C96C1CA1949D49A00979476 /* OtherObservables.tex */,
+				8C96C1CC1949D49A00979476 /* TrackQualityWithJetWeightTable.tex */,
+				8C96C1CB1949D49A00979476 /* TrackComparisonWithJetWeightTable.tex */,
+				8C96C1C91949D49A00979476 /* JetPtResponseQual.tex */,
+				8C96C1C81949D49A00979476 /* JetPtResponseComp.tex */,
+				8C96C1C71949D49A00979476 /* BDaughtersTable.tex */,
+				8C96C1CD1949D60100979476 /* DataComparison.tex */,
 				8CC48902190A9F2200EB75DE /* Summary.tex */,
-				8CC48901190A9E6D00EB75DE /* Appendix.tex */,
+				8C96C1CF1949D68400979476 /* TrackAssignment_App.tex */,
+				8C96C1CE1949D68400979476 /* DataComparison_App.tex */,
 				8CC48900190A9DEF00EB75DE /* Acknowledgments.tex */,
-				8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */,
-				8C85A0BD190A6477004F1AF9 /* Abstract.tex */,
-				8C2FC43118F6E4FE00897BF4 /* Introduction.tex */,
 				8C2FC42D18F6DC1C00897BF4 /* setup.tex */,
-				8C7A64DC18F7D8730020961B /* Titlepage.tex */,
 				8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */,
 				8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */,
-				8C8B12431938C88200B860FC /* ObtainingSignalParticles.tex */,
-				8C8B12441938C88200B860FC /* TimeMemoryTableTT.tex */,
-				8C8B12451938C88200B860FC /* TimeMemoryTableZEE.tex */,
-				8C8B12461938C88200B860FC /* TimeMemoryTableZMM.tex */,
 				8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */,
 			);
 			sourceTree = "<group>";

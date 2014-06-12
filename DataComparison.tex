@@ -1,0 +1,135 @@
+\chapter{Comparing Simulated and Real Events \label{sec:DC}}
+
+In this section the performance of the association map is compared in simulated and real events. The real events were taken by the CMS experiment at the end of 2012. In order to obtain a data sample that has a very low number of events coming from background events faking the signal signature, events should contain muons. Nevertheless, unconsidered background contamination has to be taken into account as an explanation for possible differences. Therefore, the selection presented in Section~\ref{sec:OOMet} is also applied. It requires events with at least two well reconstructed muons. Events from collisions passing this selection are compared to simulated events from a Drell-Yan sample with leptonic decays. The same selection criteria is applied to this sample. First, to enable a reasonable comparison, the simulated events need to be weighted in a way that the pileup distributions agree. Afterwards, a comparison of some parameters of the track reconstruction as well as a calculation of the association efficiency is discussed. Another observable that can be compared is the performance of the \MET{} correction. The following studies are done based on around 10\,000 simulated and real events, respectively,  passing the double muon selection.
+
+\section{Pileup Weighting \label{sec:DCPW}}
+
+Prior to the comparison, the simulated events need to be weighted according to the number of pileup interactions. In the left hand plot in Fig.~\ref{plot:DCPW} the primary vertex distribution for collision data is compared to the simulated distribution. There are two different distributions for the simulation. One before and one after the pileup weight is applied. The weighting method that is used of this is the so-called \textit{1BX}. In most cases, this procedure describes the shape of the distribution the best. The weight is calculated using the estimated true number of interactions of the bunch crossing before the muon trigger and selection is applied. This true number of interactions is the expected number of vertices at a bunch crossing. One reason why it could differ from the actual number of reconstructed vertices are inefficiencies at the vertex reconstruction. For the simulation this can be easily taken from the event information. For collision data it is calculated based on the proton proton cross-section (see Rig.~\ref{plot:IntroTotalCross}) and the instantaneous luminosity reconstruction of the Hadron forward detector (see reference~\citen{Chatrchyan:1129810}). It can be seen that after the weighting the simulated distribution agrees much better with the data distribution. The remaining differences may come from statistical fluctuations or are due to different vertex reconstruction inefficiencies. The latter could come from different shapes of the interaction region. Additionally, the calculation of the true number of interaction based on the hadron forward calorimeter leads to a systematic uncertainty of the distribution for real data. On the right hand side, the vertex distributions after the double muon selection are compared. Still no large deviations are visible. Regarding the ration plot a small systematic deviation of the data towards a lower number of vertices can be observed.  The shift to lower values compared to the distribution without the double muon trigger are expected to come from the trigger and selection criteria. \\
+For most of the plots the ratio of data divided by simulation is shown in the bottom. This is done since it is expected that the statistic uncertainty is negligible compared to the systematic uncertainty. Taking the ration cancels most of the know and unknown systematic uncertainties. Nevertheless, calculating a proper p-value for the deviation of the ratio from unity is complex. More elaboration can be found in the appendix~\ref{sec:DCPvalue}. Consequently, in most cases the actual significance of the discrepancies from data and simulation are smaller than they appear in the ratio plots.
+
+\begin{figure}[h!b]
+  \centering
+  \includegraphics[width=0.45\textwidth]{DC/NumVertices}
+  \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMap1Q1_numVtx}
+  \caption[Vertex distribution for data and simulation before and after pileup weighting and after double muon trigger]{On the left hand side the primary vertex distribution for data and simulation before and after pileup weighting is shown. On the right hand side the vertex distribution after the double muon selection is shown. The integral of each distribution is normalized to unity. \label{plot:DCPW}}
+\end{figure}
+
+\ section{Track Validation \label{sec:DCTV}}
+
+\subsection{Track Collection Related  \label{sec:DCTVTC}}
+
+The numbers of considered signal tracks are compared between collision data and simulation. In Fig.~\ref{plot:DCTVTDQual} the distributions are shown. As expected, associating the tracks always to the first vertex in step 3 (top row) leads to a much higher number of tracks than associating the tracks to the closest vertex in z (bottom row). For the second option the agreement between data and simulation is much better. For associating the track always to the first vertex the events from data tend to have larger values compared to the simulation. This difference may come from a insufficient simulation of the pileup interactions and from events from unconsidered backgrounds. An indication of the latter is the large discrepancy for a large number of signal tracks. $\Zz\rightarrow\MM$ events are expected to have a rather low track multiplicity compared to QCD events, for instance. QCD with two muons, with a sum of the momentum leading to an invariant mass around the \Zz{} mass, play a role for this discrepancy.  As a function of $\eta$ and \pt{} all data distributions agree very well with the expectations from the simulation.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMap1Q3_numTrks}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMap1Q3_numTrks_Vs_eta}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMap1Q3_numTrks_Vs_pt}
+  \\
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMapZQ3_numTrks}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMapZQ3_numTrks_Vs_eta}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMapZQ3_numTrks_Vs_pt}
+  \caption[Track number and distributions for data and simulation for two options of the association map]{The distributions of the number of tracks per event (left hand plots), as a function of $\eta$ (middle plots) and \pt (right hand plots) for data and simulation. In the top row for associating the track always to the first vertex in the bottom row for associating the track to the closest vertex in z. Always only one association is created. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTDQual}}
+\end{figure}
+
+A comparison of the different pileup subtraction techniques is shown in Fig.~\ref{plot:DCTVTDPUS}. For no pileup subtraction (left hand plot) some slight differences are visible for a track number per event greater than 500. For the Muon/Egamma approach a small undershoot of data for events with more than $\gtrsim150$ tracks is visible. As expected for this approach the number of considered signal tracks per events is much lower than with the Jet/MET approach. . All these disagreements can be caused by unconsidered backgrounds.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_generalTracks_numTrks}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_jmTracks_numTrks}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_meTracks_numTrks}
+  \caption[Track number for data and simulation for the different pileup subtraction techniques]{The distributions of the number of tracks per event for no pileup subtraction (left hand plot), the Jet/MET approach (middle plot) and the Muon/Egamma approach (right hand plot) for data and simulation. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTDPUS}}
+\end{figure}
+
+The next observable connected to the number of tracks is the sum of the $\pt^{2}$ of the considered signal tracks. This variable is also important since the vertices of the primary vertex collection are sorted according to it. In Fig.~\ref{plot:DCTVSumPt} the distributions are shown for two options of the association map and one association. For both options the peak of the distribution is at around 4\,000$\GeV^{2}$. Associating the track always to the first vertex leads to a higher tail towards a higher $\pt^{2}$ sum as expected. This is due to the higher number of signal tracks shown earlier. Keeping this in mind, the overall agreement between data and simulation is good. Some differences around the peak of the distribution can be observed but are in the order of two standard deviations of the expectation from simulation.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMap1Q3_sumPt}
+  \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMapZQ3_sumPt}
+  \caption[Distributions for the first vertex $\pt{}^{2}$ for data and simulation for two options of the association map]{The distributions of the sum of the $\pt{}^{2}$ of the tracks associated to the first vertex for data and simulation. In blue the uncertainty of the expected value from simulation is displayed. It is shown for associating the track always to the first vertex (left hand plot) and association to the closest vertex in z (right hand plot). The integral of each distribution is normalized to unity. \label{plot:DCTVSumPt}}
+\end{figure}
+
+Another observable is the track weight produced by the fit of the signal vertex. In Fig.~\ref{plot:DCTVTW} the distributions for real data and simulation are shown. As already mentioned in Section~\ref{sec:AMWFTW} the track weight is a measure for the impact of the track on the the vertex fit. A track weight of zero means no impact, while one means a large impact on the vertex fit. Since this track weight is only needed in step 1 of the work flow of the association map differences between the two options for step 3 are expected to be in the first bin only. This is due to the fact that with associating the track always to the first vertex more tracks are considered as signal tracks. All these additional tracks should have a track weight of zero stored for the first vertex. The agreement between data and simulation is good. No large discrepancies are visible.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.5\textwidth]{DC/TrackValidatorData_assMapZQ3_tweight}
+  \caption[Distributions of the track weights for the first vertex for data and simulation]{The distributions of the track weights for the first vertex for data and simulation. All tracks are considered that are associated to the first vertex with the default configuration of the association map. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTW}}
+\end{figure}
+
+Finally, in Fig.~\ref{plot:DCTVTCQuality} the quality distributions of the association to the first vertex are compared. This means that for associating the track to the first vertex in step 3 no association to the first vertex is created in iteration 3 (leading to a quality of 0). This is, of course, expected. For associating the track to the closest vertex in z the amount of associations to the first vertex is almost the same for each iteration. Most of the times only small deviations between real data and simulation can be observed. When associating the track to the closest vertex in z direction, the data significantly deviates from the simulation in the bin corresponding to quality 3. For this option, quality class 3 can only be reached by tracks that have a very large distance to the first primary vertex.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMap1Q0_quality}
+  \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMapZQ0_quality}
+  \caption[Quality distribution of the association to the first vertex for data and simulation]{Quality distribution of the association to the first vertex for data and simulation for associating the track always to the first vertex (left hand plot) and to the closest vertex in z (right hand plot). The statistical uncertainty in y are to small to be seen. The integral of each distribution is normalized to unity.\label{plot:DCTVTCQuality}}
+\end{figure}
+
+To conclude, most of the presented comparisons show a very good agreement between simulation and data. Most of the disagreements can be explained by a higher number of pileup tracks in data or unconsidered background events. The general shape of the distribution is always in good agreement. 
+
+\subsection{Association Efficiency \label{sec:DCTVAE}}
+
+In this part an efficiency calculation is presented. Based on all events in which a muon pair with an invariant mass around the nominal \Zz peak is reconstructed it is checked if both muons are associated to the same vertex. In doing so, mainly the performance of the association is considered while possible issues of the vertex or track reconstruction have a small impact. A comparison of the vertex and track reconstruction between data and simulation can be found in reference~\citen{CMS-PAPER-TRK-11-001}. Figure~\ref{plot:DCTVZmmEff} shows the results of the different qualities of the association. The efficiency is analyzed as a function of \pt{} of the individual muons or of the minimum distance between the primary vertex and the trajectory of the muon.  For one association and with associating the track to the closest vertex in z during the step 3 still some lack of efficiencies are visible. As shown on the left hand plot, especially when one muon has a minimum distance greater than 0.2\mm the efficiency drops to about $70\,\%$. For associating the track always to the first vertex this decrease is not so significant but still visible. Already with two associations these inefficiencies almost vanish. For two associations with the association to the closest vertex in z only in a few bins the efficiency drops below $100\,\%$. For the other option as well as for more associations the efficiency is always $100\,\%$. The other two plots compare the different pileup subtraction techniques. As expected applying no pileup subtraction leads to an efficiency of $100\,\%$. Furthermore, the Muon/Egamma and Jet/MET approaches lead to an efficiency that is almost always $100\,\%$. Only in very few bins it drops. On the right hand plot it can be seen that all inefficiencies come from muons that have a \pt{} smaller than 20\GeV{} . For the default configuration of the association map the largest inefficiency is around 10\GeV{} and in the order of $5\,\%$. Comparing this to the efficiency of tracks coming from B hadron decays discussed in Section~\ref{sec:OOBTagDaughters} a difference. There, the association map is competitive with the other techniques and for more than one association it leads to even better results. 
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_Data_Qual_zmumueff_Vs_minDist}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_Data_Comp_zmumueff_Vs_minDist}
+  \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_Data_Comp_zmumueff_Vs_pt}
+  \caption[Data based association efficiencies of the muon pair coming from a \Zz decay for different qualities of the association map and different pileup subtraction techniques]{The efficiencies in associating both muons from a \Zz decay to the signal vertex based on data. It is shown as a function of the minimum distance between vertex and muon trajectory for the different qualities of the association map (left hand plot) and for the different pileup subtraction techniques (middle plot). Additionally, for the different pileup subtraction techniques it is shown as a function of \pt{} (right hand plot).  \label{plot:DCTVZmmEff}}
+\end{figure}
+
+It is studied which of the selected muon pairs are not fully associated to the first vertex by the association map. In Fig.~\ref{plot:DCTVZmmMass} the invariant mass of the muon pairs is shown. Out of 10\,316 selected muon pairs for 42 pairs at least one muon is not associated to the signal vertex with the default configuration of the association map. This is in the order of a few per mill. As listed in the left hand plot the central value of the invariant mass changes only slightly towards the nominal \Zz mass while the RMS remains stable. On the right hand plot the muon pairs are shown that fail the association test. For the Muon/Egamma and Jet/MET approach only one pair with an invariant mass of 54\GeV{} is not selected. The invariant mass of the 42 muon pairs from the association map mentioned earlier is distributed over the whole range. Around the nominal \Zz{} mass a small peak is visible, too.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_Data_Comp_invariantMass_passed}
+  \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_Data_Comp_invariantMass_failed}
+  \caption[Invariant mass spectrum for muon pairs where both are or at least one of them is not associated to the signal vertex for different pileup subtraction techniques]{The invariant mass spectrum of those muon pairs where both muons are associated to the signal vertex (left hand side) and where at least one muon is not associated to the signal vertex (right hand plot). It is done for different pileup subtraction techniques. The integral of each histogram is normalized to unity. \label{plot:DCTVZmmMass}}
+\end{figure}
+
+
+\section{\texorpdfstring{\MET{}}{MET} Validation \label{sec:DCMV}}
+
+The reconstruction of the \MET{} is compared with respect to agreement between data and simulation and different pileup subtraction techniques for the selected events. The method of the analysis has already been introduced in Section~\ref{sec:OOMet}. 
+
+\subsection{Data and Simulation Comparison \label{sec:DCMVDSC}}
+ 
+The performance of the default configuration of the association map is compared between simulation and data. The results of the raw and corrected \MET{} can be seen in Figs.~\ref{plot:DCMVAMRaw} and~\ref{plot:DCMVAMT0}, respectively. The reconstructed raw \MET{} in data is on average about 1\GeV{} higher than in simulation and a bit wider. This may be due to some background events that pass the double muon selection and are not considered here. For instance, this background can come from QCD events or diboson events. After the first correction this difference vanishes. Regarding the dependence on the number of pileup interactions half of the points overlay each other. For the dependence of the raw \MET{} there are some differences visible, especially in the low number of pileup region. There, the discrepancy is in the order of four standard deviations.This may be due to the rather low number of events with such  low number of pileup interactions. The same holds for the corrected \MET{} comparison. There is only one additional significant difference at around 22 pileup interactions visible. Including the statistical uncertainties, no other large disagreement is observed.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Raw_ZQ3_Histo}
+  \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Raw_ZQ3_Prof}
+  \caption[Raw missing transverse energy distribution for the association map in data and simulation]{The distributions of the reconstructed raw \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data and simulation. Here, the default configuration of the association map is used. The uncertainty of the simulation is shown in dark blue. The integral of each distribution is normalized to unity. \label{plot:DCMVAMRaw}}
+\end{figure}
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_ZQ3_Histo}
+  \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_ZQ3_Prof}
+  \caption[Corrected missing transverse energy distribution for the association map in data and simulation]{The distributions of the corrected \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data and simulation. Here, the default configuration of the association map is used. The uncertainty of the simulation is shown in dark blue. The integral of each distribution is normalized to unity. \label{plot:DCMVAMT0}}
+\end{figure}
+
+\subsection{Pileup Subtraction Technique Comparison using Data \label{sec:DCMVPSC}}
+
+Finally, the different pileup subtraction techniques are compared based on data events. In Fig.~\ref{plot:DCMVComp} the corrected \MET{} distribution as well as its dependence on the number of pileup interactions is shown. The distribution without corrections have already been discussed. Also for data, the association map leads to the best results while the Muon/Egamma approach leads to very similar results. Comparing this to the results shown in Fig.~\ref{plot:OOMetComp} it is evidenced that the difference between these two approaches on the one hand and the Jet/MET approach increased to around 1\GeV{}. With respect to applying no pileup subtraction the gap increased to about 3\GeV{}.  These differences are in the order of $5\--15\,\%$.
+
+
+The general dependence on the number of pileup interactions is comparable. Increasing the number of pileup interactions by three leads to an increase of the averaged \MET{} of around 1.5\GeV{} for the association map and the Muon/Egamma approach. In case of the other two techniques this increase is a bit higher. The conclusion of this part is the same as in Section~\ref{sec:OOMetComp}: the performance of the Jet/MET approach is as good as the association map for events with two more pileup interactions.
+
+\begin{figure}[h!t]
+  \centering
+  \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_Data_Histo}
+  \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_Data_Prof}
+  \caption[Corrected missing transverse energy distribution for different pileup subtraction techniques in data]{The distributions of the corrected \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data. Here, different pileup subtraction techniques are compared. The integral of each distribution on the left hand plot is normalized to unity. \label{plot:DCMVComp}}
+\end{figure}
+
+\section{Conclusion}
+
+Most of the comparison between data and simulation show good agreement. After pileup weighting a small difference can be seen since data tends to a lower number of primary vertices. This might be a reason for the deviations seen in the following plots. Furthermore, unconsidered backgrounds and a possible insufficient simulation of pileup interactions appear. For instance, for associating the track always to the first vertex in step 3 the number of signal tracks per event is much higher in data than it is in simulation. Because this difference is not visible for associating the track to the closest vertex in z the simulation of pileup interactions may have some inaccuracies at that point. The same behavior can be seen for the total number of reconstructed tracks, which is when no pileup subtraction is applied. Having this in mind the discrepancy of the sum of the $\pt{}^{2}$ for associating the track always to the first vertex can be explained. For associating the track to the closest vertex in z one deviation is visible in total. For the association quality 3 the number of association is in data much higher than it is in simulation. This quality can only be reached with track that have a large distance to the associated vertex. As shown pileup tracks have no significant impact on this option. Hence, the reason for this difference needs to be further investigated.\\
+Concerning the association efficiency of the muon pair coming from the \Zz decay, in about $99.6\,\%$ of the events both muons are assigned to the same primary vertex for the default configuration of the association map. The invariant mass of those muon pairs that fail the assignment cover a wide range. \\
+Finally, the performance of the \MET{} in data and simulation agree well. The slightly higher \MET{} in data can be explained with unconsidered background events. Comparing the different pileup subtraction techniques the association map leads to the best results after the first correction.

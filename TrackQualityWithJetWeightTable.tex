@@ -1,0 +1,34 @@
+%%
+%% This is just the table for the quality comparison for all options
+%%
+%% Quality | Efficiency | Purity | Product | PU Efficiency | PU Purity | PU Product
+%%
+
+\begin{table}[h!]
+\begin{center}
+\caption{The values in $\%$ of efficiency, purity and the product of both for preserving signal tracks and subtracting pileup tracks for the different quality classes of the association map. Here, all tracks from simulated \ttbar events are considered. Additionally, the tracks are weighted according to their contribution to the jet momentum (see Equation~\ref{eq:OOJetWeight}). All values are averaged over the whole parameter range. An efficiency of $100\,\%$ for at least two iterations (quality 1 and 0) and associating the track always to the first vertex means that the simulated signal vertex is the first or second in the reconstructed vertex collection.}
+\label{tab:OOJetsTracksQuality}
+
+\begin{tabular}{c c c c c c c c}
+ & & \multicolumn{3}{c} {Signal} & \multicolumn{3}{c} {Pileup}  \\
+ Quality &  & $\varepsilon$ & p &  $\varepsilon\times\textrm{p}$ & $\varepsilon_{pu}$ & $\textrm{p}_{pu}$  & $\varepsilon_{pu}\times\textrm{p}_{pu}$ \\
+\midrule[2pt] 
+\multirow{2}{*}{3} 
+                        & 1st & 99.1 & 72.0 & 71.3 & 76.9 & 98.9 & 76.0 \\
+\cmidrule{2-8}
+                        & z    &  98.1 & 97.9 & 96.0 & 98.8 & 95.6 & 94.5 \\
+\midrule
+\multirow{2}{*}{1} 
+                        & 1st & 100.0 & 36.6 & 36.6 & 0.0 & 0.0 & 0.0 \\
+\cmidrule{2-8}
+                        & z    &  99.4 & 87.1 & 86.6 & 92.3 & 97.0 & 89.6 \\
+\midrule
+\multirow{2}{*}{0} 
+                        & 1st & 100.0 & 36.6 & 36.6 & 0.0 & 0.0 & 0.0 \\
+\cmidrule{2-8}
+                        & z    &  99.6 & 78.2 & 77.9 & 85.5 & 97.5 & 83.3 \\
+
+\end{tabular}
+
+\end{center}
+\end{table}
