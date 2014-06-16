@@ -24,7 +24,7 @@
 		8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "command-definitions.tex"; path = "general/command-definitions.tex"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C2FC43118F6E4FE00897BF4 /* Introduction.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Introduction.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C7A64DC18F7D8730020961B /* Titlepage.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Titlepage.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
-		8C7A64DF18F7F2840020961B /* Detector.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Detector.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C7A64DF18F7F2840020961B /* Detector.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = Detector.tex; sourceTree = "<group>"; usesTabs = 0; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C7A64E118F8304E0020961B /* Thesis.bib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thesis.bib; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.bibtex; };
 		8C85A0BD190A6477004F1AF9 /* Abstract.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Abstract.tex; sourceTree = "<group>"; };
 		8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Zusammenfassung.tex; sourceTree = "<group>"; };
@@ -54,7 +54,11 @@
 		8C59192518F6BE5F00CB61A5 = {
 			isa = PBXGroup;
 			children = (
+				8C2FC42D18F6DC1C00897BF4 /* setup.tex */,
+				8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */,
+				8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */,
 				8C2FC42C18F6D5F700897BF4 /* Thesis.tex */,
+				8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */,
 				8C7A64E118F8304E0020961B /* Thesis.bib */,
 				8C7A64DC18F7D8730020961B /* Titlepage.tex */,
 				8C85A0BD190A6477004F1AF9 /* Abstract.tex */,
@@ -91,10 +95,6 @@
 				8C96C1CF1949D68400979476 /* TrackAssignment_App.tex */,
 				8C96C1CE1949D68400979476 /* DataComparison_App.tex */,
 				8CC48900190A9DEF00EB75DE /* Acknowledgments.tex */,
-				8C2FC42D18F6DC1C00897BF4 /* setup.tex */,
-				8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */,
-				8C2FC42F18F6DCBA00897BF4 /* new-cms-tdr.cls */,
-				8C2FC43018F6DCBA00897BF4 /* command-definitions.tex */,
 			);
 			sourceTree = "<group>";
 		};
