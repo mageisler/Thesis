@@ -14,9 +14,11 @@
 		8C155992190958D000AB69C8 /* ElectronComparisonTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ElectronComparisonTable.tex; sourceTree = "<group>"; };
 		8C155993190958D000AB69C8 /* MuonComparisonTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MuonComparisonTable.tex; sourceTree = "<group>"; };
 		8C155994190958D000AB69C8 /* QualityComparisonTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QualityComparisonTable.tex; sourceTree = "<group>"; };
-		8C155995190958D000AB69C8 /* RecoTrackSelectionTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RecoTrackSelectionTable.tex; sourceTree = "<group>"; };
+		8C155995190958D000AB69C8 /* RecoTrackSelectionTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RecoTrackSelectionTable.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C155996190958D000AB69C8 /* SimTrackSelectionTable.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SimTrackSelectionTable.tex; sourceTree = "<group>"; };
 		8C155997190958D000AB69C8 /* TrackAssignment.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TrackAssignment.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C2AAACF19505D2400239518 /* HighPU_App.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HighPU_App.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C2AAAD019505D2400239518 /* HighPU.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HighPU.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C2FC42C18F6D5F700897BF4 /* Thesis.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Thesis.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C2FC42D18F6DC1C00897BF4 /* setup.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = setup.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C2FC42E18F6DCBA00897BF4 /* lucas_unsrt.bst */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = lucas_unsrt.bst; path = general/lucas_unsrt.bst; sourceTree = "<group>"; };
@@ -26,8 +28,8 @@
 		8C7A64DC18F7D8730020961B /* Titlepage.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Titlepage.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C7A64DF18F7F2840020961B /* Detector.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = Detector.tex; sourceTree = "<group>"; usesTabs = 0; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C7A64E118F8304E0020961B /* Thesis.bib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Thesis.bib; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.bibtex; };
-		8C85A0BD190A6477004F1AF9 /* Abstract.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Abstract.tex; sourceTree = "<group>"; };
-		8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Zusammenfassung.tex; sourceTree = "<group>"; };
+		8C85A0BD190A6477004F1AF9 /* Abstract.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Abstract.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
+		8C85A0BE190A64DA004F1AF9 /* Zusammenfassung.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Zusammenfassung.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C8B12431938C88200B860FC /* ObtainingSignalParticles.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObtainingSignalParticles.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C8B12441938C88200B860FC /* TimeMemoryTableTT.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableTT.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
 		8C8B12451938C88200B860FC /* TimeMemoryTableZEE.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TimeMemoryTableZEE.tex; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = tex.lang.latex; };
@@ -91,9 +93,11 @@
 				8C96C1C81949D49A00979476 /* JetPtResponseComp.tex */,
 				8C96C1C71949D49A00979476 /* BDaughtersTable.tex */,
 				8C96C1CD1949D60100979476 /* DataComparison.tex */,
+				8C2AAAD019505D2400239518 /* HighPU.tex */,
 				8CC48902190A9F2200EB75DE /* Summary.tex */,
 				8C96C1CF1949D68400979476 /* TrackAssignment_App.tex */,
 				8C96C1CE1949D68400979476 /* DataComparison_App.tex */,
+				8C2AAACF19505D2400239518 /* HighPU_App.tex */,
 				8CC48900190A9DEF00EB75DE /* Acknowledgments.tex */,
 			);
 			sourceTree = "<group>";
