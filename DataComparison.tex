@@ -11,7 +11,7 @@ For most of the plots the ratio of data divided by simulation is shown in the bo
   \centering
   \includegraphics[width=0.45\textwidth]{DC/NumVertices}
   \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMap1Q1_numVtx}
-  \caption[Vertex distribution for data and simulation before and after pileup weighting and after double muon trigger]{On the left hand side the primary vertex distribution for data and simulation before and after pileup weighting is shown. On the right hand side the vertex distribution after the double muon selection is shown. The integral of each distribution is normalized to unity. \label{plot:DCPW}}
+  \caption[Vertex distribution in data and simulation before and after pileup weighting and after double muon trigger]{On the left hand side the primary vertex distribution in data and simulation before and after pileup weighting is shown. On the right hand side the vertex distribution after the double muon selection is shown. The integral of each distribution is normalized to unity. \label{plot:DCPW}}
 \end{figure}
 
 \ section{Track Validation \label{sec:DCTV}}
@@ -29,7 +29,7 @@ The numbers of considered signal tracks are compared between collision data and 
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMapZQ3_numTrks}
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMapZQ3_numTrks_Vs_eta}
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_assMapZQ3_numTrks_Vs_pt}
-  \caption[Track number and distributions for data and simulation for two options of the association map]{The distributions of the number of tracks per event (left hand plots), as a function of $\eta$ (middle plots) and \pt (right hand plots) for data and simulation. In the top row for associating the track always to the first vertex in the bottom row for associating the track to the closest vertex in z. Always only one association is created. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTDQual}}
+  \caption[Track number and distribution in data and simulation of two options of the association map]{The distributions of the number of tracks per event (left hand plots), as a function of $\eta$ (middle plots) and \pt (right hand plots) in data and simulation. In the top row for associating the track always to the first vertex in the bottom row for associating the track to the closest vertex in z. Always only one association is created. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTDQual}}
 \end{figure}
 
 A comparison of the different pileup subtraction techniques is shown in Fig.~\ref{plot:DCTVTDPUS}. For no pileup subtraction (left hand plot) some slight differences are visible for a track number per event greater than 500. For the Muon/Egamma approach a small undershoot of data for events with more than $\gtrsim150$ tracks is visible. As expected for this approach the number of considered signal tracks per events is much lower than with the Jet/MET approach. . All these disagreements can be caused by unconsidered backgrounds.
@@ -39,7 +39,7 @@ A comparison of the different pileup subtraction techniques is shown in Fig.~\re
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_generalTracks_numTrks}
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_jmTracks_numTrks}
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_meTracks_numTrks}
-  \caption[Track number for data and simulation for the different pileup subtraction techniques]{The distributions of the number of tracks per event for no pileup subtraction (left hand plot), the Jet/MET approach (middle plot) and the Muon/Egamma approach (right hand plot) for data and simulation. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTDPUS}}
+  \caption[Track number in data and simulation of the different pileup subtraction techniques]{The distributions of the number of tracks per event for no pileup subtraction (left hand plot), the Jet/MET approach (middle plot) and the Muon/Egamma approach (right hand plot) in data and simulation. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTDPUS}}
 \end{figure}
 
 The next observable connected to the number of tracks is the sum of the $\pt^{2}$ of the considered signal tracks. This variable is also important since the vertices of the primary vertex collection are sorted according to it. In Fig.~\ref{plot:DCTVSumPt} the distributions are shown for two options of the association map and one association. For both options the peak of the distribution is at around 4\,000$\GeV^{2}$. Associating the track always to the first vertex leads to a higher tail towards a higher $\pt^{2}$ sum as expected. This is due to the higher number of signal tracks shown earlier. Keeping this in mind, the overall agreement between data and simulation is good. Some differences around the peak of the distribution can be observed but are in the order of two standard deviations of the expectation from simulation.
@@ -48,7 +48,7 @@ The next observable connected to the number of tracks is the sum of the $\pt^{2}
   \centering
   \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMap1Q3_sumPt}
   \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMapZQ3_sumPt}
-  \caption[Distributions for the first vertex $\pt{}^{2}$ for data and simulation for two options of the association map]{The distributions of the sum of the $\pt{}^{2}$ of the tracks associated to the first vertex for data and simulation. In blue the uncertainty of the expected value from simulation is displayed. It is shown for associating the track always to the first vertex (left hand plot) and association to the closest vertex in z (right hand plot). The integral of each distribution is normalized to unity. \label{plot:DCTVSumPt}}
+  \caption[Distribution of the first vertex $\pt{}^{2}$ in data and simulation of two options of the association map]{The distributions of the sum of the $\pt{}^{2}$ of the tracks associated to the first vertex in data and simulation. In blue the uncertainty of the expected value from simulation is displayed. It is shown for associating the track always to the first vertex (left hand plot) and association to the closest vertex in z (right hand plot). The integral of each distribution is normalized to unity. \label{plot:DCTVSumPt}}
 \end{figure}
 
 Another observable is the track weight produced by the fit of the signal vertex. In Fig.~\ref{plot:DCTVTW} the distributions for real data and simulation are shown. As already mentioned in Section~\ref{sec:AMWFTW} the track weight is a measure for the impact of the track on the the vertex fit. A track weight of zero means no impact, while one means a large impact on the vertex fit. Since this track weight is only needed in step 1 of the work flow of the association map differences between the two options for step 3 are expected to be in the first bin only. This is due to the fact that with associating the track always to the first vertex more tracks are considered as signal tracks. All these additional tracks should have a track weight of zero stored for the first vertex. The agreement between data and simulation is good. No large discrepancies are visible.
@@ -56,7 +56,7 @@ Another observable is the track weight produced by the fit of the signal vertex.
 \begin{figure}[h!t]
   \centering
   \includegraphics[width=0.5\textwidth]{DC/TrackValidatorData_assMapZQ3_tweight}
-  \caption[Distributions of the track weights for the first vertex for data and simulation]{The distributions of the track weights for the first vertex for data and simulation. All tracks are considered that are associated to the first vertex with the default configuration of the association map. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTW}}
+  \caption[Distribution of the track weights for the first vertex in data and simulation]{The distributions of the track weights for the first vertex in data and simulation. All tracks are considered that are associated to the first vertex with the default configuration of the association map. In blue the uncertainty of the expected value from simulation is shown. The integral of each distribution is normalized to unity. \label{plot:DCTVTW}}
 \end{figure}
 
 Finally, in Fig.~\ref{plot:DCTVTCQuality} the quality distributions of the association to the first vertex are compared. This means that for associating the track to the first vertex in step 3 no association to the first vertex is created in iteration 3 (leading to a quality of 0). This is, of course, expected. For associating the track to the closest vertex in z the amount of associations to the first vertex is almost the same for each iteration. Most of the times only small deviations between real data and simulation can be observed. When associating the track to the closest vertex in z direction, the data significantly deviates from the simulation in the bin corresponding to quality 3. For this option, quality class 3 can only be reached by tracks that have a very large distance to the first primary vertex.
@@ -65,7 +65,7 @@ Finally, in Fig.~\ref{plot:DCTVTCQuality} the quality distributions of the assoc
   \centering
   \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMap1Q0_quality}
   \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_assMapZQ0_quality}
-  \caption[Quality distribution of the association to the first vertex for data and simulation]{Quality distribution of the association to the first vertex for data and simulation for associating the track always to the first vertex (left hand plot) and to the closest vertex in z (right hand plot). The statistical uncertainty in y are to small to be seen. The integral of each distribution is normalized to unity.\label{plot:DCTVTCQuality}}
+  \caption[Quality distribution of the association to the first vertex in data and simulation]{Quality distribution of the association to the first vertex in data and simulation for associating the track always to the first vertex (left hand plot) and to the closest vertex in z (right hand plot). The statistical uncertainty in y are to small to be seen. The integral of each distribution is normalized to unity.\label{plot:DCTVTCQuality}}
 \end{figure}
 
 To conclude, most of the presented comparisons show a very good agreement between simulation and data. Most of the disagreements can be explained by a higher number of pileup tracks in data or unconsidered background events. The general shape of the distribution is always in good agreement. 
@@ -79,7 +79,7 @@ In this part an efficiency calculation is presented. Based on all events in whic
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_Data_Qual_zmumueff_Vs_minDist}
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_Data_Comp_zmumueff_Vs_minDist}
   \includegraphics[width=0.325\textwidth]{DC/TrackValidatorData_Data_Comp_zmumueff_Vs_pt}
-  \caption[Data based association efficiencies of the muon pair coming from a \Zz decay for different qualities of the association map and different pileup subtraction techniques]{The efficiencies in associating both muons from a \Zz decay to the signal vertex based on data. It is shown as a function of the minimum distance between vertex and muon trajectory for the different qualities of the association map (left hand plot) and for the different pileup subtraction techniques (middle plot). Additionally, for the different pileup subtraction techniques it is shown as a function of \pt{} (right hand plot).  \label{plot:DCTVZmmEff}}
+  \caption[Data based association efficiencies of the muon pairs coming from a \Zz decay of different qualities of the association map and different pileup subtraction techniques]{The efficiencies in associating both muons from a \Zz decay to the signal vertex based on data. It is shown as a function of the minimum distance between vertex and muon trajectory for the different qualities of the association map (left hand plot) and for the different pileup subtraction techniques (middle plot). Additionally, for the different pileup subtraction techniques it is shown as a function of \pt{} (right hand plot).  \label{plot:DCTVZmmEff}}
 \end{figure}
 
 It is studied which of the selected muon pairs are not fully associated to the first vertex by the association map. In Fig.~\ref{plot:DCTVZmmMass} the invariant mass of the muon pairs is shown. Out of 10\,316 selected muon pairs for 42 pairs at least one muon is not associated to the signal vertex with the default configuration of the association map. This is in the order of a few per mill. As listed in the left hand plot the central value of the invariant mass changes only slightly towards the nominal \Zz mass while the RMS remains stable. On the right hand plot the muon pairs are shown that fail the association test. For the Muon/Egamma and Jet/MET approach only one pair with an invariant mass of 54\GeV{} is not selected. The invariant mass of the 42 muon pairs from the association map mentioned earlier is distributed over the whole range. Around the nominal \Zz{} mass a small peak is visible, too.
@@ -88,7 +88,7 @@ It is studied which of the selected muon pairs are not fully associated to the f
   \centering
   \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_Data_Comp_invariantMass_passed}
   \includegraphics[width=0.45\textwidth]{DC/TrackValidatorData_Data_Comp_invariantMass_failed}
-  \caption[Invariant mass spectrum for muon pairs where both are or at least one of them is not associated to the signal vertex for different pileup subtraction techniques]{The invariant mass spectrum of those muon pairs where both muons are associated to the signal vertex (left hand side) and where at least one muon is not associated to the signal vertex (right hand plot). It is done for different pileup subtraction techniques. The integral of each histogram is normalized to unity. \label{plot:DCTVZmmMass}}
+  \caption[Invariant mass spectrum for muon pairs where the association of both muon passed or failed of different pileup subtraction techniques]{The invariant mass spectrum of those muon pairs where both muons are associated to the signal vertex (left hand side) and where at least one muon is not associated to the signal vertex (right hand plot). It is done for different pileup subtraction techniques. The integral of each histogram is normalized to unity. \label{plot:DCTVZmmMass}}
 \end{figure}
 
 
@@ -104,14 +104,14 @@ The performance of the default configuration of the association map is compared 
   \centering
   \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Raw_ZQ3_Histo}
   \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Raw_ZQ3_Prof}
-  \caption[Raw missing transverse energy distribution for the association map in data and simulation]{The distributions of the reconstructed raw \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data and simulation. Here, the default configuration of the association map is used. The uncertainty of the simulation is shown in dark blue. The integral of each distribution is normalized to unity. \label{plot:DCMVAMRaw}}
+  \caption[Raw missing transverse energy distribution of different options of the association map in data and simulation]{The distributions of the reconstructed raw \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data and simulation. Here, the default configuration of the association map is used. The uncertainty of the simulation is shown in dark blue. The integral of each distribution is normalized to unity. \label{plot:DCMVAMRaw}}
 \end{figure}
 
 \begin{figure}[h!t]
   \centering
   \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_ZQ3_Histo}
   \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_ZQ3_Prof}
-  \caption[Corrected missing transverse energy distribution for the association map in data and simulation]{The distributions of the corrected \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data and simulation. Here, the default configuration of the association map is used. The uncertainty of the simulation is shown in dark blue. The integral of each distribution is normalized to unity. \label{plot:DCMVAMT0}}
+  \caption[Corrected missing transverse energy distribution of doifferent options of the association map in data and simulation]{The distributions of the corrected \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data and simulation. Here, the default configuration of the association map is used. The uncertainty of the simulation is shown in dark blue. The integral of each distribution is normalized to unity. \label{plot:DCMVAMT0}}
 \end{figure}
 
 \subsection{Pileup Subtraction Technique Comparison using Data \label{sec:DCMVPSC}}
@@ -125,7 +125,7 @@ The general dependence on the number of pileup interactions is comparable. Incre
   \centering
   \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_Data_Histo}
   \includegraphics[width=0.45\textwidth]{DC/METValidatorData_Type0_Data_Prof}
-  \caption[Corrected missing transverse energy distribution for different pileup subtraction techniques in data]{The distributions of the corrected \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data. Here, different pileup subtraction techniques are compared. The integral of each distribution on the left hand plot is normalized to unity. \label{plot:DCMVComp}}
+  \caption[Corrected missing transverse energy distribution of different pileup subtraction techniques in data]{The distributions of the corrected \MET{} (left hand plot) and their dependence on the number of pileup interactions (right hand plot) in data. Here, different pileup subtraction techniques are compared. The integral of each distribution on the left hand plot is normalized to unity. \label{plot:DCMVComp}}
 \end{figure}
 
 \section{Conclusion}

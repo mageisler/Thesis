@@ -13,7 +13,7 @@ As evidenced by the results presented in Chapter~\ref{sec:TrackAss} looking for 
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_NumPURecoTracks_1_pt}
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_NumPURecoTracks_Z_pt}
   \includegraphics[width=0.325\textwidth]{TV/TrackValidator_ZMM_NumPURecoTracks_AllTracks_pt}
-  \caption[Distributions of the transverse momentum of signal and pileup tracks for different qualities of the association and different pileup subtraction techniques ]{In the top row the \pt distributions of signal tracks is shown for different qualities of the association with associating the track always to the first vertex (left hand plot) or to the closest vertex in z (middle plot). Furthermore, a comparison between the different pileup subtraction techniques is shown (right hand plot). In the bottom row the same is shown for pileup tracks. All distributions are scaled down by a factor such that the histogram with the largest integral is normalized to unity. In the right hand plots the distributions of the association map are hidden behind those of the Muon/Egamma approach. \label{plot:OOTrackPt}}
+  \caption[Distribution of the transverse momentum of signal and pileup tracks for different qualities of the association map and different pileup subtraction techniques ]{In the top row the \pt distributions of signal tracks is shown for different qualities of the association map with associating the track always to the first vertex (left hand plot) or to the closest vertex in z (middle plot). Furthermore, a comparison between the different pileup subtraction techniques is shown (right hand plot). In the bottom row the same is shown for pileup tracks. All distributions are scaled down by a factor such that the histogram with the largest integral is normalized to unity. In the right hand plots the distributions of the association map are hidden behind those of the Muon/Egamma approach. \label{plot:OOTrackPt}}
 \end{figure}
 
 \section{Isolation \label{sec:OOIso}}
@@ -36,7 +36,7 @@ First, a comparison of the different qualities of the association map is done. T
   \\
   \includegraphics[width=0.45\textwidth]{OO/IsoValidator_Qual_Muon_Prof}
   \includegraphics[width=0.45\textwidth]{OO/IsoValidator_Qual_Electron_Prof}
-  \caption[Distributions of the isolation of muons and electrons and their dependencies on the number of pileup vertices for different qualities of the association]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) for different qualities of the association are shown (each integral is normalized to unity). Their dependence on the number of pileup vertices are shown in the bottom row. The technique in step 3 of the association is labeled as follows, the number behind the Q is for the quality while the first character is for the option itself (1 for always first vertex, Z for closest vertex in z direction).  \label{plot:OOIsoQual}}
+  \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for different qualities of the association map]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) for different qualities of the association map are shown (each integral is normalized to unity). Their dependence on the number of pileup vertices are shown in the bottom row. The technique in step 3 of the association is labeled as follows, the number behind the Q is for the quality while the first character is for the option itself (1 for always first vertex, Z for closest vertex in z direction).  \label{plot:OOIsoQual}}
 \end{figure}
 
 \subsection{Technique Comparison \label{sec:OOIsoComp}}
@@ -50,7 +50,7 @@ Next, the performance of the association map is compared to the other pileup sub
   \\
   \includegraphics[width=0.45\textwidth]{OO/IsoValidator_Comp_Muon_Prof}
   \includegraphics[width=0.45\textwidth]{OO/IsoValidator_Comp_Electron_Prof}
-  \caption[Distributions of the isolation of muons and electrons and their dependencies on the number of pileup vertices for different pileup subtraction techniques]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) for different pileup subtraction techniques are shown (each integral is normalized to unity). Their dependence on the number of pileup vertices are shown in the bottom row. \label{plot:OOIsoComp}}
+  \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for different pileup subtraction techniques]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) for different pileup subtraction techniques are shown (each integral is normalized to unity). Their dependence on the number of pileup vertices are shown in the bottom row. \label{plot:OOIsoComp}}
 \end{figure}
 
 
@@ -59,7 +59,7 @@ Next, the performance of the association map is compared to the other pileup sub
 
 In a next step, the effects on the reconstruction of jets are studied. Based on a collection of particles (charged and neutral), which is cleaned from pileup tracks, jets are created. A detailed description of the building of jets, in particular of the anti-$k_{t}$ algorithm can be found elsewhere~\cite{Cacciari:2008gp}. For the following studies jets are produced using the anti-$k_{t}$ algorithm with a cut-off parameter of 0.5.
 
-\subsection{Assignment of Tracks from Jets \label{sec:OOJetsTracks}}
+\subsection{Association of Tracks from Jets \label{sec:OOJetsTracks}}
 
 Before the results of the jet reconstruction itself are compared, the track validation is run again. This time, a weight is applied to each track according to its contribution to the jet momentum. The individual weight is:
 \begin{equation}
@@ -70,7 +70,7 @@ If a track does not contribute to any jet the weight is set to a very low value 
 
 \subsubsection{Quality Comparison \label{sec:OOJetsTracksQuality} }
 
-The results of the different qualities can be seen in Figs.~\ref{plot:OOJetsTVQualTTSignal} and~\ref{plot:OOJetsTVQualTTPileup}. As already explained, only two options are compared since taking the closest vertex in all three dimensions is expected to lead to the same results as looking along the $z$ axis only. The averaged values are shown in Table~\ref{tab:OOJetsTracksQuality}. For all qualities, the product of efficiency and purity at looking for the closest vertex along the $z$ axis compared to taking always the first vertex is better. There, quality 3 (one association per track) leads to the best result.
+The results of the different association qualities can be seen in Figs.~\ref{plot:OOJetsTVQualTTSignal} and~\ref{plot:OOJetsTVQualTTPileup}. As already explained, only two options are compared since taking the closest vertex in all three dimensions is expected to lead to the same results as looking along the $z$ axis only. The averaged values are shown in Table~\ref{tab:OOJetsTracksQuality}. For all qualities, the product of efficiency and purity at looking for the closest vertex along the $z$ axis compared to taking always the first vertex is better. There, quality 3 (one association per track) leads to the best result.
 
 \begin{figure}[h!t]
   \centering
@@ -85,7 +85,7 @@ The results of the different qualities can be seen in Figs.~\ref{plot:OOJetsTVQu
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Quality_EfficiencyPurity_eta}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Quality_EfficiencyPurity_pt}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Quality_EfficiencyPurity_npu}
-  \caption[Efficiencies, purities and their product for the different qualities based on simulated \ttbar events with jet weight]{The efficiencies, purities and the product of both for the different association qualities based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsTVQualTTSignal}}
+  \caption[Efficiencies, purities and their product of the different association qualities based on simulated \ttbar events with jet weight]{The efficiencies, purities and the product of both for the different association qualities based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsTVQualTTSignal}}
 \end{figure}
 
 \begin{figure}[h!t]
@@ -101,7 +101,7 @@ The results of the different qualities can be seen in Figs.~\ref{plot:OOJetsTVQu
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Quality_PUefficiencypurity_eta}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Quality_PUefficiencypurity_pt}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Quality_PUefficiencypurity_npu}
-  \caption[Pileup efficiencies, purities and their product for the different qualities based on simulated \ttbar events with jet weight]{The pileup efficiencies, purities and the product of both for the different association qualities based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:OOJetsTVQualTTPileup}}
+  \caption[Pileup efficiencies, purities and their product of the different association qualities based on simulated \ttbar events with jet weight]{The pileup efficiencies, purities and the product of both for the different association qualities based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:OOJetsTVQualTTPileup}}
 \end{figure}
 
 \input{TrackQualityWithJetWeightTable}
@@ -123,7 +123,7 @@ Now, the results of the association map are compared to those from the other sub
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Comparison_EfficiencyPurity_eta}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Comparison_EfficiencyPurity_pt}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Comparison_EfficiencyPurity_npu}
-  \caption[Efficiencies, purities and their product for the different pileup subtraction techniques based on simulated \ttbar events with jet weight]{The efficiencies, purities and the product of both for the different pileup subtraction techniques based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsTVCompTTSignal}}
+  \caption[Efficiencies, purities and their product of the different pileup subtraction techniques based on simulated \ttbar events with jet weight]{The efficiencies, purities and the product of both for the different pileup subtraction techniques based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsTVCompTTSignal}}
 \end{figure}
 
 \begin{figure}[h!t]
@@ -139,7 +139,7 @@ Now, the results of the association map are compared to those from the other sub
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Comparison_PUefficiencypurity_eta}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Comparison_PUefficiencypurity_pt}
   \includegraphics[width=0.325\textwidth]{OO/TrackValidator_Jets_Comparison_PUefficiencypurity_npu}
-  \caption[Pileup efficiencies, purities and their product for the different pileup subtraction techniques based on simulated \ttbar events with jet weight]{The pileup efficiencies, purities and the product of both for the different pileup subtraction techniques based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsTVCompTTPileup}}
+  \caption[Pileup efficiencies, purities and their product of the different pileup subtraction techniques based on simulated \ttbar events with jet weight]{The pileup efficiencies, purities and the product of both for the different pileup subtraction techniques based on simulated \ttbar events. The tracks are weighted according to their contribution to the jet momentum (see Equation~\eqnref{eq:OOJetWeight}). The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsTVCompTTPileup}}
 \end{figure}
 
 \input{TrackComparisonWithJetWeightTable}
@@ -167,7 +167,7 @@ First, the results of the different qualities of the association map are compare
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Qual_WithOutCorrection_Width_eta}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Qual_WithOutCorrection_Width_pt}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Qual_WithOutCorrection_Width_npu}
-  \caption[Mean and width of the \pt{} response for different qualities based on simulated QCD events for uncorrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different association qualities based on simulated QCD events for uncorrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseQualWO}}
+  \caption[Mean and width of the \pt{} response of different association qualities based on simulated QCD events for uncorrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different association qualities based on simulated QCD events for uncorrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseQualWO}}
 \end{figure}
 
 \begin{figure}[h!t]
@@ -179,7 +179,7 @@ First, the results of the different qualities of the association map are compare
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Qual_WithCorrection_Width_eta}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Qual_WithCorrection_Width_pt}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Qual_WithCorrection_Width_npu}
-  \caption[Mean and width of the \pt{} response for different qualities based on simulated QCD events for corrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different association qualities based on simulated QCD events for corrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseQualW}}
+  \caption[Mean and width of the \pt{} response of different association qualities based on simulated QCD events for corrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different association qualities based on simulated QCD events for corrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseQualW}}
 \end{figure}
 
 \input{JetPtResponseQual}
@@ -197,7 +197,7 @@ Finally, the performance of the association map is compared to the other approac
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Comp_WithOutCorrection_Width_eta}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Comp_WithOutCorrection_Width_pt}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Comp_WithOutCorrection_Width_npu}
-  \caption[Mean and width of the \pt{} response for different pileup subtraction techniques based on simulated QCD events for uncorrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different pileup subtraction techniques based on simulated QCD events for uncorrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseCompWO}}
+  \caption[Mean and width of the \pt{} response of different pileup subtraction techniques based on simulated QCD events for uncorrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different pileup subtraction techniques based on simulated QCD events for uncorrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseCompWO}}
 \end{figure}
 
 \begin{figure}[h!t]
@@ -209,7 +209,7 @@ Finally, the performance of the association map is compared to the other approac
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Comp_WithCorrection_Width_eta}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Comp_WithCorrection_Width_pt}
   \includegraphics[width=0.325\textwidth]{OO/JetValidator_Comp_WithCorrection_Width_npu}
-  \caption[Mean and width of the \pt{} response for different pileup subtraction techniques based on simulated QCD events for corrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different pileup subtraction techniques based on simulated QCD events for corrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseCompW}}
+  \caption[Mean and width of the \pt{} response of different pileup subtraction techniques based on simulated QCD events for corrected jets]{The mean $\left<\zeta\right>$ and width $\sigma_{\zeta}$ of the \pt{} response of different pileup subtraction techniques based on simulated QCD events for corrected jets. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:OOJetsPtResponseCompW}}
 \end{figure}
 
 \input{JetPtResponseComp}
@@ -223,18 +223,18 @@ For this study, simulated Drell-Yan events decaying to two leptons with one addi
   \centering
   \includegraphics[width=0.45\textwidth]{OO/METValidator_Qual_Raw_Histo}
   \includegraphics[width=0.45\textwidth]{OO/METValidator_Qual_Raw_Prof}
-  \caption[The raw \MET{} distributions and their dependence on the number of pileup vertices for different qualities based on simulated DY events]{The raw \MET{} distributions (integral is normalized to unity) and their dependence on the number of pileup vertices for different qualities of the association map based on simulated DY events. No correction is applied. Hence, all distributions are exactly the same. \label{plot:OOMetRaw}}
+  \caption[The raw \MET{} distribution and its dependence on the number of pileup vertices for different association qualities based on simulated DY events]{The raw \MET{} distributions (integral is normalized to unity) and their dependence on the number of pileup vertices for different qualities of the association map based on simulated DY events. No correction is applied. Hence, all distributions are exactly the same. \label{plot:OOMetRaw}}
 \end{figure}
 
 \subsection{Quality Comparison \label{sec:OOMetQual}}
 
-First, the results of the different qualities from the association map are compared having applied the first \MET{} correction. This correction is based on the particles that are considered as originating at pileup vertices. Hence, having applied this correction on the raw \MET{} different values are expected. As can be seen in Fig.~\ref{plot:OOMetQual}, three iterations with associating the track to the closest vertex in z leads to the lowest \MET{}. For this association option the number of associations has no large influence on the distribution of the \MET{}. On average, the corrected \MET{} is in the order of 17\GeV{}. Furthermore, associating the track always to the first vertex leads to significantly worse results. On average, when taking always the first vertex the \MET{} is about $8\,\%$ higher than when using the closest vertex. 
+First, the results of the different qualities of the association map are compared having applied the first \MET{} correction. This correction is based on the particles that are considered as originating at pileup vertices. Hence, having applied this correction on the raw \MET{} different values are expected. As can be seen in Fig.~\ref{plot:OOMetQual}, three iterations with associating the track to the closest vertex in z leads to the lowest \MET{}. For this association option the number of associations has no large influence on the distribution of the \MET{}. On average, the corrected \MET{} is in the order of 17\GeV{}. Furthermore, associating the track always to the first vertex leads to significantly worse results. On average, when taking always the first vertex the \MET{} is about $8\,\%$ higher than when using the closest vertex.
 
 \begin{figure}[h!t]
   \centering
   \includegraphics[width=0.45\textwidth]{OO/METValidator_Qual_Type0_Histo}
   \includegraphics[width=0.45\textwidth]{OO/METValidator_Qual_Type0_Prof}
-  \caption[The corrected \MET{} distributions and their dependence on the number of pileup vertices for different qualities based on simulated Drell-Yan events]{The corrected \MET{} distributions (each integral is normalized to unity) and their dependence on the number of pileup vertices for different qualities of the association map based on simulated Drell-Yan events. In these plots the \MET{} is corrected for the contribution of pileup interactions. \label{plot:OOMetQual}}
+  \caption[The corrected \MET{} distribution and its dependence on the number of pileup vertices for different association qualities based on simulated Drell-Yan events]{The corrected \MET{} distributions (each integral is normalized to unity) and their dependence on the number of pileup vertices for different qualities of the association map based on simulated Drell-Yan events. In these plots the \MET{} is corrected for the contribution of pileup interactions. \label{plot:OOMetQual}}
 \end{figure}
 
 \subsection{Technique Comparison \label{sec:OOMetComp}}
@@ -245,7 +245,7 @@ Next, the performance of the association map is compared to the other approaches
   \centering
   \includegraphics[width=0.45\textwidth]{OO/METValidator_Comp_Type0_Histo}
   \includegraphics[width=0.45\textwidth]{OO/METValidator_Comp_Type0_Prof}
-  \caption[The corrected \MET{} distributions and their dependence on the number of pileup vertices for different pileup subtraction techniques based on simulated Drell-Yan events]{The corrected \MET{} distributions (each integral is normalized to unity) and their dependence on the number of pileup vertices for different pileup subtraction techniques based on simulated Drell-Yan events. In these plots the \MET{} is corrected for the contribution of pileup interactions. \label{plot:OOMetComp}}
+  \caption[The corrected \MET{} distribution and its dependence on the number of pileup vertices for different pileup subtraction techniques based on simulated Drell-Yan events]{The corrected \MET{} distributions (each integral is normalized to unity) and their dependence on the number of pileup vertices for different pileup subtraction techniques based on simulated Drell-Yan events. In these plots the \MET{} is corrected for the contribution of pileup interactions. \label{plot:OOMetComp}}
 \end{figure}
 
 \section{b Tagging \label{sec:OOBTag}}
@@ -258,14 +258,14 @@ As a first analysis, the track validation from Section~\ref{sec:TASEFR} is modif
 
 \subsubsection{Quality Comparison \label{sec:OOBTagDaughtersQual}}
 
-First, the different qualities from the association map are compared. The results for the efficiency can be seen in Fig.~\ref{plot:OOBTagDaughtersQual} and the averaged values in Table~\ref{tab:OOBTagDaughters}. As can be seen for both options two iterations lead to an efficiency of nearly $100\,\%$. Only for tracks with a high pseudorapidity, a low \pt or in events with many underlying pileup interactions the efficiency drops below $90\,\%$. 
+First, the different qualities of the association map are compared. The results for the efficiency can be seen in Fig.~\ref{plot:OOBTagDaughtersQual} and the averaged values in Table~\ref{tab:OOBTagDaughters}. As can be seen for both options two iterations lead to an efficiency of nearly $100\,\%$. Only for tracks with a high pseudorapidity, a low \pt or in events with many underlying pileup interactions the efficiency drops below $90\,\%$.
 
 \begin{figure}[h!t]
   \centering
   \includegraphics[width=0.325\textwidth]{OO/BDaughtersFinder_Qual_eta}
   \includegraphics[width=0.325\textwidth]{OO/BDaughtersFinder_Qual_pt}
   \includegraphics[width=0.325\textwidth]{OO/BDaughtersFinder_Qual_npu}
-  \caption[Efficiencies of the different qualities of the association map for reconstructing tracks from B decays]{The efficiencies of the different qualities of the association map for reconstructing tracks coming from B decays. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:OOBTagDaughtersQual}}
+  \caption[Efficiencies of the different qualities of the association map for reconstructing tracks from B-hadron decays]{The efficiencies of the different qualities of the association map for reconstructing tracks coming from B decays. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:OOBTagDaughtersQual}}
 \end{figure}
 
 \input{BDaughtersTable}
@@ -279,7 +279,7 @@ Now, the association map is compared to the other pileup subtraction techniques.
   \includegraphics[width=0.325\textwidth]{OO/BDaughtersFinder_Comp_eta}
   \includegraphics[width=0.325\textwidth]{OO/BDaughtersFinder_Comp_pt}
   \includegraphics[width=0.325\textwidth]{OO/BDaughtersFinder_Comp_npu}
-  \caption[Efficiencies of the different pileup subtraction techniques for reconstructing tracks from B decays]{The efficiencies of the different pileup subtraction techniques for reconstructing tracks coming from B decays. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:OOBTagDaughtersComp}}
+  \caption[Efficiencies of the different pileup subtraction techniques for reconstructing tracks from B-hadron decays]{The efficiencies of the different pileup subtraction techniques for reconstructing tracks coming from B decays. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plot), transverse momentum (middle plot) and the number of pileup interactions (right hand plot). \label{plot:OOBTagDaughtersComp}}
 \end{figure}
 
 \subsection{b Tag Comparison}
@@ -299,7 +299,7 @@ The different qualities of the association map are compared. The results can be 
   \includegraphics[width=0.325\textwidth]{OO/RecoBValidation_Qual_effVsDiscrCut_Scaled}
   \includegraphics[width=0.325\textwidth]{OO/RecoBValidation_Qual_FlavEffVsBEff_C_Scaled}
   \includegraphics[width=0.325\textwidth]{OO/RecoBValidation_Qual_FlavEffVsBEff_DUSG_Scaled}
-  \caption[B tag performance of different qualities based on simulated \ttbar events]{The b-tag performance of different qualities of the association map based on simulated \ttbar events. The b-jet efficiency is shown as a function of the discriminant (left hand plots) while the c-jet efficiency (middle plots) and light-quark jet efficiency (right hand plots) are plotted as a function of the b-jet efficiency. In the second row the distributions are normalized to quality 1 and associating the track always to the first vertex at step 3 of the association map (1-Q1). \label{plot:OOBTaggingQual}}
+  \caption[b-tag performance of different association qualities based on simulated \ttbar events]{The b-tag performance of different qualities of the association map based on simulated \ttbar events. The b-jet efficiency is shown as a function of the discriminant (left hand plots) while the c-jet efficiency (middle plots) and light-quark jet efficiency (right hand plots) are plotted as a function of the b-jet efficiency. In the second row the distributions are normalized to quality 1 and associating the track always to the first vertex at step 3 of the association map (1-Q1). \label{plot:OOBTaggingQual}}
 \end{figure}
 
 \subsubsection{Technique Comparison \label{sec:OOBTaggingComp}}
@@ -315,7 +315,7 @@ Finally, the different pileup subtraction techniques are compared. The problem h
   \includegraphics[width=0.325\textwidth]{OO/RecoBValidation_Comp_effVsDiscrCut_Scaled}
   \includegraphics[width=0.325\textwidth]{OO/RecoBValidation_Comp_FlavEffVsBEff_C_Scaled}
   \includegraphics[width=0.325\textwidth]{OO/RecoBValidation_Comp_FlavEffVsBEff_DUSG_Scaled}
-  \caption[B tag performance of different pileup subtraction techniques based on simulated \ttbar events]{The b-tag performance of different pileup subtraction techniques based on simulated \ttbar events. The b-jet efficiency is shown as a function of the discriminant (left hand plots) while the c-jet efficiency (middle plots) and light-quark jet efficiency (right hand plots) are plotted as a function of the b-jet efficiency. In the second row the distributions are normalized to the distribution of no pileup cleaning. \label{plot:OOBTaggingComp}}
+  \caption[b-tag performance of different pileup subtraction techniques based on simulated \ttbar events]{The b-tag performance of different pileup subtraction techniques based on simulated \ttbar events. The b-jet efficiency is shown as a function of the discriminant (left hand plots) while the c-jet efficiency (middle plots) and light-quark jet efficiency (right hand plots) are plotted as a function of the b-jet efficiency. In the second row the distributions are normalized to the distribution of no pileup cleaning. \label{plot:OOBTaggingComp}}
 \end{figure}
 
 \section{Conclusion}
