@@ -11,7 +11,40 @@ To study the performance of the different pileup subtraction techniques under th
 \item center-of-mass energy of 14\TeV and average number of pileup interactions of 50.
 \end{itemize}
 Further important properties of the simulation are the lowered bunch spacing of 25\ns and the changed proton distribution within the bunches. The first leads to a much higher influence of the so-called out-of-time pileup. That are tracks or particles from previous or following bunch crossings. The latter means that the shape of the density of the protons in a bunch is Gaussian. This leads to a much higher density of primary vertices in the central part of the interaction region. Hence, also to a higher vertex density around the simulated signal vertex. \\
-For each listed set of conditions three samples with different signal interactions are simulated. First, \Zz decays to two muons with at least one additional jets from the initial state. With this sample the performance of the track assignment as well as the muon isolation and the calibration of the missing transverse energy \ETmiss is analyzed. Second, \Zz decays to two electrons. Based on this sample the track assignment and the electron isolation is studied. Finally, \ttbar decays are also simulated. With this the performance of the track assignment and of the jet reconstruction are analyzed. For most of the studies only the first scenario is studied in detail. The results of the other two scenarios are mostly similar. They are shown in Appendix~\ref{sec:HPUApp}. \\
+For each listed set of conditions three samples with different signal interactions are simulated. First, \Zz decays to two muons with at least one additional jets from the initial state. With this sample the performance of the track assignment as well as the muon isolation and the calibration of the missing transverse energy \ETmiss is analyzed. Second, \Zz decays to two electrons. Based on this sample the track assignment and the electron isolation is studied. Finally, \ttbar decays are also simulated. With this the performance of the track assignment and of the jet reconstruction are analyzed. For most of the studies only the first scenario is studied in detail. The results of the other two scenarios are mostly similar. They are shown in Appendix~\ref{sec:HPUApp}.
+
+\begin{figure}[Ht]
+    \centering
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_1_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_1_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_1_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_1_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_1_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_1_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_1_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_1_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_1_npu}
+    \caption[Efficiencies, purities and their product of the different qualities of the association map with associating the track always to the first vertex during step 3 with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different association qualities for associating the track always to the first vertex during step 3. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuQual1}}
+\end{figure}
+
+\begin{figure}[Ht]
+    \centering
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_Z_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_Z_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_Z_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_Z_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_Z_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_Z_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_Z_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_Z_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_Z_npu}
+    \caption[Efficiencies, purities and their product of the different qualities of the association map with associating the track to the closest vertex in z only during step 3 with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different association qualities for associating the track to the closest vertex in z only during step 3. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuQualZ}}
+\end{figure}
+
 The studies of the events are based on the reconstruction software as it was implemented in the end of 2013. From that time on until the restart of the accelerator in 2015 several improvements are made. These are going to improve the performances shown in the following sections. Furthermore, some algorithms in the reconstruction are very likely to change. While the definition of the relative isolation and the algorithm of the reconstruction of jets is not going to change the b tagging technique might be tuned to the new conditions. Therefore, the latter one is not going to be discussed here. Another part that is going to be tuned are the correction factors for the jet energy. Nevertheless, the \pt{}-response of the corrected and uncorrected jets is shown. Last, the calculation and correction of the \MET{} is expected to stay as it is.
 
 \section{Track Association \label{sec:HPUTA}}
@@ -19,46 +52,14 @@ The studies of the events are based on the reconstruction software as it was imp
 First, the performance of the track assignment is analyzed. For each set of conditions the results of the different association qualities are discussed based on the $\Zz\rightarrow\MM$ sample. In the following the results of the association map are compared to the other techniques for all simulated samples.\\ 
 The definitions of the efficiencies and purities are explained in Chapter~\ref{sec:TrackAss}. Furthermore, the selection of the simulated and reconstructed tracks is also given in that section.
 
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_1_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_1_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_1_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_1_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_1_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_1_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_1_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_1_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_1_npu}
-  \caption[Efficiencies, purities and their product of the different qualities of the association map with associating the track always to the first vertex during step 3 with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different association qualities for associating the track always to the first vertex during step 3. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuQual1}}
-\end{figure}
-
 
 \subsection{13\TeV and $\left<PU\right>=30$ \label{sec:HPUTAE13PU30}}
 
 In this section the results for a center-of-mass energy of 13\TeV and an average number of underlying pileup interactions of about 30 are shown. All results discussed are representative also for the other simulated scenarios. Hence, the results for the other scenarios can be found in Appendices~\ref{sec:HPUAppE13PU50TA} and~\ref{sec:HPUAppE14PU50TA}.
 
-\begin{figure}[h!t]
-  \centering
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_Z_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_Z_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_Z_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_Z_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_Z_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_Z_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_Z_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_Z_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_Z_npu}
-  \caption[Efficiencies, purities and their product of the different qualities of the association map with associating the track to the closest vertex in z only during step 3 with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different association qualities for associating the track to the closest vertex in z only during step 3. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuQualZ}}
-\end{figure}
-
 \subsubsection{$\Zz\rightarrow\MM$ \label{sec:HPUTAE13PU30Ztomumu}}
 
-\begin{figure}[h!t]
+\begin{figure}[Ht]
   \centering
   \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_1_eta}
   \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_1_pt}
@@ -74,83 +75,83 @@ In this section the results for a center-of-mass energy of 13\TeV and an average
   \caption[Pileup efficiencies, purities and their product of the different qualities of the association map with associating the track always to the first vertex during step 3 with 13\TeV and $\left<PU\right>=30$]{The pileup efficiencies, purities and the product of both of the different association qualities for associating the track always to the first vertex during step 3. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuQualPU1}}
 \end{figure}
 
+\begin{figure}[Ht]
+    \centering
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_Z_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_Z_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_Z_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_Z_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_Z_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_Z_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_Z_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_Z_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_Z_npu}
+    \caption[Pileup efficiencies, purities and their product of the different qualities of the association map with associating the track to the closest vertex in z only during step 3 with 13\TeV and $\left<PU\right>=30$]{The pileup efficiencies, purities and the product of both of the different association qualities for associating the track to the closest vertex in z only during step 3. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuQualPUZ}}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZMM_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZMM_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZMM_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZMM_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZMM_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZMM_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZMM_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZMM_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZMM_npu}
+    \caption[Purities, efficiencies and their product of the different pileup subtraction techniques based on simulated $\Zz\rightarrow\MM$ decays with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different pileup subtraction techniques for simulated $\Zz\rightarrow\MM$ decays. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuComp}}
+\end{figure}
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_ZMM_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_ZMM_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_ZMM_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_ZMM_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_ZMM_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_ZMM_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_ZMM_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_ZMM_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_ZMM_npu}
+    \caption[Pileup efficiencies, purities and their product of the different pileup subtraction techniques based on simulated $\Zz\rightarrow\MM$ decays with 13\TeV and $\left<PU\right>=30$]{The pileup efficiencies, purities and the product of both of the different pileup subtraction techniques for simulated $\Zz\rightarrow\MM$ decays. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuPUComp}}
+\end{figure}
+
+
 At first, the different qualities of the association map are studied. Again, only associating the track always to the first vertex and taking the closest vertex in z only are considered. The signal efficiencies and purities for the two techniques are shown in Figs.~\ref{plot:HPUTAE13PU30ZtomumuQual1} and~\ref{plot:HPUTAE13PU30ZtomumuQualZ}. \\
 The purities of all qualities when taking always the first vertex are very low. This is due to the fact that there are much more pileup tracks now. Associating all charged hadrons that are not used for the production of the primary vertices to the first one has clearly a big impact here. Still, only a few pileup tracks have a high \pt{}. Hence, the purity is still very good for these tracks. On the other hand, for qualities equal to or smaller than 3 the efficiency is tolerable. Quality 2 and 3  are about $20\,\%$ worse with respect to the results shown in Section~\ref{sec:TASEFR} but do not degrade as much as the purity. Quality 1 and 0 reach an efficiency of $100\,\%$. For higher qualities the efficiency is very low. \\
 For taking the closest vertex along z the picture changes. With the old conditions the purity has been much better compared to taking always the first vertex. With the different density around the signal vertex the purity drops dramatically to around $20\,\%$ independent of the quality. Furthermore, the efficiency for only one association is very low at about $20\,\%$. Moreover, for more associations the efficiency rises by about $20\,\%$ per association. Taking these results it can be said that all three associations of the map deliver the same performance. The purity is always the same and the efficiency is increased by the same amount for each association. \\
 The pileup efficiencies and purities are shown in Figs.~\ref{plot:HPUTAE13PU30ZtomumuQualPU1} and~\ref{plot:HPUTAE13PU30ZtomumuQualPUZ}. It can be seen that the pileup purity changes only slightly for both techniques. This is again due to the high number of pileup tracks. A wrong consideration of one simulated signal track as a reconstructed pileup track leads only to a small degradation of the pileup purity. On the other hand, the pileup efficiency for taking always the first vertex is already for one association low. For more associations it drops to zero. \\
 Taking the closest vertex in z leads to a much better pileup efficiency. Even with three associations it is around $50\,\%$. Furthermore, a dependency is also visible here. After each association the pileup efficiency drops by about $15\,\%$. For quality 1 it is in the order of $65\,\%$ and for quality 2,3 and 4 it is $80\,\%$. For higher quality classes a pileup efficiency of nearly $100\,\%$ is within reach.  The dependency on $\eta$ or \pt{} is almost negligible. Only with respect to the number of pileup interactions a trend can be seen. This can be explained by the rising amount of pileup tracks per event. Consequently, a nearly constant number of wrongly associated signal tracks leads to an improvement in  pileup purity with respect to the number of pileup interactions. The drop to a pileup purity of $0\,\%$ for high transverse momenta is because of the low number of pileup tracks in this region. Hence, one wrongly associated signal track can lead to a very low pileup purity.
 
-\begin{figure}[h!t]
-  \centering
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_Z_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_Z_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_Z_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_Z_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_Z_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_Z_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_Z_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_Z_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_Z_npu}
-  \caption[Pileup efficiencies, purities and their product of the different qualities of the association map with associating the track to the closest vertex in z only during step 3 with 13\TeV and $\left<PU\right>=30$]{The pileup efficiencies, purities and the product of both of the different association qualities for associating the track to the closest vertex in z only during step 3. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuQualPUZ}}
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZEE_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZEE_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZEE_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZEE_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZEE_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZEE_npu}
+    \\
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZEE_eta}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZEE_pt}
+    \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZEE_npu}
+    \caption[Purities, efficiencies and their product of the different pileup subtraction techniques based on simulated $\Zz\rightarrow\EE$ decays with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different pileup subtraction techniques for simulated $\Zz\rightarrow\EE$ decays. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtoeeComp}}
 \end{figure}
 
 As a next study, based on this sample the different pileup subtraction techniques are compared. In Fig.~\ref{plot:HPUTAE13PU30ZtomumuComp} the signal purities and efficiencies of the different approaches are shown. Comparing these to the results shown in Chapter~\ref{sec:TrackAss} it is visible that the results for the high pileup events are worse. The approach of the Jet/MET group lead to the best results. For both, the association map and the approach of the Muon/Egamma group, the efficiency is very low. Both approaches try to find the closest primary vertex to the track for an association. With the new conditions and the higher vertex density around the signal vertex this leads to insufficient efficiency. The same holds for the purity. With the old conditions the association map and the approach of the Muon/Egamma group reached very good results while the approach of the Jet/MET group is comparatively worse. With the new conditions all approaches lead to similar results in terms of purity.
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZMM_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZMM_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZMM_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZMM_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZMM_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZMM_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZMM_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZMM_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZMM_npu}
-  \caption[Purities, efficiencies and their product of the different pileup subtraction techniques based on simulated $\Zz\rightarrow\MM$ decays with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different pileup subtraction techniques for simulated $\Zz\rightarrow\MM$ decays. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuComp}}
-\end{figure}
-
-In Fig.~\ref{plot:HPUTAE13PU30ZtomumuPUComp} the pileup purities and efficiencies of the different approaches are shown. The Jet/MET approach leads to the worst results especially for the pileup efficiency. The other two approaches are still in the same region. Only for tracks with a very low \pt the approach of the Muon/Egamma group leads to significantly better results than the association map in terms of pileup efficiency. With respect to the pileup purity the association map and the Muon/Egamma approach lead to similar results, again. 
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_ZMM_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_ZMM_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiency_ZMM_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_ZMM_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_ZMM_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUpurity_ZMM_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_ZMM_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_ZMM_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_ZMM_npu}
-  \caption[Pileup efficiencies, purities and their product of the different pileup subtraction techniques based on simulated $\Zz\rightarrow\MM$ decays with 13\TeV and $\left<PU\right>=30$]{The pileup efficiencies, purities and the product of both of the different pileup subtraction techniques for simulated $\Zz\rightarrow\MM$ decays. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtomumuPUComp}}
-\end{figure}
+In Fig.~\ref{plot:HPUTAE13PU30ZtomumuPUComp} the pileup purities and efficiencies of the different approaches are shown. The Jet/MET approach leads to the worst results especially for the pileup efficiency. The other two approaches are still in the same region. Only for tracks with a very low \pt the approach of the Muon/Egamma group leads to significantly better results than the association map in terms of pileup efficiency. With respect to the pileup purity the association map and the Muon/Egamma approach lead to similar results, again.
 
 \subsubsection{$\Zz\rightarrow\EE$ \label{sec:HPUTAE13PU30Ztoee}}
 
-The different pileup subtraction techniques are compared based on simulated $\Zz\rightarrow\EE$ events. The signal efficiencies and purities can be found in Fig.~\ref{plot:HPUTAE13PU30ZtoeeComp}. Again all purities are in the same region around $10\,\%$. For tracks with a \pt greater than 10\GeV the purity reaches acceptable values. The efficiency of the Jet/MET approach is again much better than the other two. Only for tracks with a high \pt the association map leads to similar results. 
-
-\begin{figure}[!t]
-  \centering
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZEE_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZEE_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Efficiency_ZEE_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZEE_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZEE_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_Purity_ZEE_npu}
-   \\
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZEE_eta}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZEE_pt}
-  \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_EfficiencyPurity_ZEE_npu}
-  \caption[Purities, efficiencies and their product of the different pileup subtraction techniques based on simulated $\Zz\rightarrow\EE$ decays with 13\TeV and $\left<PU\right>=30$]{The efficiencies, purities and the product of both of the different pileup subtraction techniques for simulated $\Zz\rightarrow\EE$ decays. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30ZtoeeComp}}
-\end{figure}
+The different pileup subtraction techniques are compared based on simulated $\Zz\rightarrow\EE$ events. The signal efficiencies and purities can be found in Fig.~\ref{plot:HPUTAE13PU30ZtoeeComp}. Again all purities are in the same region around $10\,\%$. For tracks with a \pt greater than 10\GeV the purity reaches acceptable values. The efficiency of the Jet/MET approach is again much better than the other two. Only for tracks with a high \pt the association map leads to similar results.
 
 The distribution of the pileup purities and efficiencies are shown in Fig.~\ref{plot:HPUTAE13PU30ZtoeePUComp}. The association map and the approach of the Muon/Egamma group lead to better results compared to the Jet/MET technique. For the pileup purity this difference is clearly visible over the whole $\eta$ region and in the mid region of \pt{}. Also for the pileup efficiency the association map and the Muon/Egamma approach lead to similar results. Only for tracks with a very low \pt the Muon/Egamma technique is better. This difference is mainly due to the fact that for electrons in the Muon/Egamma approach no primary vertex is searched but only a cut on the distance between track and signal vertex is set. Tracks with a low \pt mostly have a large uncertainty on it. Therefore, searching for the closest vertex is more difficult for those tracks.
 
@@ -207,56 +208,57 @@ The pileup purities and efficiencies are shown in Fig.~\ref{plot:HPUTAE13PU30TTP
   \includegraphics[width=0.325\textwidth]{HP/TrackValidator_E13PU30_PUefficiencypurity_TT_npu}
   \caption[Pileup efficiencies, purities and their product of the different pileup subtraction techniques based on simulated \ttbar events with 13\TeV and $\left<PU\right>=30$]{The pileup efficiencies, purities and the product of both of the different pileup subtraction techniques for simulated \ttbar events. The conditions are set to a center-of-mass energy of 13\TeV and an average number of pileup interactions of 30. The distributions are shown as a function of the pseudorapidity $\eta$ (left hand plots), transverse momentum (middle plots) and the number of pileup interactions (right hand plots). \label{plot:HPUTAE13PU30TTPUComp}}
 \end{figure}
+\clearpage{}
+
+\begin{figure}[Hb]
+    \centering
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Muon_Histo}
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Electron_Histo}
+    \\
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Muon_Prof}
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Electron_Prof}
+    \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for events with 13\TeV and $\left<PU\right>=30$]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) of the different pileup subtraction techniques are shown (the integral of each distribution is normalized to unity). Their dependence on the number of pileup vertices is shown in the bottom row. It is calculated based on $\Zz\rightarrow\MM$ and $\Zz\rightarrow\EE$ decays with 13\TeV and on average 30 pileup interactions.\label{plot:HPUIsoE13PU30}}
+\end{figure}
 
 \subsubsection{Conclusion}
 
 In summary, the results of the track assignment for events with a higher center-of-mass energy and a higher number of pileup interactions on average are as follows. Regarding the signal purity and efficiency it seems that no pileup subtraction is necessary. The results of the Jet/MET technique are only a bit different. As soon as the closest primary vertex is taken purity and efficiency drop immensely. This issue can be solved by better reconstruction algorithms or by reducing the density of the primary vertices in the interaction region. To decrease this density two different approaches can be considered. First, reducing the angle under which the proton bunches collide. The interaction region would be enlarged in z direction. Second, the density distribution of the protons within a bunch could be changed from Gaussian to a flat one. This may also decrease the density around the signal vertex. Regarding the pileup purity and efficiency the association map and the Muon/Egamma technique always lead to much better results than the Jet/MET approach.
 
+\begin{figure}[Hb]
+    \centering
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Muon_Histo}
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Electron_Histo}
+    \\
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Muon_Prof}
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Electron_Prof}
+    \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for events with 13\TeV and $\left<PU\right>=50$]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) of the different pileup subtraction techniques are shown (the integral of each distribution is normalized to unity). Their dependence on the number of pileup vertices are shown in the bottom row. It is calculated based on $\Zz\rightarrow\MM$ and $\Zz\rightarrow\EE$ decays with 13\TeV and on average 50 pileup interactions.\label{plot:HPUIsoE13PU50}}
+\end{figure}
+
 \section{Isolation \label{sec:HPUIso}}
 
-The impact on the isolation is studied in this section. The definition and calculation of it is explained in Section~\ref{sec:OOIso}. Again, this is done for all muons and electrons with a \pt greater than 5\GeV. For muons the $\Zz\rightarrow\MM$ sample is used while for electrons the $\Zz\rightarrow\EE$ sample is taken. 
+The impact on the isolation is studied in this section. The definition and calculation of it is explained in Section~\ref{sec:OOIso}. Again, this is done for all muons and electrons with a \pt greater than 5\GeV. For muons the $\Zz\rightarrow\MM$ sample is used while for electrons the $\Zz\rightarrow\EE$ sample is taken.
+
+\begin{figure}[Hb]
+    \centering
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Muon_Histo}
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Electron_Histo}
+    \\
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Muon_Prof}
+    \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Electron_Prof}
+    \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for events with 14\TeV and $\left<PU\right>=50$]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) of the different pileup subtraction techniques are shown (the integral of each distribution is normalized to unity). Their dependency on the number of pileup vertices are shown in the bottom row. It is calculated based on $\Zz\rightarrow\MM$ and $\Zz\rightarrow\EE$ decays with 14\TeV and on average 50 pileup interactions.\label{plot:HPUIsoE14PU50}}
+\end{figure}
 
 \subsection{13\TeV and $\left<PU\right>=30$ \label{sec:HPUIsoE13PU30}}
 
 The results of the different isolations are shown in Fig.~\ref{plot:HPUIsoE13PU30}. As expected, the distributions for the association map and the Muon/Egamma approach are very similar. Also the results for the Jet/MET approach and for no pileup cleaning differ only slightly. Comparing these results to the reference shown in Fig.~\ref{plot:OOIsoComp}  the relative isolation increases by a factor of around two. This may be because of the higher center-of-mass energy and the higher number of pileup tracks. For instance, at around 20 pileup interactions the average relative isolation of the muons for the reference scenario is in the order of 0.1. For the upcoming conditions it is in the order 0.4. This is completely caused by the higher center-of-mass energy since the average number of tracks per pileup vertex is not expected to change much. Together with the shifted number of pileup interactions to higher values the increase of the relative isolation can be explained.
 
-\begin{figure}[h!t]
-  \centering
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Muon_Histo}
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Electron_Histo}
-  \\
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Muon_Prof}
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU30_Comp_Electron_Prof}
-  \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for events with 13\TeV and $\left<PU\right>=30$]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) of the different pileup subtraction techniques are shown (the integral of each distribution is normalized to unity). Their dependence on the number of pileup vertices is shown in the bottom row. It is calculated based on $\Zz\rightarrow\MM$ and $\Zz\rightarrow\EE$ decays with 13\TeV and on average 30 pileup interactions.\label{plot:HPUIsoE13PU30}}
-\end{figure}
-
 \subsection{13\TeV and $\left<PU\right>=50$ \label{sec:HPUIsoE13PU50}}
 
 In Fig.~\ref{plot:HPUIsoE13PU50} the distributions of the particle isolation for events with about 50 underlying pileup interactions are shown. Comparing these results to those with about 30 underlying pileup interactions the relative isolation increases tremendously. This increase is of course due to the higher number of pileup interactions. Hence, the impact of the number of pileup interactions is visible here.
 
-\begin{figure}[h!t]
-  \centering
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Muon_Histo}
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Electron_Histo}
-  \\
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Muon_Prof}
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E13PU50_Comp_Electron_Prof}
-  \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for events with 13\TeV and $\left<PU\right>=50$]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) of the different pileup subtraction techniques are shown (the integral of each distribution is normalized to unity). Their dependence on the number of pileup vertices are shown in the bottom row. It is calculated based on $\Zz\rightarrow\MM$ and $\Zz\rightarrow\EE$ decays with 13\TeV and on average 50 pileup interactions.\label{plot:HPUIsoE13PU50}}
-\end{figure}
-
 \subsection{14\TeV and $\left<PU\right>=50$ \label{sec:HPUIsoE14PU50}}
 
 Finally, the relative isolations for events at a center-of-mass energy of 14\TeV and on average 50 pileup interactions are shown in Fig.~\ref{plot:HPUIsoE14PU50}. The difference between 13\TeV and 14\TeV is not so large. For both, muons and electrons, the relative isolation increases slightly. This may be due to the fact that the number of tracks does not rise much from 13 to 14\TeV but the momentum of the particular particles does a bit. Since the sum of the energy of all particles within the R-cone of 0.4 (0.3 for electrons) is divided by the momentum of the particular track it may lead to a slightly higher relative isolation for particles from events with a higher center-of-mass energy.
-
-\begin{figure}[h!t]
-  \centering
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Muon_Histo}
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Electron_Histo}
-  \\
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Muon_Prof}
-  \includegraphics[width=0.45\textwidth]{HP/IsoValidator_E14PU50_Comp_Electron_Prof}
-  \caption[Distribution of the isolation of muons and electrons and their dependence on the number of pileup vertices for events with 14\TeV and $\left<PU\right>=50$]{In the top row the distributions of the isolation of muons (left hand plot) and electrons (right hand plot) of the different pileup subtraction techniques are shown (the integral of each distribution is normalized to unity). Their dependency on the number of pileup vertices are shown in the bottom row. It is calculated based on $\Zz\rightarrow\MM$ and $\Zz\rightarrow\EE$ decays with 14\TeV and on average 50 pileup interactions.\label{plot:HPUIsoE14PU50}}
-\end{figure}
 
 \section{Jet Reconstruction \label{sec:HPUJet}}
 
@@ -267,7 +269,7 @@ Since the results do not change much for the three high pileup scenarios only th
 
 The results for the mean and the width of the \pt{} response for the uncorrected jets can be seen in Fig.~\ref{plot:HPUJetE13PU30WO}. Comparing these results to those from the reference scenario shown in Fig.~\ref{plot:OOJetsPtResponseCompWO} the association map and the Muon/Egamma approach still lead to very similar results. In both approaches the \pt{} response is always below one but show a strong dependence on $\eta$. On the other hand, while the Jet/MET approach leads to very good results in the reference scenario for the upcoming scenario this approach leads to too high transverse momentum of the jets. Moreover, it leads to the same results as applying no pileup cleaning. For the whole $\eta$ range the \pt{} response is sightly above 1. Additionally, for high \pt{} it is very close to one. The width of the pt response of the built jets based on these two techniques is still better than those of the association map or the Muon/Egamma approach. 
 
-\begin{figure}[h!t]
+\begin{figure}[Ht]
   \centering
   \includegraphics[width=0.325\textwidth]{HP/JetValidator_E13PU30_WithOutCorrection_Mean_eta}
   \includegraphics[width=0.325\textwidth]{HP/JetValidator_E13PU30_WithOutCorrection_Mean_pt}
@@ -281,7 +283,7 @@ The results for the mean and the width of the \pt{} response for the uncorrected
 
 The results for the corrected jets can be found in Fig.~\ref{plot:HPUJetE13PU30W}. The Jet/MET approach the correction improves the mean of the \pt{} response but the resulting distribution are not as flat as in the reference scenario (see Fig.~\ref{plot:OOJetsPtResponseCompW}). This is of course expected since the correction factors need to be tuned to the new situation. Again, the \pt{} response for the association map and the Muon/Egamma approach are corrected in the wrong direction. The distributions are a bit flatter now but still below one. The width of the \pt{} response does not change much due to the correction. As expected, the Jet/MET technique leads to better results compared to the association map and the Muon/Egamma approach.
 
-\begin{figure}[h!t]
+\begin{figure}[Ht]
   \centering
   \includegraphics[width=0.325\textwidth]{HP/JetValidator_E13PU30_WithCorrection_Mean_eta}
   \includegraphics[width=0.325\textwidth]{HP/JetValidator_E13PU30_WithCorrection_Mean_pt}
@@ -301,7 +303,7 @@ In this section the effects on the correction of the missing transverse energy a
 
 The results for the first scenario are shown in Fig.~\ref{plot:HPUMETE13PU30T0}. The distribution of the raw \MET{} can be found in Appendix~\ref{sec:HPUAppE13PU30MC}. Compared to the results from the reference scenario shown in Figs.~\ref{plot:OOMetRaw} and~\ref{plot:OOMetComp} the average raw \MET{} per event increases by a factor of two. After the first correction the association map still leads to the best performance. On average the resulting \MET{} is more than 0.5\GeV lower than that of the Muon/Egamma approach and about 1\GeV lower than that of the Jet/MET approach. Also the RMS of the distribution of the association map is the best.
 
-\begin{figure}[h!t]
+\begin{figure}[Ht]
   \centering
   \includegraphics[width=0.45\textwidth]{HP/METValidator_E13PU30_Type0_Histo}
   \includegraphics[width=0.45\textwidth]{HP/METValidator_E13PU30_Type0_Prof}
@@ -312,7 +314,7 @@ The results for the first scenario are shown in Fig.~\ref{plot:HPUMETE13PU30T0}.
 
 The distribution of the raw missing transverse energy can be found in Appendix~\ref{sec:HPUAppE13PU50MC}. Due to the higher number of pileup interactions the average \MET{} shown in Fig.~\ref{plot:HPUMETE13PU50T0} for the second scenario is about $20\,\%$ higher compared to that of the first scenario. The general picture already seen in the other scenarios does not change after the first correction. Doing no pileup subtraction leads to the worst results. The results of the Jet/MET approach are only slightly better. The gap to the result from the association increases a bit to almost 1.5\GeV{}. Between these two approaches is the Muon/Egamma approach. It leads to results that are about 0.5\GeV{} worse than those of the association map. Again, the distribution of the association map has the smallest RMS.
 
-\begin{figure}[h!t]
+\begin{figure}[Ht]
   \centering
   \includegraphics[width=0.45\textwidth]{HP/METValidator_E13PU50_Type0_Histo}
   \includegraphics[width=0.45\textwidth]{HP/METValidator_E13PU50_Type0_Prof}
@@ -323,7 +325,7 @@ The distribution of the raw missing transverse energy can be found in Appendix~\
 
 The results for the third scenario are shown in Fig.~\ref{plot:HPUMETE14PU50T0}. The distribution of the raw \MET{} can be found in Appendix~\ref{sec:HPUAppE14PU50MC}. The effect of the higher center-of-mass energy in this scenario is only small. Again, the previous observations are confirmed. The association map leads to the best results in the mean as well as in the RMS of the distribution of the \MET{} after the first correction. The differences to the other techniques are in the same order as in the previous scenario. 
 
-\begin{figure}[h!t]
+\begin{figure}[Ht]
   \centering
   \includegraphics[width=0.45\textwidth]{HP/METValidator_E14PU50_Type0_Histo}
   \includegraphics[width=0.45\textwidth]{HP/METValidator_E14PU50_Type0_Prof}
