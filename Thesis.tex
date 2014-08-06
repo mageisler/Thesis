@@ -13,13 +13,13 @@
 \renewcommand{\chapterpagestyle}{mystyle}
 
 \input{Abstract}
+\cleardoublepage
 \input{Zusammenfassung}
 
 \renewcommand*\contentsname{Table of Contents}
 \tableofcontents
-\clearpage
+\cleardoublepage
 
-\setboolean{@twoside}{true}
 \setcounter{page}{1}
 
 \pagenumbering{arabic}
@@ -59,6 +59,7 @@
 \input{DataComparison_App}
 \clearpage
 \input{HighPU_App}
+\cleardoublepage
 
 \renewcommand*\listfigurename{List of Figures}
 \renewcommand*\listtablename{List of Tables}
@@ -66,13 +67,14 @@
 
 \phantomsection\addcontentsline{toc}{chapter}{List of Figures}
 \listoffigures
-\clearpage
+\cleardoublepage
 \phantomsection\addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
+\cleardoublepage
 \phantomsection\addcontentsline{toc}{chapter}{\bibname}
 \bibliography{Thesis}
+\cleardoublepage
 
 \input{Acknowledgments}
-\clearpage
 
 \end{document}

@@ -7,7 +7,7 @@ To bend the accelerated hadrons around 1200 superconducting dipole magnets made 
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.65\textwidth]{Detector/Sketch_LHC}
+  \includegraphics[width=0.6\textwidth]{Detector/Sketch_LHC}
   \caption[Sketch of the LHC]{A sketch of the LHC and the four experiments as they are located at the French-Swiss border taken from~\cite{Team:40525}. \label{plot:LCHSketch}}
 \end{figure}
 
@@ -45,6 +45,11 @@ Putting all these values together the design luminosity is around \LHigh{} for p
   \includegraphics[width=0.55\textwidth]{Intro/peak_lumi_per_day_pp_2012}
   \caption[Instantaneous luminosity at CMS]{The instantaneous luminosity as delivered to CMS by the LHC accelerator during the proton-proton run period in 2012. Taken from~\cite{CMS-Lumi-Public-Webpage} \label{plot:IntroInstLumi}}
 \end{figure}
+\begin{figure}[Htb]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Intro/ppXsection}
+    \caption[Total and elastic cross section for pp interactions]{The total and elastic cross section for proton-proton collisions as a function of the center-of-mass energy. Taken from reference~\citen{Beringer:1900zz}.\label{plot:IntroTotalCross}}
+\end{figure}
 
 To get  a more suitable parameter this instantaneous luminosity needs to be translated into proton-proton interactions per bunch crossing. The total cross section for proton-proton interactions is taken from Fig.~\ref{plot:IntroTotalCross}. At a center-of-mass energy of 8\TeV it is assumed to be approximately 90\mb. Together with the bunch spacing of 50\ns one finds for the number of interactions $n_{int}$ per bunch crossing:
 \begin{eqnarray}
@@ -52,18 +57,12 @@ n_{int} & \approx & 7\hertzpernbarn \cdot 90\mb \cdot 50\ns \nonumber \\
  & \approx & 31.5 \nonumber.
 \end{eqnarray}
 
-Hence, the expected number of proton-proton interactions per bunch crossing during the first run period of the LHC is expected to be in the order of 30. In Fig~\ref{plot:IntroCrossSections} the cross sections for several physics processes is illustrated. As shown, the gap between the total cross section and the cross section for the production of a b quark is about 3 orders of magnitude. Hence, only about 1\permil{} of the proton-proton interactions is of physical interest. These interesting interactions are named signal processes. Furthermore, the probabilty of two signal interactions in one bunch crossing is very low. The additional 30 interactions per bunch crossing are mostly of no interest and are often referred to as pileup.
-
-\begin{figure}[Htb]
-    \centering
-    \includegraphics[width=0.7\textwidth]{Intro/ppXsection}
-    \caption[Total and elastic cross section for pp interactions]{The total and elastic cross section for proton-proton collisions as a function of the center-of-mass energy. Taken from reference~\citen{Beringer:1900zz}.\label{plot:IntroTotalCross}}
-\end{figure}
+Hence, the expected number of proton-proton interactions per bunch crossing during the first run period of the LHC is expected to be in the order of 30. In Fig~\ref{plot:IntroCrossSections} the cross sections for several physics processes is illustrated. As shown, the gap between the total cross section and the cross section for the production of a b quark is about 3 orders of magnitude. Hence, only about 1\permil{} of the proton-proton interactions is of physical interest. These interesting interactions are named signal processes. Furthermore, the probability of two signal interactions in one bunch crossing is very low. The additional 30 interactions per bunch crossing are mostly of no interest and are often referred to as pileup.
 
 \begin{figure}[Htb]
     \centering
     \includegraphics[width=0.55\textwidth]{Intro/LHCCrossSections}
-    \caption[Cross sections for different physics processes]{The cross section specific physics processes as a function of the center-of-mass energy $\sqrt{s}$. For $\sqrt{s}<4\TeV{}$ it is shown for proton-antiproton collisions as produced at the Tevatron. For higher energies for proton-proton collision at the LHC. The dotted lines represent the design center-of-mass energies at the Tevatron (1.96\TeV{}) and the LHC (14\TeV{}). Taken from reference~\citen{Jenni:616089}.\label{plot:IntroCrossSections}}
+    \caption[Cross sections for different physics processes]{The cross section specific physics processes as a function of the center-of-mass energy $\sqrt{s}$. For $\sqrt{s}<4\TeV{}$ it is shown for proton-anti proton collisions as produced at the Tevatron. For higher energies for proton-proton collision at the LHC. The dotted lines represent the design center-of-mass energies at the Tevatron (1.96\TeV{}) and the LHC (14\TeV{}). Taken from reference~\citen{Jenni:616089}.\label{plot:IntroCrossSections}}
 \end{figure}
 
 \section{Compact Muon Solenoid Experiment \label{LHCCMSCMS}}
@@ -102,7 +101,7 @@ At interaction point five of the LHC the CMS detector is located. The cylindrica
 The innermost part of the CMS detector is the tracking system. It has a cylindrical shape with a length of 5.8\m{} and a diameter of 2.5\m{}. Consequently, the acceptance of the tracker reaches a pseudorapidity of 2.5. The modules of the tracker are made of silicon. On the one hand, modules made of silicon can provide a very high granularity and a fast readout. This is needed since at its design parameters the LHC will collide two proton bunches every 25\ns{} with around 1000 created particles per event. Furthermore, silicon is expected to withstand conditions with such a high radiation for a relatively high lifetime. On the other hand, using silicon modules leads to a high amount of readout electronics and cooling devices. This increases the probability of photon conversions or nuclear interactions. Further information about which sensor technology has been chosen can be found elsewhere~\cite{Chatrchyan:1129810}. In total, about 200\ms{} of active silicon area is built into the CMS tracker making it the largest silicon tracker ever built.\\
 As demonstrated in the sketches shown in Fig.~\ref{plot:LHCCMSTrackerCMS} the tracker can be further divided into a pixel and a strip detector. A schematic cross section through the CMS tracker can be seen in Fig.~\ref{plot:LHCCMSTrackerCrossCMS}. There, the position of the pixel and strip tracker is illustrated, too.
 
-\begin{figure}[Htb]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.45\textwidth]{Detector/CMS_Tracker}
     \includegraphics[width=0.45\textwidth]{Detector/CMS_PixelTracker}
@@ -124,7 +123,7 @@ As already shown in Fig.~\ref{plot:LHCCMSTrackerCrossCMS} the strip tracker cons
 In the central region the TIB consists of four cylinders with a length of 140\cm{} placed at radii of 255.0, 339.0, 418.5 and 498.0\mm{}. This tracker part is followed by the TOB that is the only tracker sub-detector that is fully equipped with thick sensors. It consists of six cylindrical layers with a length of 236\cm{}. The layers are placed at radii of 608, 692, 780, 868, 956 and 1080\mm{}. The modules are arranged in a way that the strips are parallel to the z direction. Hence the $\phi{}$ position of the hit can be measured with highest accuracy. For both, TIB and TOB, the two innermost layers are equipped with double-sided modules giving also information about the z position of the hits.\\
 Next to the TIB the TID is placed. It consists of three disks at z positions of $\pm{}$80 to $\pm$90\cm{}. These disks are identical and assembled with three rings of modules spanning a radius from 200 to 500\mm{}. Due to this orientation again the $\phi{}$ position of the hit has the highest accuracy. The two innermost rings of each wheel are equipped with double-sided modules. In doing so, the radius of the position of the double-sided modules of TIB and TID are similar. Additionally, the radius of the hit from the beam axis can be measured at the double-sided modules. Lastly, the TEC consists of 9 endcaps at z positions from $\pm{}$124 to $\pm{}$ 280\cm{}. They cover a radius from 220 to 1135\mm{}. Depending on the z position the endcaps are equipped with four to seven rings of modules. The double-sided modules are again placed in a way that the distance to the beam axis is the same as for those in the TIB and TOB.
 
-\begin{figure}[Ht]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.55\textwidth]{Detector/Tracker_RadiationLength}
     \caption[Material budget of the CMS tracker]{The stacked material budget of the CMS tracker in multiples of the radiation length as a function of the pseudorapidity. It is further broken down to the sub-detectors. Taken from~\citen{Chatrchyan:1129810}. \label{plot:LHCCMSTrackerRadiationLength}}
@@ -197,7 +196,7 @@ The key towards a complete and accurate reconstruction of the whole event at the
 
 \paragraph*{Iterative Tracking}
 
-\begin{figure}[Ht]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.55\textwidth]{Intro/TrackRes_dz_Vs_Pt}
     \caption[Track resolution \vs pseudorapidity for different bins of transverse momentum]{The distribution of the track resolution of the transverse impact parameter $d_{z}$ as a function of the transverse momenta for different bins of pseudorapidity. The tracks are divided into three regions of pseudorapidity, the barrel region $\left[0., 0.9\right]$, the transition region $\left(0.9, 1.4\right]$ and the endcap region $\left(1.4, 2.5\right]$. \label{plot:IntroTrackRes}}
@@ -210,29 +209,27 @@ One important outcome of the track reconstruction is the resolution of the verte
 
 Another important collection are the reconstructed primary vertices. These are produced by clustering a subset of the reconstructed tracks into sets of tracks that are coming from nearly the same position. These tracks have to fulfill certain quality selections and have its origin close to the interaction region. The most important feature for the work presented here is the so-called track weight. This weight is calculated after the fit is finished and stands for the compatibility between the track and the fitted vertex. It is greater than zero for those tracks only that are used during the fit of the respective vertex. The closer the value gets to one the more compatible the track is with the vertex. As said above only a subset of the reconstructed tracks is used for the production of the primary vertices. Figure~\ref{plot:IntroTrackWeight} illustrates that about $60\%$ of all reconstructed tracks have a track weight at any vertex.  More information about the technique of the vertex fit can be found elsewhere~\cite{CMS-PAPER-TRK-11-001}.
 
-\begin{figure}[Htb]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.45\textwidth]{Intro/VertexNum_Vs_Ntrks}
     \includegraphics[width=0.45\textwidth]{Intro/TrackWeightCheck}
     \caption[Distribution of the number of tracks used to fit the primary vertices and fraction of reconstructed tracks that have a track weight at any primary vertex]{The distribution of the number of tracks used for fitting a particular vertex (left hand side) and the fraction of reconstructed tracks that have a track weight greater than 0 at the chosen signal vertex, at any primary vertex or at no vertex at all as a function of the pseudorapidity (right hand side). \label{plot:IntroTrackWeight}}
 \end{figure}
 
-As shown in Section~\ref{sec:IntroLumiPPI} in one bunch crossing on average 30 proton-proton interactions are expected if the LHC runs at its maximum in the first run period. The space in that all these collisions happen is the so-called beam spot. The shape of the beam spot can be described as a cylinder lying centrally along the $z$ axis. This cylinder has a diameter of about 120\mum and a total length of about 30\cm. Therefore, the biggest separation of the primary vertices is expected to be along the $z$ axis compared to the other axes. The probability for a collision to be at a certain position z is shown in Fig.~\ref{plot:IntroVertexPos}. The shape of the probability can be well-described by a Gaussian with a width of about 5\cm.
-
-\begin{figure}[Htb]
+\begin{figure}[Ht]
     \centering
     \includegraphics[width=0.55\textwidth]{Intro/VertexNum_Vs_Z}
     \caption[Vertex distribution along z]{The distribution for the reconstructed primary vertices along the $z$ axis for the last run period in 2012 (integral normalized to unity). \label{plot:IntroVertexPos}}
 \end{figure}
 
-The mean separation of the primary vertices in one bunch crossing is therefore strongly dependent on the number of collisions. For the data in Fig.~\ref{plot:IntroVertexSep}, the mean separation is shown as a function of the number of reconstructed vertices of the bunch crossing. The separation is defined as the distance of one primary vertex to the next one. For bunch crossings with more than 30 reconstructed vertices the mean separation becomes less than 5\mm. The same holds for an instantaneous luminosity of greater than 6\hertzpernbarn. A more detailed look of the primary vertex separation can be found in Fig.~\ref{plot:IntroVertexSep2D}. As it can be seen the separation of the primary vertices can go down below 1\mm in the central region.
-
-\begin{figure}[Htb]
+\begin{figure}[Ht]
     \centering
     \includegraphics[width=0.45\textwidth]{Intro/VertexSep_Vs_Npu}
     \includegraphics[width=0.45\textwidth]{Intro/VertexSep_Vs_InstLumi}
     \caption[Mean vertex separation \vs number of reconstructed vertices and \vs instantaneous luminosity]{The distribution of the mean separation of the primary vertices \vs the number of reconstructed vertices (left hand side) and \vs the instantaneous luminosity for one run of the last run period in 2012. \label{plot:IntroVertexSep}}
 \end{figure}
+
+As shown in Section~\ref{sec:IntroLumiPPI} in one bunch crossing on average 30 proton-proton interactions are expected if the LHC runs at its maximum in the first run period. The space in that all these collisions happen is the so-called beam spot. The shape of the beam spot can be described as a cylinder lying centrally along the $z$ axis. This cylinder has a diameter of about 120\mum and a total length of about 30\cm. Therefore, the biggest separation of the primary vertices is expected to be along the $z$ axis compared to the other axes. The probability for a collision to be at a certain position z is shown in Fig.~\ref{plot:IntroVertexPos}. The shape of the probability can be well-described by a Gaussian with a width of about 5\cm.
 
 \begin{figure}[Htb]
     \centering
@@ -240,6 +237,8 @@ The mean separation of the primary vertices in one bunch crossing is therefore s
     \includegraphics[width=0.45\textwidth]{Intro/VertexNum_Vs_Z_Vs_Sep}
     \caption[Vertex separation \vs number of reconstructed vertices and \vs z position of the vertex. Number of signal vertices \vs z position and separation for events with 20 underlying pileup events]{The distribution of the averaged separation of the signal vertex \vs the number of reconstructed vertices and the z position (left hand side) and the number of signal vertices \vs the z position and separation for events with 20 underlying pileup events for one run of the last run period in 2012. \label{plot:IntroVertexSep2D}}
 \end{figure}
+
+The mean separation of the primary vertices in one bunch crossing is therefore strongly dependent on the number of collisions. For the data in Fig.~\ref{plot:IntroVertexSep}, the mean separation is shown as a function of the number of reconstructed vertices of the bunch crossing. The separation is defined as the distance of one primary vertex to the next one. For bunch crossings with more than 30 reconstructed vertices the mean separation becomes less than 5\mm. The same holds for an instantaneous luminosity of greater than 6\hertzpernbarn. A more detailed look of the primary vertex separation can be found in Fig.~\ref{plot:IntroVertexSep2D}. As it can be seen the separation of the primary vertices can go down below 1\mm in the central region.
 
 To estimate the resolution of the primary vertex reconstruction the "split method" is applied on data from one run at the end of the first run period in 2012. A more detailed description of this method can be found in reference~\citen{CMS-PAPER-TRK-11-001}. First, all tracks from a certain vertex are split equally into two different sets. In this process, one tries to ensure that both track sets have, on average, the same kinematic properties. Based on these two sets two new vertices are fitted independently using the adaptive vertex fitter~\cite{CMS-PAPER-TRK-11-001}. The distance of the position of these two vertices is then stored. After applying this procedure to all primary vertices a Gaussian is fitted to the distribution of that distance. To obtain the resolution of the primary vertices the standard deviation of the Gaussian is divided by $\sqrt{2}$. In Fig.~\ref{plot:IntroVertexRes} the primary vertex resolution in z is shown. The resolution depends strongly on the number of tracks that are used to fit the primary vertex. The typical range of this resolution lies between 200\mum for about 10 tracks and around 40\mum for more than 60 tracks.
 

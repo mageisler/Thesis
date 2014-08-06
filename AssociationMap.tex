@@ -16,14 +16,14 @@ To allow for more than one associated vertex per track the corresponding input p
 For each individual track from the given collection, the work flow of finding the best matching primary vertex can be divided into three steps. A sketch illustrating this is presented in Fig.~\ref{plot:AMWorkSketch}. Step 1 is taking advantage of the track weight stored for each vertex (see Section~\ref{sec:LHCCMSPaVR}), as it is commonly done in pileup subtraction techniques (see Section~\ref{sec:IntroCurPST}). If a track weight is stored at any primary vertex for the track the process is stopped and the association is put into the association map. Step 2 uses secondary vertices. If a track matches to a secondary vertex, it is attempted to find the best primary vertex using the position of the secondary vertex and the estimated momentum of the incoming particle. This particle is expected to be generated at a primary vertex and interact at the secondary vertex. Only if no association could be created yet, step 3 is executed. It is a search for the vertex closest to the particular track and always giving a result. In the description of this last step a small manipulation of the real distance from the primary vertex to the track is introduced. This modification takes into account the number of tracks that are used to fit the primary vertex. It is also applied at step 2 when the closest primary vertex to an estimated incoming particle of a secondary vertex needs to be found. More details about these three steps are given in the following sections.  \\
 As soon as an association is found it is stored in the map together with a quality measure. This quality is defined based on the estimated purity, depending on the distance between track and associated vertex, and the iteration at which it is created. In Fig.~\ref{plot:AMTrackStepFrac}, the fraction of tracks that are associated at a particular step is shown. As illustrated, up to $60\,\%$ of all tracks are used for the primary vertex fit while less than $5\,\%$ of the tracks can be matched to a secondary vertex.
 
-\begin{figure}[Ht]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=1.\textwidth]{AM/Workflow}
     \caption[Sketch of the work flow of the association map]{The general work flow of the association map. The input collections are shown in ellipses, the different steps in rectangles. \label{plot:AMWorkSketch}}
 \end{figure}
 
 In case more than one association should be created the work flow is executed normally during the iteration 1. At any following iteration only step 3 is applied. The primary vertex fit is implemented in such way that one track cannot be matched to more than one primary vertex, during step 1. In step 2, one track can only be matched to a primary and a secondary vertex if it belongs to the incoming particle of the secondary vertex. If this happens the association using the secondary vertex will be based on this incoming track, as explained later. Hence, step 2 in iteration 2 always leads to the same result as step 1 of iteration 1 or  step 3 of iteration 2. Because of this and the fact that step 3 is the fastest step to execute, from iteration 2 on, all associations will only be created using step 3. For each iteration, matched vertices from previous iterations are removed from the vertex collection in order not to create the same association multiple times. As a consequence, for events with less reconstructed vertices than requested associations the number of created associations is lowered. \\ \\
-The configuration presented here is set up based on a simulated data sample, which needs to be a standard sample widely used in CMS. Therefore, a data sample containing \Zz decays into two muons is chosen. Furthermore, at least one jet from the initial state is simulated. Using this sample most main objects for physics analyses are covered. The simulated center-of-mass energy is 8\TeV and the number of underlying pileup interactions is adopted to real data using a Poissonian distribution with a mean of nearly 20. Consequently, in total about 430 tracks per event including about 50 tracks from the signal vertex are simulated. Additionally, to simulate the impact of so-called out-of-time pileup also the three previous as well as the five following bunch cossings are simulated with a bunch spacing of 50\unit{ns}.
+The configuration presented here is set up based on a simulated data sample, which needs to be a standard sample widely used in CMS. Therefore, a data sample containing \Zz decays into two muons is chosen. Furthermore, at least one jet from the initial state is simulated. Using this sample most main objects for physics analyses are covered. The simulated center-of-mass energy is 8\TeV and the number of underlying pileup interactions is adopted to real data using a Poissonian distribution with a mean of nearly 20. Consequently, in total about 430 tracks per event including about 50 tracks from the signal vertex are simulated. Additionally, to simulate the impact of so-called out-of-time pileup also the three previous as well as the five following bunch crossings are simulated with a bunch spacing of 50\unit{ns}.
 
 \begin{figure}[Ht]
     \centering
@@ -60,7 +60,7 @@ As will be shown, the values for both, purity and efficiency, are better than th
 In the two following steps the most probable primary vertex has to be found for a given track. This is done by looking for the closest vertex to that track. There are two different ways. The first one is to look for the closest vertex in all three dimensions. The second way is to look in z direction only because of the largest separation of the primary vertices along this axis (see Sec.~\ref{sec:LHCCMSPaVR}). \\
 To look for the closest vertex in all three dimensions a trajectory needs to be build. It describes the tracks curvature in the interaction region. Then, for every primary vertex the minimum distance to this trajectory is calculated. To look for the closest vertex in z, no trajectory needs to be build since the position of closest approach (p.o.c.a.) to the interaction point is already saved in the default data format. To obtain the closest primary vertex the distance between the z position of the tracks p.o.c.a. and the primary vertex is taken.
 
-\begin{figure}[Ht]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.325\textwidth]{AM/FinalAssociation_Eff_3_False}
     \includegraphics[width=0.325\textwidth]{AM/FinalAssociation_Pur_3_False}
@@ -133,15 +133,15 @@ The results are shown in Fig.~\ref{plot:AMWFSVpcEffAndPurSO}. Taking the closest
     \caption[Efficiencies, purities and their product of the association with photon conversions for different search options as a function of distance to the beam axis]{The efficiencies (left hand plot), purities (middle plot) and the product of both (right hand plot) for the track association matched to photon conversions. The distance to the beam axis in the $x$-$y$ plane is shown on the $x$ axis.\label{plot:AMWFSVpcEffAndPurSO}}
 \end{figure}
 
-Next, the impact of the quality of the reconstructed conversion on the performance of the association is investigated. In order to do this, a collection of photon conversions fulfilling a "\textit{high Purity}" selection is created. The difference of these conversions (filtered) to all conversions (unfiltered) is presented in terms of efficiency and purity in Fig.~\ref{plot:AMWFSVpcEffAndPurDC}. The mentioned rho is the distance of the position of the photon conversion to the beam axis in the $x$-$y$ plane.  To obtain the efficiency and purity, the seeds of a reconstructed conversion are matched to simulated conversions. As expected, the average difference in efficiency is in the order of $10\,\%$ while the purity changes only minimally, except for one bin.
-
-\begin{figure}[Ht]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.325\textwidth]{AM/SecondaryValidator_conv_Efficiency}
     \includegraphics[width=0.325\textwidth]{AM/SecondaryValidator_conv_Purity}
     \includegraphics[width=0.325\textwidth]{AM/UnCleanedComparison_conv_TrackNum_Vs_Val}
     \caption[Efficiency and purity of the reconstructed photon conversions as a function of distance to the beam axis and number of matched tracks]{The efficiencies (left hand plot) and purities (middle plot) of the reconstructed photon conversions as a function of simulated or reconstructed distance to the beam axis. On the right hand plot the number of matched tracks per event is shown as a function of  the distance to the beam axis in the $x$-$y$ plane. Filtered stands for high purity conversions. \label{plot:AMWFSVpcEffAndPurDC}}
 \end{figure}
+
+Next, the impact of the quality of the reconstructed conversion on the performance of the association is investigated. In order to do this, a collection of photon conversions fulfilling a "\textit{high Purity}" selection is created. The difference of these conversions (filtered) to all conversions (unfiltered) is presented in terms of efficiency and purity in Fig.~\ref{plot:AMWFSVpcEffAndPurDC}. The mentioned rho is the distance of the position of the photon conversion to the beam axis in the $x$-$y$ plane.  To obtain the efficiency and purity, the seeds of a reconstructed conversion are matched to simulated conversions. As expected, the average difference in efficiency is in the order of $10\,\%$ while the purity changes only minimally, except for one bin.
 
 The impact on the performance of the association is shown in Fig.~\ref{plot:AMWFSVpcEffAndPurRT}. For this study, all tracks that are matched to a conversion from the unfiltered collection but not matched to a filtered conversion are associated to a primary vertex using step 3 (see Section~\ref{sec:AMWFFA}). Comparing the results of the efficiency and purity it is found that the results of the unfiltered collection are better. While the efficiency is better, the purity shows only a small improvement.
 
@@ -168,7 +168,7 @@ To take tracks originating from decays of neutral particles into account, it is 
 To check if a reconstructed track matches to such a decay a loop is carried out over all neutral decays from the given collections. The daughters of a particular decay can be accessed and compared to the respective reconstructed track. Based on the summed momentum of the two daughters and the position of the decay the trajectory of the incoming neutral particle can be reconstructed. \\
 With this trajectory the most likely primary vertex can be found. The efficiency and purity of four different search options similar to Section~\ref{sec:AMWFSVpc} are compared: to look for the closest vertex in all three dimensions and in z direction only for the estimated primary particle and for the reconstructed secondary particle, respectively. The results are shown in Fig.~\ref{plot:AMWFSVdecEffAndPurSO} for  \PKzS{}s and \PgL{}s. Again, especially for the efficiency, using the closest primary vertex to the estimated neutral particle in all three dimensions (labeled "Primary 3D" in the plots) leads to the best results. Therefore, this option is also used for neutral particle decays.
 
-\begin{figure}[Ht]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.325\textwidth]{AM/ReassosTest_kdec_Efficiency_Vs_Val}
     \includegraphics[width=0.325\textwidth]{AM/ReassosTest_kdec_Purity_Vs_Val}
@@ -188,7 +188,7 @@ Again, it is checked if a filter needs to be set on the quality of the reconstru
 \end{itemize}
 To estimate the impact of this filter on the performance of the neutral particle decay reconstruction the efficiency and purity are calculated. For all simulated \PKzS{}s and \PgL{}s it is checked if they decay into two particles whose tracks can be reconstructed. This means that these particles give rise to at least three hits in the tracker and have a transverse momentum greater than 1\GeV. Decays fulfilling these conditions are matched to reconstructed neutral particle decays if they are within a range of 5 standard deviations of the reconstruction uncertainty. The results can be seen in Fig.~\ref{plot:AMWFSVdecEffAndPurDC}.
 
-\begin{figure}[Ht]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.325\textwidth]{AM/SecondaryValidator_kdec_Efficiency}
     \includegraphics[width=0.325\textwidth]{AM/SecondaryValidator_kdec_Purity}
@@ -385,7 +385,7 @@ Next, the three different options have to be analyzed separately.
     \includegraphics[width=0.3\textwidth]{AM/QualityAnalyzer_1_2D_FV_0}
     \includegraphics[width=0.3\textwidth]{AM/QualityAnalyzer_1_2D_3D_0}
     \includegraphics[width=0.3\textwidth]{AM/QualityAnalyzer_1_2D_Z_0}
-    \caption[Cumulative purities of iteration 2 \vs{} distance between track and primary vertex to define quality for smaller distances of association one]{The cumulative purities for always associating the track to the first vertex (left hand plot), looking for the closest in 3D (middle plot) and in z only (right hand plot) of the iteration 2 as a function of the distance of the second association. Here, the first association has a rather small distance (see Table~\ref{tab:AMWFQDI1nc}). On the left hand plot no distribution for step 3 is shown since the track has already been associated to the first vertex in iteration 1. \label{plot:AMWFQualityI20}}
+    \caption[Cumulative purities of iteration 2 \vs{} distance between track and primary vertex to define quality for smaller distances of association one]{The cumulative purities for associating the track always to the first vertex (left hand plot), looking for the closest in 3D (middle plot) and in z only (right hand plot) of the iteration 2 as a function of the distance of the second association. Here, the first association has a rather small distance (see Table~\ref{tab:AMWFQDI1nc}). On the left hand plot no distribution for step 3 is shown since the track has already been associated to the first vertex in iteration 1. \label{plot:AMWFQualityI20}}
 \end{figure}
 
 \begin{figure}[Ht]
@@ -416,7 +416,7 @@ It can be seen in Fig.~\ref{plot:AMWFQualityI30} that the purity is already very
 
 In Fig.~\ref{plot:AMWFQualityDist} the distribution of the quality classes is shown. Associating the track to the closest vertex in all three dimensions and only along the $z$ axis lead to indistinguishable results. As can be seen for iteration 1, most of the associations obtain a quality of 5 (around $60\,\%$). Furthermore, only if the track is always associated to the first vertex a quality of three can be obtained in a notable fraction. In iteration 2 about $5\,\%$ and $1\,\%$ of the associations get a quality of two, respectively.
 
-\begin{figure}[Htb]
+\begin{figure}[Hb]
     \centering
     \includegraphics[width=0.55\textwidth]{AM/AMValidator_Quality}
     \caption[Distribution of the quality classes]{The distribution of the quality classes. The integral is scaled such that the content of the qualities from 3 to 6 sum up to unity. Due to the fact that not always two or more primary vertices are reconstructed the integral of quality 1 and 2 as well as of quality 0 do not sum up to 1. Because of the similar results for looking for the closest vertex along the $z$ axis only or in all three dimensions the two distributions overlay in this plot. \label{plot:AMWFQualityDist}}
